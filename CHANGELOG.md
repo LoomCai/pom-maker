@@ -7,4 +7,10 @@
 SAWS
 ====
 
-To view the latest `README`, `docs`, and `c
+To view the latest `README`, `docs`, and `code` visit the GitHub repo:
+
+https://github.com/donnemartin/saws
+
+To submit bugs or feature requests, visit the issue tracker:
+
+https:/
