@@ -23,4 +23,9 @@ Changelog
 
 ### Bug Fixes
 
-* [#90](https://gi
+* [#90](https://github.com/donnemartin/saws/pull/90) - Fix `Sphinx` document generation issues.
+
+### Updates
+
+* Update list of commands.
+* [#92](https://git
