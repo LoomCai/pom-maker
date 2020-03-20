@@ -13,4 +13,14 @@ https://github.com/donnemartin/saws
 
 To submit bugs or feature requests, visit the issue tracker:
 
-https:/
+https://github.com/donnemartin/saws/issues
+
+Changelog
+=========
+
+0.4.2 (2017-04-08)
+------------------
+
+### Bug Fixes
+
+* [#90](https://gi
