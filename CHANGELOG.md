@@ -31,4 +31,8 @@ Changelog
 * [#92](https://github.com/donnemartin/saws/pull/92) - Update `feed_key to feed and process_keys for `prompt-toolkit` v1.0.1+.
 
 0.4.1 (2015-05-31)
--------------
+------------------
+
+### Bug Fixes
+
+* [#83](https://github.com/donnemartin/saws/pull/83) - Update to `prompt-toolkit` 1.0.0, which includes a number of p
