@@ -35,4 +35,8 @@ Changelog
 
 ### Bug Fixes
 
-* [#83](https://github.com/donnemartin/saws/pull/83) - Update to `prompt-toolkit` 1.0.0, which includes a number of p
+* [#83](https://github.com/donnemartin/saws/pull/83) - Update to `prompt-toolkit` 1.0.0, which includes a number of performance improvements (especially noticeable on Windows) and bug fixes.
+
+### Updates
+
+* [#75](https://github.com/donnemartin/saws/pull/75), [#76](https://gith
