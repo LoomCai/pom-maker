@@ -28,4 +28,7 @@ Changelog
 ### Updates
 
 * Update list of commands.
-* [#92](https://git
+* [#92](https://github.com/donnemartin/saws/pull/92) - Update `feed_key to feed and process_keys for `prompt-toolkit` v1.0.1+.
+
+0.4.1 (2015-05-31)
+-------------
