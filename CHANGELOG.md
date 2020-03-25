@@ -39,4 +39,5 @@ Changelog
 
 ### Updates
 
-* [#75](https://github.com/donnemartin/saws/pull/75), [#76](https://gith
+* [#75](https://github.com/donnemartin/saws/pull/75), [#76](https://github.com/donnemartin/saws/pull/76) - Fix groff install and follow Dockerfile best practices.
+* [#85](https://github.com/donnemartin/saws/pull/85) - Update packaging
