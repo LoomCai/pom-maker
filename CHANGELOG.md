@@ -46,4 +46,12 @@ Changelog
 * Update INSTALLATION:
     * Add install from SOURCE.
     * Add note about OS X 10.11 pip issue (now also in README).
-   
+    * Update intro.
+* Update link to style guide in CONTRIBUTING.
+
+0.4.0 (2015-12-08)
+------------------
+
+### Features
+
+* Implemented [#67](https://githu
