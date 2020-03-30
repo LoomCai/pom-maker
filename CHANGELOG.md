@@ -54,4 +54,8 @@ Changelog
 
 ### Features
 
-* Implemented [#67](https://githu
+* Implemented [#67](https://github.com/donnemartin/saws/issues/67): Add Fish-style auto suggestions.
+
+### Bug Fixes
+
+* Fixed [#71](https://github.com/donnemartin/saws/issues/
