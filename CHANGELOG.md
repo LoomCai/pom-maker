@@ -58,4 +58,5 @@ Changelog
 
 ### Bug Fixes
 
-* Fixed [#71](https://github.com/donnemartin/saws/issues/
+* Fixed [#71](https://github.com/donnemartin/saws/issues/71): Disable color output for shell commands.
+* Fixed [#72](https://github.com/donnemartin/saws/issues/72): Exiting with `F10`
