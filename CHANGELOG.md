@@ -59,4 +59,11 @@ Changelog
 ### Bug Fixes
 
 * Fixed [#71](https://github.com/donnemartin/saws/issues/71): Disable color output for shell commands.
-* Fixed [#72](https://github.com/donnemartin/saws/issues/72): Exiting with `F10`
+* Fixed [#72](https://github.com/donnemartin/saws/issues/72): Exiting with `F10` does not clear the menu bar.
+
+### Updates
+
+* Updated list of commands.
+* Updated repo `README`.
+    * Added auto suggestions.
+* Fixed [#66]
