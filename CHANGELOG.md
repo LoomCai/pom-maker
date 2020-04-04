@@ -73,4 +73,5 @@ Changelog
 
 ### Features
 
+* Resolved [#38](https://github.com/donnemartin/saws/issues/38): Added `Docker` installation support, by [frosforever](https://github.com/frosforever).
 * Resolved
