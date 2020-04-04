@@ -66,4 +66,11 @@ Changelog
 * Updated list of commands.
 * Updated repo `README`.
     * Added auto suggestions.
-* Fixed [#66]
+* Fixed [#66](https://github.com/donnemartin/saws/issues/38): Removed `docs/build` from source repo.
+
+0.3.2 (2015-10-16)
+------------------
+
+### Features
+
+* Resolved
