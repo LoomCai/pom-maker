@@ -76,4 +76,5 @@ Changelog
 * Resolved [#38](https://github.com/donnemartin/saws/issues/38): Added `Docker` installation support, by [frosforever](https://github.com/frosforever).
 * Resolved [#39](https://github.com/donnemartin/saws/issues/39): Changed completion matching to ignore case.
 * Resolved [#40](https://github.com/donnemartin/saws/issues/40): Added `emr --cluster-states` completions.
-* Resolved [#52](https://github.com/donnemartin/saws/issues/52) and [#58](https://github.com/don
+* Resolved [#52](https://github.com/donnemartin/saws/issues/52) and [#58](https://github.com/donnemartin/saws/issues/58): Updated list of auto-completed commands and subcommands.
+* Resolved [#53](https://github.com/donnemartin/saws/issues/53): Moved shortcuts out 
