@@ -84,4 +84,5 @@ Changelog
 * Fixed [#22](https://github.com/donnemartin/saws/issues/22) and [#26](https://github.com/donnemartin/saws/issues/26):
     * `ordereddict` is now only installed with Python 2.6.
     * `enum34` is now only installed with Python 3.3 and below.
-* Fixed [#29](https://github.com/donnemartin/saws/issues/29): `SAWS` is now compatible with  `prompt_toolkit` version 0.52, by [jonathanslenders](https
+* Fixed [#29](https://github.com/donnemartin/saws/issues/29): `SAWS` is now compatible with  `prompt_toolkit` version 0.52, by [jonathanslenders](https://github.com/jonathanslenders).
+* Fixed [#33](https://github.com/donnemartin/saws/issues/29): `SAWS` will no longer exit on keyboard interrupt such a
