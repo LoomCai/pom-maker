@@ -81,4 +81,6 @@ Changelog
 
 ### Bug Fixes
 
-* Fixed [#22](https://github.com/donnemartin/
+* Fixed [#22](https://github.com/donnemartin/saws/issues/22) and [#26](https://github.com/donnemartin/saws/issues/26):
+    * `ordereddict` is now only installed with Python 2.6.
+    * `enum34` is now only installe
