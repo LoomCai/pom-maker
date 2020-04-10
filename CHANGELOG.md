@@ -89,4 +89,10 @@ Changelog
 * Fixed [#35](https://github.com/donnemartin/saws/issues/35): Grep now works consistently with shortcuts, by [mlimaloureiro](https://github.com/mlimaloureiro).
 * Fixed [#41](https://github.com/donnemartin/saws/issues/41): Blank entry is no longer shown in list of completion if there is no optional value set for a given tag's key.
 * Fixed [#60](https://github.com/donnemartin/saws/issues/60): Running an empty command no longer results in a pygmentize syntax error.
-* Fixed [#61](https://github.com/donnemartin/saws/issues/61): Refreshing resources multiple time
+* Fixed [#61](https://github.com/donnemartin/saws/issues/61): Refreshing resources multiple times no longer results in an exception.
+
+### Updates
+
+* Added PyPI keywords for easier searching.
+* Updated PyPI `README`.
+    * Added GitHub repo link, i
