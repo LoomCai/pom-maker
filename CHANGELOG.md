@@ -95,4 +95,7 @@ Changelog
 
 * Added PyPI keywords for easier searching.
 * Updated PyPI `README`.
-    * Added GitHub repo link, i
+    * Added GitHub repo link, issue tracker, and repo gif.
+* Added `INSTALLATION` doc, with the following updates:
+    * Added `virtualenv` installation section.
+    * Added `Pipsi` installation sectio
