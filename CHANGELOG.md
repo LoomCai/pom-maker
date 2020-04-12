@@ -98,4 +98,5 @@ Changelog
     * Added GitHub repo link, issue tracker, and repo gif.
 * Added `INSTALLATION` doc, with the following updates:
     * Added `virtualenv` installation section.
-    * Added `Pipsi` installation sectio
+    * Added `Pipsi` installation section [#44](https://github.com/donnemartin/saws/issues/44), by [svieira](https://github.com/svieira).
+    * Added `Docker` installation section [#38
