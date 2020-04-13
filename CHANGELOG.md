@@ -99,4 +99,6 @@ Changelog
 * Added `INSTALLATION` doc, with the following updates:
     * Added `virtualenv` installation section.
     * Added `Pipsi` installation section [#44](https://github.com/donnemartin/saws/issues/44), by [svieira](https://github.com/svieira).
-    * Added `Docker` installation section [#38
+    * Added `Docker` installation section [#38](https://github.com/donnemartin/saws/issues/38), by [frosforever](https://github.com/frosforever).
+* Updated repo `README`.
+    * Upda
