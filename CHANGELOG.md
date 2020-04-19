@@ -101,4 +101,6 @@ Changelog
     * Added `Pipsi` installation section [#44](https://github.com/donnemartin/saws/issues/44), by [svieira](https://github.com/svieira).
     * Added `Docker` installation section [#38](https://github.com/donnemartin/saws/issues/38), by [frosforever](https://github.com/frosforever).
 * Updated repo `README`.
-    * Upda
+    * Updated discussion of shortcuts with the new `~/.saws.shortcuts` file.
+    * Added Command History section.
+    * Updated AWS Credentials and Named Profiles s
