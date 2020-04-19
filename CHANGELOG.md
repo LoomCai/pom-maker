@@ -105,4 +105,5 @@ Changelog
     * Added Command History section.
     * Updated AWS Credentials and Named Profiles section.
     * Added command to run `SAWS` in the Developer Installation section.
-    * Updated Motivation section to include fuzzy shortcut completion, toolbar
+    * Updated Motivation section to include fuzzy shortcut completion, toolbar options, execution and piping of shell commands. and history of commands.
+    * Mentioned initial testing of Python 3.5 suppor
