@@ -103,4 +103,6 @@ Changelog
 * Updated repo `README`.
     * Updated discussion of shortcuts with the new `~/.saws.shortcuts` file.
     * Added Command History section.
-    * Updated AWS Credentials and Named Profiles s
+    * Updated AWS Credentials and Named Profiles section.
+    * Added command to run `SAWS` in the Developer Installation section.
+    * Updated Motivation section to include fuzzy shortcut completion, toolbar
