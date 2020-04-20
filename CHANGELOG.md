@@ -106,4 +106,13 @@ Changelog
     * Updated AWS Credentials and Named Profiles section.
     * Added command to run `SAWS` in the Developer Installation section.
     * Updated Motivation section to include fuzzy shortcut completion, toolbar options, execution and piping of shell commands. and history of commands.
-    * Mentioned initial testing of Python 3.5 suppor
+    * Mentioned initial testing of Python 3.5 support.
+    * Added install from GitHub source instructions to get the latest dev release
+* Updated docs.
+
+0.2.1 (2015-09-23)
+------------------
+
+### Bug Fixes
+
+- Fixed [#29]
