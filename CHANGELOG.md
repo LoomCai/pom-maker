@@ -124,4 +124,8 @@ Changelog
 
 - Added support for [#18](https://github.com/donnemartin/saws/issues/18): Multiple syntax highlighting themes.
 
-- Added improved support for [#17](https
+- Added improved support for [#17](https://github.com/donnemartin/saws/issues/17): Execute shell commands within `SAWS`, including piping.
+
+### Bug Fixes
+
+- Fixed [#21](https://github.com/do
