@@ -120,4 +120,8 @@ Changelog
 0.2.0 (2015-09-22)
 ------------------
 
-### Featur
+### Features
+
+- Added support for [#18](https://github.com/donnemartin/saws/issues/18): Multiple syntax highlighting themes.
+
+- Added improved support for [#17](https
