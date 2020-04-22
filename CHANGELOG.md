@@ -115,4 +115,9 @@ Changelog
 
 ### Bug Fixes
 
-- Fixed [#29]
+- Fixed [#29](https://github.com/donnemartin/saws/issues/29): Dependency on python-prompt-toolkit > 0.50 breaks saws.
+
+0.2.0 (2015-09-22)
+------------------
+
+### Featur
