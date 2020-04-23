@@ -128,4 +128,11 @@ Changelog
 
 ### Bug Fixes
 
-- Fixed [#21](https://github.com/donnemartin/saws/issues/21): Current command is overwritten on screen when refreshing resources with F5, by [jonathanslenders](https://github.com/jona
+- Fixed [#21](https://github.com/donnemartin/saws/issues/21): Current command is overwritten on screen when refreshing resources with F5, by [jonathanslenders](https://github.com/jonathanslenders).
+
+### Updates
+
+- Updated `README` installation section with:
+
+    * `Virtualenv` instructions.
+    * Details on how to run AWS named profiles
