@@ -135,4 +135,9 @@ Changelog
 - Updated `README` installation section with:
 
     * `Virtualenv` instructions.
-    * Details on how to run AWS named profiles
+    * Details on how to run AWS named profiles/credentials.
+    * Supported/tested platforms.
+
+- Updated `README` developer installation section with a new command to build the docs.
+
+- Updated do
