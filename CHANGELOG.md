@@ -140,4 +140,11 @@ Changelog
 
 - Updated `README` developer installation section with a new command to build the docs.
 
-- Updated do
+- Updated docs.
+
+0.1.1 (2015-09-21)
+------------------
+
+### Bug Fixes
+
+- Fixed [#14](https://github.com/donnemartin/saws/issues/14): Fuzzy completions are sometim
