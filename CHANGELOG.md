@@ -147,4 +147,11 @@ Changelog
 
 ### Bug Fixes
 
-- Fixed [#14](https://github.com/donnemartin/saws/issues/14): Fuzzy completions are sometim
+- Fixed [#14](https://github.com/donnemartin/saws/issues/14): Fuzzy completions are sometimes showing incorrect
+  completions for built-in commands and subcommands.
+
+### Updates
+
+- Updated `README` installation section on how to run `SAWS`.
+
+- Upd
