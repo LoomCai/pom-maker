@@ -154,4 +154,12 @@ Changelog
 
 - Updated `README` installation section on how to run `SAWS`.
 
-- Upd
+- Updated docs.
+
+- Updated description, download url, license, and classifiers in
+  setup.py.
+
+0.1.0 (2015-09-21)
+------------------
+
+- Initial re
