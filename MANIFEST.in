@@ -1,0 +1,4 @@
+include README.md
+include LICENSE.txt
+include requirements-dev.txt
+include saws/data/S
