@@ -217,3 +217,141 @@ List all DynamoDB tables:
 List all EMR clusters:
 
     aws emr ls  # fuzzy shortcut: aws emls
+
+Add/remove/modify shortcuts in your [~/.saws.shortcuts](https://github.com/donnemartin/saws/blob/master/saws/shortcuts) file to suit your needs.
+
+Feel free to submit:
+
+* An issue to request additional shortcuts
+* A pull request if you'd like to share your shortcuts (see [contributing guidelines](#contributions))
+
+### Fuzzy Resource and Shortcut Completion
+
+To toggle fuzzy completion of AWS resources and shortcuts, use `F3` key.
+
+Sample fuzzy shortcuts to start and stop EC2 instances:
+
+    aws ecstop
+    aws ecstart
+
+Note:  Fuzzy completion currently only works with AWS [resources](#auto-completion-of-aws-resources) and [shortcuts](customizable-shortcuts).
+
+![](http://i.imgur.com/7OvFHCw.png)
+
+## Fish-Style Auto-Suggestions
+
+`SAWS` supports Fish-style auto-suggestions.  Use the `right arrow` key to complete a suggestion.
+
+![](http://i.imgur.com/t5200q1.png)
+
+## Executing Shell Commands
+
+`SAWS` allows you to execute shell commands from the `saws>` prompt.
+
+![](http://i.imgur.com/FiSn6b2.png)
+
+## Command History
+
+`SAWS` keeps track of commands you enter and stores them in `~/.saws-history`.  Use the up and down arrow keys to cycle through the command history.
+
+![](http://i.imgur.com/z8RrDQB.png)
+
+## Contextual Help
+
+`SAWS` supports contextual command line `help` and contextual web `docs`.
+
+### Contextual Command Line Help
+
+The `help` command is powered by the AWS CLI and outputs help within the command line.
+
+Usage:
+
+    aws <command> <subcommand> help
+
+![](http://i.imgur.com/zSkzt6y.png)
+
+### Contextual Web Docs
+
+Sometimes you're not quite sure what specific command/subcommand/option combination you need to use.  In such cases, browsing through several combinations with the `help` command line is cumbersome versus browsing the online AWS CLI docs through a web browser.
+
+`SAWS` supports contextual web docs with the `docs` command or the `F9` key.  `SAWS` will display the web docs specific to the currently entered command and subcommand.
+
+Usage:
+
+    aws <command> <subcommand> docs
+
+![](http://i.imgur.com/zK4IJYp.png)
+
+## Toolbar Options
+
+`SAWS` supports a number of toolbar options:
+
+* `F2` toggles [output syntax highlighting](#syntax-and-output-highlighting)
+* `F3` toggles [fuzzy completion of AWS resources and shortcuts](#fuzzy-resource-and-shortcut-completion)
+* `F4` toggles [completion of shortcuts](#customizable-shortcuts)
+* `F5` refreshes [resources for auto-completion](#auto-completion-of-aws-resources)
+* `F9` displays the [contextual web docs](#contextual-web-docs)
+* `F10` or `control d` exits `SAWS`
+
+![](http://i.imgur.com/7vz8OSc.png)
+
+## Windows Support
+
+`SAWS` has been tested on Windows 7 and Windows 10.
+
+On Windows, the [.sawsrc](https://github.com/donnemartin/saws/blob/master/saws/sawsrc) file can be found in `%userprofile%`.  For example:
+
+    C:\Users\dmartin\.sawsrc
+
+Although you can use the standard Windows command prompt, you'll probably have a better experience with either [cmder](https://github.com/cmderdev/cmder) or [conemu](https://github.com/Maximus5/ConEmu).
+
+![](http://i.imgur.com/pUwJWck.png)
+
+## Installation
+
+### Pip Installation
+
+[![PyPI version](https://badge.fury.io/py/saws.svg)](http://badge.fury.io/py/saws) [![PyPI](https://img.shields.io/pypi/pyversions/saws.svg)](https://pypi.python.org/pypi/saws/)
+
+`SAWS` is hosted on [PyPI](https://pypi.python.org/pypi/saws).  The following command will install `SAWS` along with dependencies such as the [AWS CLI](https://github.com/aws/aws-cli):
+
+    $ pip install saws
+
+You can also install the latest `SAWS` from GitHub source which can contain changes not yet pushed to PyPI:
+
+    $ pip install git+https://github.com/donnemartin/saws.git
+
+If you are not installing in a [virtualenv](#virtual-environment-and-docker-installation), run with `sudo`:
+
+    $ sudo pip install saws
+
+Once installed, start `SAWS`:
+
+    $ saws
+
+### Virtual Environment and Docker Installation
+
+It is recommended that you install Python packages in a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) to avoid potential [issues with dependencies or permissions](https://github.com/donnemartin/saws/issues/15).
+
+To view `SAWS` `virtualenv` and [Docker](https://www.docker.com/) installation instructions, click [here](https://github.com/donnemartin/saws/blob/master/INSTALLATION.md).
+
+### Mac OS X 10.11 El Capitan Users
+
+There is a known issue with Apple and its included python package dependencies (more info at https://github.com/pypa/pip/issues/3165). We are investigating ways to fix this issue but in the meantime, to install saws, you can run:
+
+    $ sudo pip install saws --upgrade --ignore-installed six
+
+### AWS Credentials and Named Profiles
+
+[Configure your credentials](https://github.com/aws/aws-cli#getting-started) with the AWS CLI:
+
+    $ aws configure
+
+If you'd like to use a specific named profile with `SAWS`, run the following commands on OS X, Linux, or Unix:
+
+    $ export AWS_DEFAULT_PROFILE=user1
+    $ saws
+
+Or as a one-liner:
+
+    $ AWS_DEFAULT_PROFILE=user1 saws
