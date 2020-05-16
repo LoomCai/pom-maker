@@ -355,3 +355,115 @@ If you'd like to use a specific named profile with `SAWS`, run the following com
 Or as a one-liner:
 
     $ AWS_DEFAULT_PROFILE=user1 saws
+
+Windows users can run the following commands:
+
+    > set AWS_DEFAULT_PROFILE=user1
+    > saws
+
+Command line options for starting `SAWS` with a specific profile are [under development](https://github.com/donnemartin/saws/issues/16).  For more details on how to install and configure the AWS CLI, refer to the following [documentation](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
+
+### Supported Python Versions
+
+* Python 2.6
+* Python 2.7
+* Python 3.3
+* Python 3.4
+* Pypy
+
+Light testing indicates that `SAWS` also seems to be compatible with Python 3.5.
+
+Pypy3 is not supported due to [lack of support](https://github.com/boto/botocore/issues/622) from [boto](https://github.com/boto/boto).
+
+### Supported Platforms
+
+* Mac OS X
+    * Tested on OS X 10.10
+* Linux, Unix
+    * Tested on Ubuntu 14.04 LTS
+* Windows
+    * Tested on Windows 7 and 10
+
+## Developer Installation
+
+If you're interested in contributing to `SAWS`, run the following commands:
+
+    $ git clone https://github.com/donnemartin/saws.git
+    $ pip install -e .
+    $ pip install -r requirements-dev.txt
+    $ saws
+
+### Continuous Integration
+
+[![Build Status](https://travis-ci.org/donnemartin/saws.svg?branch=master)](https://travis-ci.org/donnemartin/saws)
+
+Continuous integration details are available on [Travis CI](https://travis-ci.org/donnemartin/saws).
+
+### Dependencies Management
+
+[![Dependency Status](https://gemnasium.com/donnemartin/saws.svg)](https://gemnasium.com/donnemartin/saws)
+
+Dependencies management details are available on [Gemnasium](https://gemnasium.com/donnemartin/saws).
+
+### Unit Tests and Code Coverage
+
+Run unit tests in your active Python environment:
+
+    $ python tests/run_tests.py
+
+Run unit tests with [tox](https://pypi.python.org/pypi/tox) on multiple Python environments:
+
+    $ tox
+
+### Documentation
+
+[![Documentation Status](https://readthedocs.org/projects/saws/badge/?version=latest)](http://saws.readthedocs.org/en/latest/?badge=latest)
+
+Source code documentation is available on [Readthedocs.org](http://saws.readthedocs.org/en/latest/?badge=latest).
+
+Run the following to build the docs:
+
+    $ scripts/update_docs.sh
+
+## Contributing
+
+Contributions are welcome!
+
+Review the [Contributing Guidelines](https://github.com/donnemartin/saws/blob/master/CONTRIBUTING.md) for details on how to:
+
+* Submit issues
+* Submit pull requests
+
+## Credits
+
+* [AWS CLI](https://github.com/aws/aws-cli) by [AWS](https://github.com/aws) for powering `SAWS` under the hood
+* [Python Prompt Toolkit](https://github.com/jonathanslenders/python-prompt-toolkit) by [jonathanslenders](https://github.com/jonathanslenders) for simplifying the creation of `SAWS`
+* [Wharfee](https://github.com/j-bennet/wharfee) by [j-bennet](https://github.com/j-bennet) for inspiring the creation of `SAWS` and for some handy utility functions
+
+## Contact Info
+
+Feel free to contact me to discuss any issues, questions, or comments.
+
+* Email: [donne.martin@gmail.com](mailto:donne.martin@gmail.com)
+* Twitter: [donne_martin](https://twitter.com/donne_martin)
+* GitHub: [donnemartin](https://github.com/donnemartin)
+* LinkedIn: [donnemartin](https://www.linkedin.com/in/donnemartin)
+* Website: [donnemartin.com](http://donnemartin.com)
+
+## License
+
+*I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me and not my employer (Facebook).*
+
+    Copyright 2015 Donne Martin
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
