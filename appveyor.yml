@@ -1,2 +1,10 @@
 # What Python version is installed where:
-# http://w
+# http://www.appveyor.com/docs/installed-software#python
+
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+      TOX_ENV: "py27"
+
+    - PYTHON: "C:\\Python33"
+      TOX_ENV:
