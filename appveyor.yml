@@ -18,4 +18,8 @@ environment:
 
 init:
   - "%PYTHON%/python -V"
-  - "%PYTH
+  - "%PYTHON%/python -c \"import struct;print( 8 * struct.calcsize(\'P\'))\""
+
+install:
+  - "%PYTHON%/Scripts/easy_install -U pip"
+  - "%PYTHON%/Scripts/pip install to
