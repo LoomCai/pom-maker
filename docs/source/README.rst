@@ -1,0 +1,1 @@
+.. figure:: http://i.imgur.com/vzC5zmA.
