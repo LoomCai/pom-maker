@@ -11,4 +11,9 @@ SAWS
 Motivation
 ----------
 
-AWS 
+AWS CLI
+~~~~~~~
+
+Although the `AWS CLI <https://github.com/aws/aws-cli>`__ is a great
+resource to manage your AWS-powered services, it's **tough to remember
+us
