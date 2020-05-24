@@ -16,4 +16,11 @@ AWS CLI
 
 Although the `AWS CLI <https://github.com/aws/aws-cli>`__ is a great
 resource to manage your AWS-powered services, it's **tough to remember
-us
+usage** of:
+
+-  70+ top-level commands
+-  2000+ subcommands
+-  Countless command-specific options
+-  Resources such as instance tags and buckets
+
+SAWS: A Supercharg
