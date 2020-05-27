@@ -29,4 +29,9 @@ SAWS: A Supercharged AWS CLI
 ``SAWS`` aims to **supercharge** the AWS CLI with features focusing on:
 
 -  **Improving ease-of-use**
--  **In
+-  **Increasing productivity**
+
+Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
+**same commands** and **command structure**.
+
+``SAWS`` and 
