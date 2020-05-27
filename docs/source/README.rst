@@ -44,4 +44,12 @@ Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
 
 -  Auto-completion of:
 
-   -  C
+   -  Commands
+   -  Subcommands
+   -  Options
+
+-  Auto-completion of resources:
+
+   -  Bucket names
+   -  Instance ids
+   -  Instance tags
