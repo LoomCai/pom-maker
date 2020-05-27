@@ -23,4 +23,10 @@ usage** of:
 -  Countless command-specific options
 -  Resources such as instance tags and buckets
 
-SAWS: A Supercharg
+SAWS: A Supercharged AWS CLI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``SAWS`` aims to **supercharge** the AWS CLI with features focusing on:
+
+-  **Improving ease-of-use**
+-  **In
