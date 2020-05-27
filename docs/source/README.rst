@@ -34,4 +34,14 @@ SAWS: A Supercharged AWS CLI
 Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
 **same commands** and **command structure**.
 
-``SAWS`` and 
+``SAWS`` and ``AWS CLI`` Usage:
+
+::
+
+    aws <command> <subcommand> [parameters] [options]
+
+``SAWS`` features:
+
+-  Auto-completion of:
+
+   -  C
