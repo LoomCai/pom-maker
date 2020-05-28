@@ -53,3 +53,8 @@ Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
    -  Bucket names
    -  Instance ids
    -  Instance tags
+   -  `More coming soon! <#todo-add-more-resources>`__
+
+-  Customizable shortcuts
+-  Fuzzy completion of resources and shortcuts
+-  Fish-style auto-sugg
