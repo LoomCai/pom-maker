@@ -57,4 +57,11 @@ Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
 
 -  Customizable shortcuts
 -  Fuzzy completion of resources and shortcuts
--  Fish-style auto-sugg
+-  Fish-style auto-suggestions
+-  Syntax and output highlighting
+-  Execution of shell commands
+-  Command history
+-  Contextual help
+-  Toolbar options
+
+``SAWS`` is ava
