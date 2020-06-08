@@ -64,4 +64,16 @@ Under the hood, ``SAWS`` is **powered by the AWS CLI** and supports the
 -  Contextual help
 -  Toolbar options
 
-``SAWS`` is ava
+``SAWS`` is available for Mac, Linux, Unix, and
+`Windows <#windows-support>`__.
+
+.. figure:: http://i.imgur.com/Eo12q9T.png
+   :alt: 
+
+Index
+-----
+
+Features
+~~~~~~~~
+
+-  `Syn
