@@ -76,4 +76,6 @@ Index
 Features
 ~~~~~~~~
 
--  `Syn
+-  `Syntax and Output Highlighting <#syntax-and-output-highlighting>`__
+-  `Auto-Completion of Commands, Subcommands, and
+   Options <#auto-completion
