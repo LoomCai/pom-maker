@@ -78,4 +78,9 @@ Features
 
 -  `Syntax and Output Highlighting <#syntax-and-output-highlighting>`__
 -  `Auto-Completion of Commands, Subcommands, and
-   Options <#auto-completion
+   Options <#auto-completion-of-commands-subcommands-and-options>`__
+-  `Auto-Completion of AWS
+   Resources <#auto-completion-of-aws-resources>`__
+
+   -  `S3 Buckets <#s3-buckets>`__
+   -  `
