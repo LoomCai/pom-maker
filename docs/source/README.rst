@@ -90,4 +90,7 @@ Features
 -  `Customizable Shortcuts <#customizable-shortcuts>`__
 -  `Fuzzy Resource and Shortcut
    Completion <#fuzzy-resource-and-shortcut-completion>`__
--  `Fish-Style 
+-  `Fish-Style Auto-Suggestions <#fish-style-auto-suggestions>`__
+-  `Executing Shell Commands <#executing-shell-commands>`__
+-  `Command History <#command-history>`__
+-  `Context
