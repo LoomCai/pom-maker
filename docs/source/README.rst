@@ -93,4 +93,7 @@ Features
 -  `Fish-Style Auto-Suggestions <#fish-style-auto-suggestions>`__
 -  `Executing Shell Commands <#executing-shell-commands>`__
 -  `Command History <#command-history>`__
--  `Context
+-  `Contextual Help <#contextual-help>`__
+
+   -  `Contextual Command Line Help <#contextual-command-line-help>`__
+   -  `Contextual Web Docs <#contextual-w
