@@ -83,4 +83,8 @@ Features
    Resources <#auto-completion-of-aws-resources>`__
 
    -  `S3 Buckets <#s3-buckets>`__
-   -  `
+   -  `EC2 Instance Ids <#ec2-instance-ids>`__
+   -  `EC2 Instance Tags <#ec2-instance-tags>`__
+   -  `TODO: Add More Resources <#todo-add-more-resources>`__
+
+- 
