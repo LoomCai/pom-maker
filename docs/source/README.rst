@@ -87,4 +87,7 @@ Features
    -  `EC2 Instance Tags <#ec2-instance-tags>`__
    -  `TODO: Add More Resources <#todo-add-more-resources>`__
 
-- 
+-  `Customizable Shortcuts <#customizable-shortcuts>`__
+-  `Fuzzy Resource and Shortcut
+   Completion <#fuzzy-resource-and-shortcut-completion>`__
+-  `Fish-Style 
