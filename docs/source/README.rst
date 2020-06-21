@@ -96,4 +96,12 @@ Features
 -  `Contextual Help <#contextual-help>`__
 
    -  `Contextual Command Line Help <#contextual-command-line-help>`__
-   -  `Contextual Web Docs <#contextual-w
+   -  `Contextual Web Docs <#contextual-web-docs>`__
+
+-  `Toolbar Options <#toolbar-options>`__
+-  `Windows Support <#windows-support>`__
+
+Installation and Tests
+~~~~~~~~~~~~~~~~~~~~~~
+
+-  
