@@ -104,4 +104,8 @@ Features
 Installation and Tests
 ~~~~~~~~~~~~~~~~~~~~~~
 
--  
+-  `Installation <#installation>`__
+
+   -  `Pip Installation <#pip-installation>`__
+   -  `Virtual Environment and Docker
+      Installation <#virtual-environment-an
