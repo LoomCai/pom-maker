@@ -116,4 +116,6 @@ Installation and Tests
 
 -  `Developer Installation <#developer-installation>`__
 
-   
+   -  `Continuous Integration <#continuous-integration>`__
+   -  `Dependencies Management <#dependencies-management>`__
+   -  `Unit Tests and Code Cover
