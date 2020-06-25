@@ -111,4 +111,9 @@ Installation and Tests
       Installation <#virtual-environment-and-docker-installation>`__
    -  `AWS Credentials and Named
       Profiles <#aws-credentials-and-named-profiles>`__
-   -  `Supported Python Versions <#
+   -  `Supported Python Versions <#supported-python-versions>`__
+   -  `Supported Platforms <#supported-platforms>`__
+
+-  `Developer Installation <#developer-installation>`__
+
+   
