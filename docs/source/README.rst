@@ -108,4 +108,7 @@ Installation and Tests
 
    -  `Pip Installation <#pip-installation>`__
    -  `Virtual Environment and Docker
-      Installation <#virtual-environment-an
+      Installation <#virtual-environment-and-docker-installation>`__
+   -  `AWS Credentials and Named
+      Profiles <#aws-credentials-and-named-profiles>`__
+   -  `Supported Python Versions <#
