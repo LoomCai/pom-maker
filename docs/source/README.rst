@@ -133,4 +133,13 @@ Syntax and Output Highlighting
 ------------------------------
 
 .. figure:: http://i.imgur.com/xQDpw70.png
-   :
+   :alt: 
+
+You can control which theme to load for syntax highlighting by updating
+your
+`~/.sawsrc <https://github.com/donnemartin/saws/blob/master/saws/sawsrc>`__
+file:
+
+::
+
+    
