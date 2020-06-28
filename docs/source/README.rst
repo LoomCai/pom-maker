@@ -126,4 +126,11 @@ Misc
 
 -  `Contributing <#contributing>`__
 -  `Credits <#credits>`__
--  `Contact I
+-  `Contact Info <#contact-info>`__
+-  `License <#license>`__
+
+Syntax and Output Highlighting
+------------------------------
+
+.. figure:: http://i.imgur.com/xQDpw70.png
+   :
