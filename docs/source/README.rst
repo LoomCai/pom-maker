@@ -118,4 +118,12 @@ Installation and Tests
 
    -  `Continuous Integration <#continuous-integration>`__
    -  `Dependencies Management <#dependencies-management>`__
-   -  `Unit Tests and Code Cover
+   -  `Unit Tests and Code Coverage <#unit-tests-and-code-coverage>`__
+   -  `Documentation <#documentation>`__
+
+Misc
+~~~~
+
+-  `Contributing <#contributing>`__
+-  `Credits <#credits>`__
+-  `Contact I
