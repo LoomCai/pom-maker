@@ -144,4 +144,8 @@ file:
 
     # Visual theme. Possible values: manni, igor, xcode, vim, autumn, vs, rrt,
     # native, perldoc, borland, tango, emacs, friendly, monokai, paraiso-dark,
-    # color
+    # colorful, murphy, bw, pastie, paraiso-light, trac, default, fruity
+    theme = vim
+
+Auto-Completion of Commands, Subcommands, and Options
+--------
