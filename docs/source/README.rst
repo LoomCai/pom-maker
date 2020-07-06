@@ -148,4 +148,7 @@ file:
     theme = vim
 
 Auto-Completion of Commands, Subcommands, and Options
---------
+-----------------------------------------------------
+
+``SAWS`` provides smart autocompletion as you type. Entering the
+following command will interactively list
