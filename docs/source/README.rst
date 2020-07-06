@@ -151,4 +151,14 @@ Auto-Completion of Commands, Subcommands, and Options
 -----------------------------------------------------
 
 ``SAWS`` provides smart autocompletion as you type. Entering the
-following command will interactively list
+following command will interactively list and auto-complete all
+subcommands **specific only** to ``ec2``:
+
+::
+
+    aws ec2
+
+.. figure:: http://i.imgur.com/P2tL9vW.png
+   :alt: 
+
+Auto-Completion of AW
