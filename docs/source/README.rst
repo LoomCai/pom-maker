@@ -161,4 +161,8 @@ subcommands **specific only** to ``ec2``:
 .. figure:: http://i.imgur.com/P2tL9vW.png
    :alt: 
 
-Auto-Completion of AW
+Auto-Completion of AWS Resources
+--------------------------------
+
+In addition to the default commands, subcommands, and options the AWS
+CLI provides, ``SAWS`` supports auto-
