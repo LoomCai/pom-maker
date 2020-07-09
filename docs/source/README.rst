@@ -183,4 +183,18 @@ Sample Usage:
 
 ::
 
- 
+    aws s3api get-bucket-acl --bucket
+
+Syntax for ``s3``:
+
+::
+
+    s3://
+
+Sample Usage:
+
+::
+
+    aws s3 ls s3://
+
+Note: The exam
