@@ -167,4 +167,20 @@ Auto-Completion of AWS Resources
 In addition to the default commands, subcommands, and options the AWS
 CLI provides, ``SAWS`` supports auto-completion of your AWS resources.
 Currently, bucket names, instance ids, and instance tags are included,
-with additional support for more resources `
+with additional support for more resources `under
+development <#todo-add-more-resources>`__.
+
+S3 Buckets
+~~~~~~~~~~
+
+Option for ``s3api``:
+
+::
+
+    --bucket
+
+Sample Usage:
+
+::
+
+ 
