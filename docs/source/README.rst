@@ -203,4 +203,18 @@ completion <fuzzy-resource-and-shortcutcompletion>`__:
 .. figure:: http://i.imgur.com/39CAS5T.png
    :alt: 
 
-EC2 Instan
+EC2 Instance Ids
+~~~~~~~~~~~~~~~~
+
+Option for ``ec2``:
+
+::
+
+    --instance-ids
+
+Sample Usage:
+
+::
+
+    aws ec2 describe-instances --instance-ids
+    aws ec2 
