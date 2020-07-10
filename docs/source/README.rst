@@ -217,4 +217,10 @@ Sample Usage:
 ::
 
     aws ec2 describe-instances --instance-ids
-    aws ec2 
+    aws ec2 ls --instance-ids
+
+Note: The ``ls`` command demonstrates the use of `customizable
+shortcuts <#customizable-shortcuts>`__:
+
+.. figure:: http://i.imgur.com/jFyCSXl.png
+   :alt
