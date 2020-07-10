@@ -197,4 +197,10 @@ Sample Usage:
 
     aws s3 ls s3://
 
-Note: The exam
+Note: The example below demonstrates the use of `fuzzy resource
+completion <fuzzy-resource-and-shortcutcompletion>`__:
+
+.. figure:: http://i.imgur.com/39CAS5T.png
+   :alt: 
+
+EC2 Instan
