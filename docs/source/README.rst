@@ -244,4 +244,11 @@ Sample Usage:
 
 **Tags support wildcards** with the ``*`` character.
 
-Note: ``ls``, ``--ec2-tag-value``, and ``--ec2-tag-key`` demonstra
+Note: ``ls``, ``--ec2-tag-value``, and ``--ec2-tag-key`` demonstrate the
+use of `customizable shortcuts <#customizable-shortcuts>`__:
+
+.. figure:: http://i.imgur.com/VIKwG3Z.png
+   :alt: 
+
+TODO: Add More Resources
+~~
