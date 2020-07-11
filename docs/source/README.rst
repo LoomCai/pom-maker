@@ -240,4 +240,8 @@ Sample Usage:
 ::
 
     aws ec2 ls --ec2-tag-key
-    aw
+    aws ec2 ls --ec2-tag-value
+
+**Tags support wildcards** with the ``*`` character.
+
+Note: ``ls``, ``--ec2-tag-value``, and ``--ec2-tag-key`` demonstra
