@@ -223,4 +223,21 @@ Note: The ``ls`` command demonstrates the use of `customizable
 shortcuts <#customizable-shortcuts>`__:
 
 .. figure:: http://i.imgur.com/jFyCSXl.png
-   :alt
+   :alt: 
+
+EC2 Instance Tags
+~~~~~~~~~~~~~~~~~
+
+Option for ``ec2``:
+
+::
+
+    --ec2-tag-key
+    --ec2-tag-value
+
+Sample Usage:
+
+::
+
+    aws ec2 ls --ec2-tag-key
+    aw
