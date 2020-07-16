@@ -251,4 +251,10 @@ use of `customizable shortcuts <#customizable-shortcuts>`__:
    :alt: 
 
 TODO: Add More Resources
-~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Feel free to `submit an issue or a pull request <#contributions>`__ if
+you'd like support for additional resources.
+
+Customizable Shortcuts
+----------
