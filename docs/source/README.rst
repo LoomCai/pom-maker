@@ -261,4 +261,7 @@ Customizable Shortcuts
 
 The
 `~/.saws.shortcuts <https://github.com/donnemartin/saws/blob/master/saws/saws.shortcuts>`__
-file contains shortcuts that you can m
+file contains shortcuts that you can modify. It comes pre-populated with
+several `handy
+shortcuts <https://github.com/donnemartin/saws/blob/master/saws/saws.shortcuts>`__
+out of the box. You 
