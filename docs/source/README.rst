@@ -257,4 +257,8 @@ Feel free to `submit an issue or a pull request <#contributions>`__ if
 you'd like support for additional resources.
 
 Customizable Shortcuts
-----------
+----------------------
+
+The
+`~/.saws.shortcuts <https://github.com/donnemartin/saws/blob/master/saws/saws.shortcuts>`__
+file contains shortcuts that you can m
