@@ -264,4 +264,8 @@ The
 file contains shortcuts that you can modify. It comes pre-populated with
 several `handy
 shortcuts <https://github.com/donnemartin/saws/blob/master/saws/saws.shortcuts>`__
-out of the box. You 
+out of the box. You can combine shortcuts with `fuzzy
+completion <#fuzzy-resource-and-shortcut-completion>`__ for even less
+keystrokes. Below are a few examples.
+
+List all EC2 ins
