@@ -268,4 +268,16 @@ out of the box. You can combine shortcuts with `fuzzy
 completion <#fuzzy-resource-and-shortcut-completion>`__ for even less
 keystrokes. Below are a few examples.
 
-List all EC2 ins
+List all EC2 instances:
+
+::
+
+    aws ec2 ls
+
+List all running EC2 instances:
+
+::
+
+    aws ec2 ls --ec2-state running  # fuzzy shortcut: aws ecstate
+
+.. fi
