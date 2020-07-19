@@ -280,4 +280,11 @@ List all running EC2 instances:
 
     aws ec2 ls --ec2-state running  # fuzzy shortcut: aws ecstate
 
-.. fi
+.. figure:: http://i.imgur.com/jYFEsoM.png
+   :alt: 
+
+List all EC2 instances with a matching tag (supports wildcards ``*``):
+
+::
+
+    aws ec2 ls --ec2-tag-key    # fuzzy shortcut: aws ecta
