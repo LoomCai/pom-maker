@@ -302,4 +302,16 @@ List EC2 instance with matching id:
 .. figure:: http://i.imgur.com/wGcUCsa.png
    :alt: 
 
-List all DynamoDB ta
+List all DynamoDB tables:
+
+::
+
+    aws dynamodb ls  # fuzzy shortcut: aws dls
+
+List all EMR clusters:
+
+::
+
+    aws emr ls  # fuzzy shortcut: aws emls
+
+Add/remove/modify shortcuts in y
