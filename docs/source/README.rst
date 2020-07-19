@@ -287,4 +287,14 @@ List all EC2 instances with a matching tag (supports wildcards ``*``):
 
 ::
 
-    aws ec2 ls --ec2-tag-key    # fuzzy shortcut: aws ecta
+    aws ec2 ls --ec2-tag-key    # fuzzy shortcut: aws ectagk
+    aws ec2 ls --ec2-tag-value  # fuzzy shortcut: aws ectagv
+
+.. figure:: http://i.imgur.com/PSuwUIw.png
+   :alt: 
+
+List EC2 instance with matching id:
+
+::
+
+    a
