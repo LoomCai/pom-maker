@@ -297,4 +297,9 @@ List EC2 instance with matching id:
 
 ::
 
-    a
+    aws ec2 ls --instance-ids  # fuzzy shortcut: aws eclsi
+
+.. figure:: http://i.imgur.com/wGcUCsa.png
+   :alt: 
+
+List all DynamoDB ta
