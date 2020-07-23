@@ -314,4 +314,10 @@ List all EMR clusters:
 
     aws emr ls  # fuzzy shortcut: aws emls
 
-Add/remove/modify shortcuts in y
+Add/remove/modify shortcuts in your
+`~/.saws.shortcuts <https://github.com/donnemartin/saws/blob/master/saws/shortcuts>`__
+file to suit your needs.
+
+Feel free to submit:
+
+-  An 
