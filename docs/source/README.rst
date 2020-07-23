@@ -322,4 +322,9 @@ Feel free to submit:
 
 -  An issue to request additional shortcuts
 -  A pull request if you'd like to share your shortcuts (see
-   `contributing guidelines <#contri
+   `contributing guidelines <#contributions>`__)
+
+Fuzzy Resource and Shortcut Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To toggle fuzzy completion of AWS resources and shortcuts, use
