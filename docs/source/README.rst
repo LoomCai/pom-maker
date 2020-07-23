@@ -320,4 +320,6 @@ file to suit your needs.
 
 Feel free to submit:
 
--  An 
+-  An issue to request additional shortcuts
+-  A pull request if you'd like to share your shortcuts (see
+   `contributing guidelines <#contri
