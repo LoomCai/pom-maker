@@ -338,4 +338,10 @@ Sample fuzzy shortcuts to start and stop EC2 instances:
     aws ecstart
 
 Note: Fuzzy completion currently only works with AWS
-`resourc
+`resources <#auto-completion-of-aws-resources>`__ and
+`shortcuts <customizable-shortcuts>`__.
+
+.. figure:: http://i.imgur.com/7OvFHCw.png
+   :alt: 
+
+Fi
