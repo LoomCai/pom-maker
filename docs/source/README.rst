@@ -344,4 +344,8 @@ Note: Fuzzy completion currently only works with AWS
 .. figure:: http://i.imgur.com/7OvFHCw.png
    :alt: 
 
-Fi
+Fish-Style Auto-Suggestions
+---------------------------
+
+``SAWS`` supports Fish-style auto-suggestions. Use the ``right arrow``
+key to complet
