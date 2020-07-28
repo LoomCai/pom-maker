@@ -364,4 +364,8 @@ Executing Shell Commands
 Command History
 ---------------
 
-``SAWS`` keeps track of 
+``SAWS`` keeps track of commands you enter and stores them in
+``~/.saws-history``. Use the up and down arrow keys to cycle through the
+command history.
+
+.. figure:: http://i.imgur.com/z8Rr
