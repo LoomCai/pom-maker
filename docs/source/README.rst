@@ -348,4 +348,12 @@ Fish-Style Auto-Suggestions
 ---------------------------
 
 ``SAWS`` supports Fish-style auto-suggestions. Use the ``right arrow``
-key to complet
+key to complete a suggestion.
+
+.. figure:: http://i.imgur.com/t5200q1.png
+   :alt: 
+
+Executing Shell Commands
+------------------------
+
+``SAWS`` allows you to execute shell command
