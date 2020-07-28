@@ -356,4 +356,12 @@ key to complete a suggestion.
 Executing Shell Commands
 ------------------------
 
-``SAWS`` allows you to execute shell command
+``SAWS`` allows you to execute shell commands from the ``saws>`` prompt.
+
+.. figure:: http://i.imgur.com/FiSn6b2.png
+   :alt: 
+
+Command History
+---------------
+
+``SAWS`` keeps track of 
