@@ -368,4 +368,13 @@ Command History
 ``~/.saws-history``. Use the up and down arrow keys to cycle through the
 command history.
 
-.. figure:: http://i.imgur.com/z8Rr
+.. figure:: http://i.imgur.com/z8RrDQB.png
+   :alt: 
+
+Contextual Help
+---------------
+
+``SAWS`` supports contextual command line ``help`` and contextual web
+``docs``.
+
+Contextual C
