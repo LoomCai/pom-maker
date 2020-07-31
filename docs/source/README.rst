@@ -383,4 +383,16 @@ Contextual Command Line Help
 The ``help`` command is powered by the AWS CLI and outputs help within
 the command line.
 
-Usage
+Usage:
+
+::
+
+    aws <command> <subcommand> help
+
+.. figure:: http://i.imgur.com/zSkzt6y.png
+   :alt: 
+
+Contextual Web Docs
+~~~~~~~~~~~~~~~~~~~
+
+Sometimes you're not q
