@@ -377,4 +377,10 @@ Contextual Help
 ``SAWS`` supports contextual command line ``help`` and contextual web
 ``docs``.
 
-Contextual C
+Contextual Command Line Help
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``help`` command is powered by the AWS CLI and outputs help within
+the command line.
+
+Usage
