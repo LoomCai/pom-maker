@@ -395,4 +395,6 @@ Usage:
 Contextual Web Docs
 ~~~~~~~~~~~~~~~~~~~
 
-Sometimes you're not q
+Sometimes you're not quite sure what specific command/subcommand/option
+combination you need to use. In such cases, browsing through several
+combinations with t
