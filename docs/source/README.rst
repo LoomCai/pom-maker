@@ -400,4 +400,12 @@ combination you need to use. In such cases, browsing through several
 combinations with the ``help`` command line is cumbersome versus
 browsing the online AWS CLI docs through a web browser.
 
-``SAWS`` supports contextual web docs with the ``docs`` command or
+``SAWS`` supports contextual web docs with the ``docs`` command or the
+``F9`` key. ``SAWS`` will display the web docs specific to the currently
+entered command and subcommand.
+
+Usage:
+
+::
+
+    aws <command>
