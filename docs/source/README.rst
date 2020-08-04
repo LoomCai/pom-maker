@@ -418,4 +418,7 @@ Toolbar Options
 
 ``SAWS`` supports a number of toolbar options:
 
-- 
+-  ``F2`` toggles `output syntax
+   highlighting <#syntax-and-output-highlighting>`__
+-  ``F3`` toggles `fuzzy completion of AWS resources and
+   shortcuts <#fuz
