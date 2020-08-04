@@ -408,4 +408,14 @@ Usage:
 
 ::
 
-    aws <command>
+    aws <command> <subcommand> docs
+
+.. figure:: http://i.imgur.com/zK4IJYp.png
+   :alt: 
+
+Toolbar Options
+---------------
+
+``SAWS`` supports a number of toolbar options:
+
+- 
