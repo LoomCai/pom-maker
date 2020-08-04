@@ -397,4 +397,7 @@ Contextual Web Docs
 
 Sometimes you're not quite sure what specific command/subcommand/option
 combination you need to use. In such cases, browsing through several
-combinations with t
+combinations with the ``help`` command line is cumbersome versus
+browsing the online AWS CLI docs through a web browser.
+
+``SAWS`` supports contextual web docs with the ``docs`` command or
