@@ -426,4 +426,12 @@ Toolbar Options
 -  ``F5`` refreshes `resources for
    auto-completion <#auto-completion-of-aws-resources>`__
 -  ``F9`` displays the `contextual web docs <#contextual-web-docs>`__
--  ``F10`` or ``con
+-  ``F10`` or ``control d`` exits ``SAWS``
+
+.. figure:: http://i.imgur.com/7vz8OSc.png
+   :alt: 
+
+Windows Support
+---------------
+
+``SAWS`` has been tested on Windows 7 and Windows 10
