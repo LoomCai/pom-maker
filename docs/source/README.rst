@@ -421,4 +421,7 @@ Toolbar Options
 -  ``F2`` toggles `output syntax
    highlighting <#syntax-and-output-highlighting>`__
 -  ``F3`` toggles `fuzzy completion of AWS resources and
-   shortcuts <#fuz
+   shortcuts <#fuzzy-resource-and-shortcut-completion>`__
+-  ``F4`` toggles `completion of shortcuts <#customizable-shortcuts>`__
+-  ``F5`` refreshes `resources for
+   aut
