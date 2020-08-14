@@ -424,4 +424,6 @@ Toolbar Options
    shortcuts <#fuzzy-resource-and-shortcut-completion>`__
 -  ``F4`` toggles `completion of shortcuts <#customizable-shortcuts>`__
 -  ``F5`` refreshes `resources for
-   aut
+   auto-completion <#auto-completion-of-aws-resources>`__
+-  ``F9`` displays the `contextual web docs <#contextual-web-docs>`__
+-  ``F10`` or ``con
