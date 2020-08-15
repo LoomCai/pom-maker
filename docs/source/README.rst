@@ -441,3 +441,9 @@ On Windows, the
 file can be found in ``%userprofile%``. For example:
 
 ::
+
+    C:\Users\dmartin\.sawsrc
+
+Although you can use the standard Windows command prompt, you'll
+probably have a better experience with either
+`c
