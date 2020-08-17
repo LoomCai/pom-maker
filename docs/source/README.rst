@@ -453,4 +453,12 @@ probably have a better experience with either
    :alt: 
 
 Installation
-----
+------------
+
+Pip Installation
+~~~~~~~~~~~~~~~~
+
+|PyPI version| |PyPI|
+
+``SAWS`` is hosted on `PyPI <https://pypi.python.org/pypi/saws>`__. The
+following command wi
