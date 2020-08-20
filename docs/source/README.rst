@@ -468,4 +468,11 @@ the `AWS CLI <https://github.com/aws/aws-cli>`__:
 
     $ pip install saws
 
-You can also install the latest ``
+You can also install the latest ``SAWS`` from GitHub source which can
+contain changes not yet pushed to PyPI:
+
+::
+
+    $ pip install git+https://github.com/donnemartin/saws.git
+
+If you are not install
