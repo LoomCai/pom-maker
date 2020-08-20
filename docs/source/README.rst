@@ -461,4 +461,11 @@ Pip Installation
 |PyPI version| |PyPI|
 
 ``SAWS`` is hosted on `PyPI <https://pypi.python.org/pypi/saws>`__. The
-following command wi
+following command will install ``SAWS`` along with dependencies such as
+the `AWS CLI <https://github.com/aws/aws-cli>`__:
+
+::
+
+    $ pip install saws
+
+You can also install the latest ``
