@@ -475,4 +475,10 @@ contain changes not yet pushed to PyPI:
 
     $ pip install git+https://github.com/donnemartin/saws.git
 
-If you are not install
+If you are not installing in a
+`virtualenv <#virtual-environment-and-docker-installation>`__, run with
+``sudo``:
+
+::
+
+    $ sudo pip install saws
