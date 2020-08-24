@@ -482,3 +482,12 @@ If you are not installing in a
 ::
 
     $ sudo pip install saws
+
+Once installed, start ``SAWS``:
+
+::
+
+    $ saws
+
+Virtual Environment and Docker Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
