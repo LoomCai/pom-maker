@@ -497,4 +497,9 @@ It is recommended that you install Python packages in a
 to avoid potential `issues with dependencies or
 permissions <https://github.com/donnemartin/saws/issues/15>`__.
 
-To view ``SAWS`` ``virtualenv`` and `Docker <https://www.docker.com
+To view ``SAWS`` ``virtualenv`` and `Docker <https://www.docker.com/>`__
+installation instructions, click
+`here <https://github.com/donnemartin/saws/blob/master/INSTALLATION.md>`__.
+
+Mac OS X 10.11 El Capitan Users
+~~~~~~~~~
