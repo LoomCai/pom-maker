@@ -490,4 +490,8 @@ Once installed, start ``SAWS``:
     $ saws
 
 Virtual Environment and Docker Installation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is recommended that you install Python packages in a
+`virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`__
+to avoid potential `issues wi
