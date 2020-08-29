@@ -494,4 +494,7 @@ Virtual Environment and Docker Installation
 
 It is recommended that you install Python packages in a
 `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`__
-to avoid potential `issues wi
+to avoid potential `issues with dependencies or
+permissions <https://github.com/donnemartin/saws/issues/15>`__.
+
+To view ``SAWS`` ``virtualenv`` and `Docker <https://www.docker.com
