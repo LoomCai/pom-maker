@@ -502,4 +502,7 @@ installation instructions, click
 `here <https://github.com/donnemartin/saws/blob/master/INSTALLATION.md>`__.
 
 Mac OS X 10.11 El Capitan Users
-~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a known issue with Apple and its included python package
+dependencies (more info at https://github.com/pypa/pip/issues/31
