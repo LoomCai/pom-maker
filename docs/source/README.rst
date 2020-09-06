@@ -517,4 +517,12 @@ AWS Credentials and Named Profiles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Configure your
-credentials <https://github.com/aws/aws-cli#getti
+credentials <https://github.com/aws/aws-cli#getting-started>`__ with the
+AWS CLI:
+
+::
+
+    $ aws configure
+
+If you'd like to use a specific named profile with ``SAWS``, run the
+following commands on 
