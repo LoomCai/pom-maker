@@ -525,4 +525,17 @@ AWS CLI:
     $ aws configure
 
 If you'd like to use a specific named profile with ``SAWS``, run the
-following commands on 
+following commands on OS X, Linux, or Unix:
+
+::
+
+    $ export AWS_DEFAULT_PROFILE=user1
+    $ saws
+
+Or as a one-liner:
+
+::
+
+    $ AWS_DEFAULT_PROFILE=user1 saws
+
+Windows u
