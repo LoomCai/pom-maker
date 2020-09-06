@@ -511,4 +511,10 @@ saws, you can run:
 
 ::
 
-    $ sudo pip install saws --
+    $ sudo pip install saws --upgrade --ignore-installed six
+
+AWS Credentials and Named Profiles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`Configure your
+credentials <https://github.com/aws/aws-cli#getti
