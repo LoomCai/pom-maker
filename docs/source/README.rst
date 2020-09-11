@@ -549,4 +549,15 @@ Command line options for starting ``SAWS`` with a specific profile are
 `under development <https://github.com/donnemartin/saws/issues/16>`__.
 For more details on how to install and configure the AWS CLI, refer to
 the following
-`documentation <http://docs.aws.amazon.com/cli/latest/userguide/installing.html>`__
+`documentation <http://docs.aws.amazon.com/cli/latest/userguide/installing.html>`__.
+
+Supported Python Versions
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Python 2.6
+-  Python 2.7
+-  Python 3.3
+-  Python 3.4
+-  Pypy
+
+Light testing indicates 
