@@ -547,4 +547,6 @@ Windows users can run the following commands:
 
 Command line options for starting ``SAWS`` with a specific profile are
 `under development <https://github.com/donnemartin/saws/issues/16>`__.
-For more details on how 
+For more details on how to install and configure the AWS CLI, refer to
+the following
+`documentation <http://docs.aws.amazon.com/cli/latest/userguide/installing.html>`__
