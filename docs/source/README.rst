@@ -538,4 +538,11 @@ Or as a one-liner:
 
     $ AWS_DEFAULT_PROFILE=user1 saws
 
-Windows u
+Windows users can run the following commands:
+
+::
+
+    > set AWS_DEFAULT_PROFILE=user1
+    > saws
+
+Command line options for sta
