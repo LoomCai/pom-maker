@@ -545,4 +545,6 @@ Windows users can run the following commands:
     > set AWS_DEFAULT_PROFILE=user1
     > saws
 
-Command line options for sta
+Command line options for starting ``SAWS`` with a specific profile are
+`under development <https://github.com/donnemartin/saws/issues/16>`__.
+For more details on how 
