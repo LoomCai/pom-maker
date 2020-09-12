@@ -560,4 +560,9 @@ Supported Python Versions
 -  Python 3.4
 -  Pypy
 
-Light testing indicates 
+Light testing indicates that ``SAWS`` also seems to be compatible with
+Python 3.5.
+
+Pypy3 is not supported due to `lack of
+support <https://github.com/boto/botocore/issues/622>`__ from
+`boto 
