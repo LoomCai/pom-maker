@@ -565,4 +565,15 @@ Python 3.5.
 
 Pypy3 is not supported due to `lack of
 support <https://github.com/boto/botocore/issues/622>`__ from
-`boto 
+`boto <https://github.com/boto/boto>`__.
+
+Supported Platforms
+~~~~~~~~~~~~~~~~~~~
+
+-  Mac OS X
+
+   -  Tested on OS X 10.10
+
+-  Linux, Unix
+
+   -  Tested on Ubuntu 14.04 
