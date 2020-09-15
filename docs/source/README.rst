@@ -576,4 +576,13 @@ Supported Platforms
 
 -  Linux, Unix
 
-   -  Tested on Ubuntu 14.04 
+   -  Tested on Ubuntu 14.04 LTS
+
+-  Windows
+
+   -  Tested on Windows 7 and 10
+
+Developer Installation
+----------------------
+
+If you're interested in contributing to ``SAWS``,
