@@ -585,4 +585,11 @@ Supported Platforms
 Developer Installation
 ----------------------
 
-If you're interested in contributing to ``SAWS``,
+If you're interested in contributing to ``SAWS``, run the following
+commands:
+
+::
+
+    $ git clone https://github.com/donnemartin/saws.git
+    $ pip install -e .
+    $ pip install -r requirements-
