@@ -600,4 +600,12 @@ Continuous Integration
 
 |Build Status|
 
-Continuous integration details are available on 
+Continuous integration details are available on `Travis
+CI <https://travis-ci.org/donnemartin/saws>`__.
+
+Dependencies Management
+~~~~~~~~~~~~~~~~~~~~~~~
+
+|Dependency Status|
+
+Dependencies management
