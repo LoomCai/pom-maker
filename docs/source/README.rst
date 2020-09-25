@@ -608,4 +608,10 @@ Dependencies Management
 
 |Dependency Status|
 
-Dependencies management
+Dependencies management details are available on
+`Gemnasium <https://gemnasium.com/donnemartin/saws>`__.
+
+Unit Tests and Code Coverage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+R
