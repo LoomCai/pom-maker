@@ -621,3 +621,16 @@ Run unit tests in your active Python environment:
     $ python tests/run_tests.py
 
 Run unit tests with `tox <https://pypi.python.org/pypi/tox>`__ on
+multiple Python environments:
+
+::
+
+    $ tox
+
+Documentation
+~~~~~~~~~~~~~
+
+|Documentation Status|
+
+Source code documentation is available on
+`Readthedocs.org <http:
