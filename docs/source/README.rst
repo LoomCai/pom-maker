@@ -633,4 +633,12 @@ Documentation
 |Documentation Status|
 
 Source code documentation is available on
-`Readthedocs.org <http:
+`Readthedocs.org <http://saws.readthedocs.org/en/latest/?badge=latest>`__.
+
+Run the following to build the docs:
+
+::
+
+    $ scripts/update_docs.sh
+
+Contribu
