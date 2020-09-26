@@ -647,4 +647,14 @@ Contributing
 Contributions are welcome!
 
 Review the `Contributing
-Guidelines <https://github.com/donnemartin/saws/blob/master/CONTRIBUTIN
+Guidelines <https://github.com/donnemartin/saws/blob/master/CONTRIBUTING.md>`__
+for details on how to:
+
+-  Submit issues
+-  Submit pull requests
+
+Credits
+-------
+
+-  `AWS CLI <https://github.com/aws/aws-cli>`__ by
+   `AWS <https:/
