@@ -657,4 +657,6 @@ Credits
 -------
 
 -  `AWS CLI <https://github.com/aws/aws-cli>`__ by
-   `AWS <https:/
+   `AWS <https://github.com/aws>`__ for powering ``SAWS`` under the hood
+-  `Python Prompt
+   Toolkit <https://github.com/jonathanslenders/python-prompt
