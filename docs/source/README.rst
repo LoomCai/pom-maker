@@ -641,4 +641,10 @@ Run the following to build the docs:
 
     $ scripts/update_docs.sh
 
-Contribu
+Contributing
+------------
+
+Contributions are welcome!
+
+Review the `Contributing
+Guidelines <https://github.com/donnemartin/saws/blob/master/CONTRIBUTIN
