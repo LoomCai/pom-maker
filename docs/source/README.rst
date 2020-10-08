@@ -659,4 +659,7 @@ Credits
 -  `AWS CLI <https://github.com/aws/aws-cli>`__ by
    `AWS <https://github.com/aws>`__ for powering ``SAWS`` under the hood
 -  `Python Prompt
-   Toolkit <https://github.com/jonathanslenders/python-prompt
+   Toolkit <https://github.com/jonathanslenders/python-prompt-toolkit>`__
+   by `jonathanslenders <https://github.com/jonathanslenders>`__ for
+   simplifying the creation of ``SAWS``
+-  `Wharfee <https://github.com/j-bennet/wh
