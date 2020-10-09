@@ -662,4 +662,8 @@ Credits
    Toolkit <https://github.com/jonathanslenders/python-prompt-toolkit>`__
    by `jonathanslenders <https://github.com/jonathanslenders>`__ for
    simplifying the creation of ``SAWS``
--  `Wharfee <https://github.com/j-bennet/wh
+-  `Wharfee <https://github.com/j-bennet/wharfee>`__ by
+   `j-bennet <https://github.com/j-bennet>`__ for inspiring the creation
+   of ``SAWS`` and for some handy utility functions
+
+Contact Inf
