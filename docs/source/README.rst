@@ -666,4 +666,10 @@ Credits
    `j-bennet <https://github.com/j-bennet>`__ for inspiring the creation
    of ``SAWS`` and for some handy utility functions
 
-Contact Inf
+Contact Info
+------------
+
+Feel free to contact me to discuss any issues, questions, or comments.
+
+-  Email: donne.martin@gmail.com
+-  Twitter: `donne\_marti
