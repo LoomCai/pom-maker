@@ -672,4 +672,6 @@ Contact Info
 Feel free to contact me to discuss any issues, questions, or comments.
 
 -  Email: donne.martin@gmail.com
--  Twitter: `donne\_marti
+-  Twitter: `donne\_martin <https://twitter.com/donne_martin>`__
+-  GitHub: `donnemartin <https://github.com/donnemartin>`__
+-  LinkedIn: `donnemartin <https://www.linkedin.com/in/
