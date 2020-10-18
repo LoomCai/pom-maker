@@ -697,4 +697,6 @@ License
     limitations under the License.
 
 .. |Build Status| image:: https://travis-ci.org/donnemartin/saws.svg?branch=master
-   :target: htt
+   :target: https://travis-ci.org/donnemartin/saws
+.. |Documentation Status| image:: https://readthedocs.org/projects/saws/badge/?version=latest
+   :target: http://saws.readthedocs.
