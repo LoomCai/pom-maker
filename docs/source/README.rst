@@ -702,4 +702,6 @@ License
    :target: http://saws.readthedocs.org/en/latest/?badge=latest
 .. |Dependency Status| image:: https://gemnasium.com/donnemartin/saws.svg
    :target: https://gemnasium.com/donnemartin/saws
-.. |PyPI version|
+.. |PyPI version| image:: https://badge.fury.io/py/saws.svg
+   :target: http://badge.fury.io/py/saws
+.. |PyPI| image:: https://img.shields.io/pypi/pyversions/s
