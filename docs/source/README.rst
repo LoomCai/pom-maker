@@ -699,4 +699,7 @@ License
 .. |Build Status| image:: https://travis-ci.org/donnemartin/saws.svg?branch=master
    :target: https://travis-ci.org/donnemartin/saws
 .. |Documentation Status| image:: https://readthedocs.org/projects/saws/badge/?version=latest
-   :target: http://saws.readthedocs.
+   :target: http://saws.readthedocs.org/en/latest/?badge=latest
+.. |Dependency Status| image:: https://gemnasium.com/donnemartin/saws.svg
+   :target: https://gemnasium.com/donnemartin/saws
+.. |PyPI version|
