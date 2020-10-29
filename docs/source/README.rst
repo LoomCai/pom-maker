@@ -704,4 +704,7 @@ License
    :target: https://gemnasium.com/donnemartin/saws
 .. |PyPI version| image:: https://badge.fury.io/py/saws.svg
    :target: http://badge.fury.io/py/saws
-.. |PyPI| image:: https://img.shields.io/pypi/pyversions/s
+.. |PyPI| image:: https://img.shields.io/pypi/pyversions/saws.svg
+   :target: https://pypi.python.org/pypi/saws/
+.. |License| image:: http://img.shields.io/:license-apache-blue.svg
+   :target: http://www.apache.
