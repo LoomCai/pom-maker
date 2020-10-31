@@ -707,4 +707,4 @@ License
 .. |PyPI| image:: https://img.shields.io/pypi/pyversions/saws.svg
    :target: https://pypi.python.org/pypi/saws/
 .. |License| image:: http://img.shields.io/:license-apache-blue.svg
-   :target: http://www.apache.
+   :target: http://www.apache.org/licenses/LICENSE-2.0.html
