@@ -48,4 +48,9 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
-# General i
+# General information about the project.
+project = u'saws'
+copyright = u'2015, Donne Martin'
+author = u'Donne Martin'
+
+# The version info for the project you
