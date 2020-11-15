@@ -53,4 +53,8 @@ project = u'saws'
 copyright = u'2015, Donne Martin'
 author = u'Donne Martin'
 
-# The version info for the project you
+# The version info for the project you're documenting, acts as replacement for
+# |version| and |release|, also used in various other places throughout the
+# built documents.
+#
+# The s
