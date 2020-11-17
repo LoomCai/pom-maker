@@ -57,4 +57,9 @@ author = u'Donne Martin'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The s
+# The short X.Y version.
+version = '0.1.0'
+# The full version, including alpha/beta/rc tags.
+release = '0.1.0'
+
+# The language for content autogenera
