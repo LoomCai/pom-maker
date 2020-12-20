@@ -137,4 +137,6 @@ html_theme = 'alabaster'
 # pixels large.
 #html_favicon = None
 
-# Add any paths
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file
