@@ -158,4 +158,11 @@ html_static_path = ['_static']
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
 
-# Additional templates that should be rendered to p
+# Additional templates that should be rendered to pages, maps page names to
+# template names.
+#html_additional_pages = {}
+
+# If false, no module index is generated.
+#html_domain_indices = True
+
+# If fa
