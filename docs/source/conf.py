@@ -188,4 +188,6 @@ html_static_path = ['_static']
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
 
-# Language t
+# Language to be used for generating the HTML full-text search index.
+# Sphinx supports the following languages:
+#   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
