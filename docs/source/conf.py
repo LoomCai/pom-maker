@@ -203,4 +203,9 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basena
+htmlhelp_basename = 'sawsdoc'
+
+# -- Options for LaTeX output ---------------------------------------------
+
+latex_elements = {
+# The paper size ('letterpap
