@@ -229,4 +229,8 @@ latex_documents = [
    u'Donne Martin', 'manual'),
 ]
 
-# The name of an image file (relative 
+# The name of an image file (relative to this directory) to place at the top of
+# the title page.
+#latex_logo = None
+
+# For "manual" documents, if this is true, then toplevel headings are parts
