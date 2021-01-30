@@ -263,4 +263,8 @@ man_pages = [
 #man_show_urls = False
 
 
-# -- Options for Texinfo output -----------------------------
+# -- Options for Texinfo output -------------------------------------------
+
+# Grouping the document tree into Texinfo files. List of tuples
+# (source start file, target name, title, author,
+#  dir menu e
