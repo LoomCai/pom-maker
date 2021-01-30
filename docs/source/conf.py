@@ -267,4 +267,8 @@ man_pages = [
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
-#  dir menu e
+#  dir menu entry, description, category)
+texinfo_documents = [
+  (master_doc, 'saws', u'saws Documentation',
+   author, 'saws', 'One line description of project.',
+   'Miscell
