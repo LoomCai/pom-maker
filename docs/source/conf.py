@@ -286,4 +286,7 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
-# http://stackoverflow.com/questions/12772927/specifying-an-online-image-in-sphinx-restructu
+# http://stackoverflow.com/questions/12772927/specifying-an-online-image-in-sphinx-restructuredtext-format
+# "Monkey patch" sphinx to omit 'nonlocal image URI found'
+import sphinx.environment
+from docutils.utils import get
