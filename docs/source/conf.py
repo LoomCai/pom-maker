@@ -283,4 +283,7 @@ texinfo_documents = [
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
 
-# If true, do no
+# If true, do not generate a @detailmenu in the "Top" node's menu.
+#texinfo_no_detailmenu = False
+
+# http://stackoverflow.com/questions/12772927/specifying-an-online-image-in-sphinx-restructu
