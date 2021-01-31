@@ -278,4 +278,9 @@ texinfo_documents = [
 #texinfo_appendices = []
 
 # If false, no module index is generated.
-#tex
+#texinfo_domain_indices = True
+
+# How to display URL addresses: 'footnote', 'no', or 'inline'.
+#texinfo_show_urls = 'footnote'
+
+# If true, do no
