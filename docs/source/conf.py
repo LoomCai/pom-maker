@@ -271,4 +271,11 @@ man_pages = [
 texinfo_documents = [
   (master_doc, 'saws', u'saws Documentation',
    author, 'saws', 'One line description of project.',
-   'Miscell
+   'Miscellaneous'),
+]
+
+# Documents to append as an appendix to all manuals.
+#texinfo_appendices = []
+
+# If false, no module index is generated.
+#tex
