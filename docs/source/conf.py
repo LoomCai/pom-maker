@@ -293,4 +293,8 @@ from docutils.utils import get_source_line
 
 def _warn_node(self, msg, node, **kwargs):
     if not msg.startswith('nonlocal image URI found:'):
-        self._warnfunc(msg, '%s:%s' % g
+        self._warnfunc(msg, '%s:%s' % get_source_line(node), **kwargs)
+
+sphinx.environment.BuildEnvironment.warn_node = _warn_node
+
+# http://stackoverflow.com/questions/5599254/how-to-use-sphinxs-autod
