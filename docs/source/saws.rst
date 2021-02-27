@@ -57,4 +57,14 @@ saws.main module
 
 .. automodule:: saws.main
     :members:
-    :undoc-member
+    :undoc-members:
+    :show-inheritance:
+
+saws.resources module
+---------------------
+
+.. automodule:: saws.resources
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
