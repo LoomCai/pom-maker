@@ -48,4 +48,13 @@ saws.logger module
 ------------------
 
 .. automodule:: saws.logger
-   
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saws.main module
+----------------
+
+.. automodule:: saws.main
+    :members:
+    :undoc-member
