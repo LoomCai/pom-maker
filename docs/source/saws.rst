@@ -39,3 +39,13 @@ saws.keys module
 saws.lexer module
 -----------------
 
+.. automodule:: saws.lexer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saws.logger module
+------------------
+
+.. automodule:: saws.logger
+   
