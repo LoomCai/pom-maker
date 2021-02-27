@@ -28,4 +28,14 @@ saws.config module
     :undoc-members:
     :show-inheritance:
 
-saws.key
+saws.keys module
+----------------
+
+.. automodule:: saws.keys
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saws.lexer module
+-----------------
+
