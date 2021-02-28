@@ -68,3 +68,15 @@ saws.resources module
     :undoc-members:
     :show-inheritance:
 
+saws.saws module
+----------------
+
+.. automodule:: saws.saws
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saws.style module
+-----------------
+
+..
