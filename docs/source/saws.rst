@@ -87,4 +87,14 @@ saws.style module
 saws.toolbar module
 -------------------
 
-.. automodule:: saws.too
+.. automodule:: saws.toolbar
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saws.utils module
+-----------------
+
+.. automodule:: saws.utils
+    :members:
+   
