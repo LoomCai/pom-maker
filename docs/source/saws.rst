@@ -97,4 +97,14 @@ saws.utils module
 
 .. automodule:: saws.utils
     :members:
-   
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: saws
+    :members:
+    :undoc-members:
+    :show-inheritance:
