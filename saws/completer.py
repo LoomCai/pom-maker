@@ -18,4 +18,8 @@ from __future__ import print_function
 import re
 import sys
 import traceback
-from six.moves imp
+from six.moves import cStringIO
+from prompt_toolkit.completion import Completer
+from .utils import TextUtils
+from .commands import AwsCommands
+from .options import Aws
