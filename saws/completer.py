@@ -22,4 +22,11 @@ from six.moves import cStringIO
 from prompt_toolkit.completion import Completer
 from .utils import TextUtils
 from .commands import AwsCommands
-from .options import Aws
+from .options import AwsOptions
+from .resources import AwsResources
+
+
+class AwsCompleter(Completer):
+    """Completer for AWS commands, subcommands, options, and parameters.
+
+    Attri
