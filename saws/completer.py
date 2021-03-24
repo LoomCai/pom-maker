@@ -29,4 +29,7 @@ from .resources import AwsResources
 class AwsCompleter(Completer):
     """Completer for AWS commands, subcommands, options, and parameters.
 
-    Attri
+    Attributes:
+        * aws_completer: An instance of the official awscli Completer.
+        * aws_completions: A set of completions to show the user.
+  
