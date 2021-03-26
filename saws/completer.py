@@ -32,4 +32,7 @@ class AwsCompleter(Completer):
     Attributes:
         * aws_completer: An instance of the official awscli Completer.
         * aws_completions: A set of completions to show the user.
+        * all_commands: A list of all commands, sub_commands, options, etc
+            from data/SOURCES.txt.
+        * config: An instance of Config.
   
