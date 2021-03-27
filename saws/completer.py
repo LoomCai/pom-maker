@@ -39,4 +39,6 @@ class AwsCompleter(Completer):
         * log_exception: A callable log_exception from SawsLogger.
         * text_utils: An instance of TextUtils.
         * fuzzy_match: A boolean that determines whether to use fuzzy matching.
-        * shortcut_match: A boolean that d
+        * shortcut_match: A boolean that determines whether to match shortcuts.
+        * BASE_COMMAND: A string representing the 'aws' command.
+        * shortcuts: An OrderedDict conta
