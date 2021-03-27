@@ -41,4 +41,7 @@ class AwsCompleter(Completer):
         * fuzzy_match: A boolean that determines whether to use fuzzy matching.
         * shortcut_match: A boolean that determines whether to match shortcuts.
         * BASE_COMMAND: A string representing the 'aws' command.
-        * shortcuts: An OrderedDict conta
+        * shortcuts: An OrderedDict containing shortcuts commands as keys
+            and their corresponding full commands as values.
+        * resources: An instance of AwsResources.
+ 
