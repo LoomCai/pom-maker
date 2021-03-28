@@ -44,4 +44,11 @@ class AwsCompleter(Completer):
         * shortcuts: An OrderedDict containing shortcuts commands as keys
             and their corresponding full commands as values.
         * resources: An instance of AwsResources.
- 
+        * options: An instance of AwsOptions
+    """
+
+    def __init__(self,
+                 aws_completer,
+                 all_commands,
+                 config,
+                 config
