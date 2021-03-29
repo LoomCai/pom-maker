@@ -51,4 +51,11 @@ class AwsCompleter(Completer):
                  aws_completer,
                  all_commands,
                  config,
-                 config
+                 config_obj,
+                 log_exception,
+                 fuzzy_match=False,
+                 shortcut_match=False):
+        """Initializes AwsCompleter.
+
+        Args:
+ 
