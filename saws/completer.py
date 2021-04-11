@@ -58,4 +58,5 @@ class AwsCompleter(Completer):
         """Initializes AwsCompleter.
 
         Args:
- 
+            * aws_completer: The official aws cli completer module.
+            * all_commands: A list of all commands, sub_commands, options,
