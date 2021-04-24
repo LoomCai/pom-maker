@@ -62,4 +62,6 @@ class AwsCompleter(Completer):
             * all_commands: A list of all commands, sub_commands, options, etc
                 from data/SOURCES.txt.
             * config: An instance of Config.
-            * config_obj: An instance of ConfigObj, re
+            * config_obj: An instance of ConfigObj, reads from ~/.sawsrc.
+            * log_exception: A callable log_exception from SawsLogger.
+            * fuzzy_match: A boolean that d
