@@ -82,4 +82,6 @@ class AwsCompleter(Completer):
         self.fuzzy_match = fuzzy_match
         self.shortcut_match = shortcut_match
         self.BASE_COMMAND = AwsCommands.AWS_COMMAND
-        sel
+        self.shortcuts = self.config.get_shortcuts(config_obj)
+        self.resources = AwsResources(self.log_exception)
+        self.options = AwsOptions(self.all_comm
