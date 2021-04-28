@@ -64,4 +64,9 @@ class AwsCompleter(Completer):
             * config: An instance of Config.
             * config_obj: An instance of ConfigObj, reads from ~/.sawsrc.
             * log_exception: A callable log_exception from SawsLogger.
-            * fuzzy_match: A boolean that d
+            * fuzzy_match: A boolean that determines whether to use
+                fuzzy matching.
+            * shortcut_match: A boolean that determines whether to
+                match shortcuts.
+
+        Ret
