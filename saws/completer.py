@@ -90,4 +90,8 @@ class AwsCompleter(Completer):
         """Get completions for the current scope.
 
         Args:
-            * document: An instan
+            * document: An instance of prompt_toolkit's Document.
+            * _: An instance of prompt_toolkit's CompleteEvent (not used).
+
+        Returns:
+            A g
