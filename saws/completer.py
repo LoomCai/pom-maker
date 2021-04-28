@@ -79,4 +79,7 @@ class AwsCompleter(Completer):
         self.config_obj = config_obj
         self.log_exception = log_exception
         self.text_utils = TextUtils()
-        
+        self.fuzzy_match = fuzzy_match
+        self.shortcut_match = shortcut_match
+        self.BASE_COMMAND = AwsCommands.AWS_COMMAND
+        sel
