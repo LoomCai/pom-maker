@@ -74,4 +74,9 @@ class AwsCompleter(Completer):
         """
         self.aws_completer = aws_completer
         self.aws_completions = set()
-        self.all_commands = all
+        self.all_commands = all_commands
+        self.config = config
+        self.config_obj = config_obj
+        self.log_exception = log_exception
+        self.text_utils = TextUtils()
+        
