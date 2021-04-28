@@ -84,4 +84,10 @@ class AwsCompleter(Completer):
         self.BASE_COMMAND = AwsCommands.AWS_COMMAND
         self.shortcuts = self.config.get_shortcuts(config_obj)
         self.resources = AwsResources(self.log_exception)
-        self.options = AwsOptions(self.all_comm
+        self.options = AwsOptions(self.all_commands)
+
+    def get_completions(self, document, _):
+        """Get completions for the current scope.
+
+        Args:
+            * document: An instan
