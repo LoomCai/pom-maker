@@ -69,4 +69,9 @@ class AwsCompleter(Completer):
             * shortcut_match: A boolean that determines whether to
                 match shortcuts.
 
-        Ret
+        Returns:
+            None.
+        """
+        self.aws_completer = aws_completer
+        self.aws_completions = set()
+        self.all_commands = all
