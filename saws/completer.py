@@ -94,4 +94,7 @@ class AwsCompleter(Completer):
             * _: An instance of prompt_toolkit's CompleteEvent (not used).
 
         Returns:
-            A g
+            A generator of prompt_toolkit's Completion objects, containing
+            matched completions.
+        """
+        # Get completions from the official AW
