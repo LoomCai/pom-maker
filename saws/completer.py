@@ -97,4 +97,7 @@ class AwsCompleter(Completer):
             A generator of prompt_toolkit's Completion objects, containing
             matched completions.
         """
-        # Get completions from the official AW
+        # Get completions from the official AWS CLI
+        aws_completer_results_list = self._get_aws_cli_completions(document)
+        self.aws_completions = set()
+        if len(document.text) < len(self.BAS
