@@ -100,4 +100,7 @@ class AwsCompleter(Completer):
         # Get completions from the official AWS CLI
         aws_completer_results_list = self._get_aws_cli_completions(document)
         self.aws_completions = set()
-        if len(document.text) < len(self.BAS
+        if len(document.text) < len(self.BASE_COMMAND):
+            # Autocomplete 'aws' at the beginning of the command
+            self.aws_completions.update([self.BASE_COMMAND])
+       
