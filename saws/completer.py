@@ -103,4 +103,6 @@ class AwsCompleter(Completer):
         if len(document.text) < len(self.BASE_COMMAND):
             # Autocomplete 'aws' at the beginning of the command
             self.aws_completions.update([self.BASE_COMMAND])
-       
+        else:
+            self.aws_completions.update(aws_completer_results_list)
+        word_before_cursor = document.get_word_before_cursor(W
