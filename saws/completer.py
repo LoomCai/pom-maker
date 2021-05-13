@@ -105,4 +105,8 @@ class AwsCompleter(Completer):
             self.aws_completions.update([self.BASE_COMMAND])
         else:
             self.aws_completions.update(aws_completer_results_list)
-        word_before_cursor = document.get_word_before_cursor(W
+        word_before_cursor = document.get_word_before_cursor(WORD=True)
+        words = self.text_utils.get_tokens(document.text)
+        if len(words) == 0:
+            return []
+        # Determine if we should insert
