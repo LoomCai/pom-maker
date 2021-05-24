@@ -109,4 +109,8 @@ class AwsCompleter(Completer):
         words = self.text_utils.get_tokens(document.text)
         if len(words) == 0:
             return []
-        # Determine if we should insert
+        # Determine if we should insert shortcuts
+        elif len(words) == 2 and \
+            words[0] == self.BASE_COMMAND and \
+                word_before_cursor != '':
+   
