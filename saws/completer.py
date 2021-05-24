@@ -113,4 +113,6 @@ class AwsCompleter(Completer):
         elif len(words) == 2 and \
             words[0] == self.BASE_COMMAND and \
                 word_before_cursor != '':
-   
+            # Insert shortcuts if the user typed 'aws' as the first
+            # command and is inputting the subcommand
+  
