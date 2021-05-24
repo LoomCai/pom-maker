@@ -115,4 +115,6 @@ class AwsCompleter(Completer):
                 word_before_cursor != '':
             # Insert shortcuts if the user typed 'aws' as the first
             # command and is inputting the subcommand
-  
+            if self.shortcut_match:
+                self.aws_completions.update(self.shortcuts.keys())
+        # Try to get completions for ena
