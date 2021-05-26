@@ -117,4 +117,7 @@ class AwsCompleter(Completer):
             # command and is inputting the subcommand
             if self.shortcut_match:
                 self.aws_completions.update(self.shortcuts.keys())
-        # Try to get completions for ena
+        # Try to get completions for enabled AWS resources
+        completions = self._get_custom_completions(
+            words, word_before_cursor, self.resources.resources_options_map)
+   
