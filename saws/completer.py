@@ -122,4 +122,7 @@ class AwsCompleter(Completer):
             words, word_before_cursor, self.resources.resources_options_map)
         # Try to get completions for global options, filter options, etc
         if completions is None:
-            completions = self._get_custom_
+            completions = self._get_custom_completions(
+                words, word_before_cursor, self.options.options_map)
+        # Try to get completions from the official AWS CLI
+        i
