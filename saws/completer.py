@@ -125,4 +125,6 @@ class AwsCompleter(Completer):
             completions = self._get_custom_completions(
                 words, word_before_cursor, self.options.options_map)
         # Try to get completions from the official AWS CLI
-        i
+        if completions is None:
+            fuzzy_aws_completions = self.fuzzy_match
+            if self.fuzzy_match and word_before_curso
