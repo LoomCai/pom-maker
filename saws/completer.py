@@ -130,4 +130,6 @@ class AwsCompleter(Completer):
             if self.fuzzy_match and word_before_cursor in \
                     self.all_commands[AwsCommands.CommandType.COMMANDS.value]:
                 # Fuzzy completion currently only works with resources, options
-  
+                # and shortcuts.  If we have just completed a top-level
+                # command (ie. ec2, elb, s3) then disable fuzzy completions,
+                # 
