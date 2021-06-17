@@ -132,4 +132,6 @@ class AwsCompleter(Completer):
                 # Fuzzy completion currently only works with resources, options
                 # and shortcuts.  If we have just completed a top-level
                 # command (ie. ec2, elb, s3) then disable fuzzy completions,
-                # 
+                # otherwise the corresponding subcommands will be fuzzy
+                # completed and incorrectly shown.
+                # See: https
