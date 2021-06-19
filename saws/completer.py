@@ -136,4 +136,6 @@ class AwsCompleter(Completer):
                 # completed and incorrectly shown.
                 # See: https://github.com/donnemartin/saws/issues/14
                 fuzzy_aws_completions = False
-            completions = self.text_utils.find_matches(word_b
+            completions = self.text_utils.find_matches(word_before_cursor,
+                                                       self.aws_completions,
+                                                       fuzzy_aw
