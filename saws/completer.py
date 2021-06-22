@@ -138,4 +138,8 @@ class AwsCompleter(Completer):
                 fuzzy_aws_completions = False
             completions = self.text_utils.find_matches(word_before_cursor,
                                                        self.aws_completions,
-                                                       fuzzy_aw
+                                                       fuzzy_aws_completions)
+        return completions
+
+    def refresh_resources_and_options(self, force_refresh=False):
+        """Convenience
