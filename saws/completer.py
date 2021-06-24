@@ -142,4 +142,8 @@ class AwsCompleter(Completer):
         return completions
 
     def refresh_resources_and_options(self, force_refresh=False):
-        """Convenience
+        """Convenience function to refresh resources for completion.
+
+        Args:
+            * force_refresh: A boolean determines whether to force a cache
+                refresh
