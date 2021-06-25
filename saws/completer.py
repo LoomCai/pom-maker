@@ -146,4 +146,9 @@ class AwsCompleter(Completer):
 
         Args:
             * force_refresh: A boolean determines whether to force a cache
-                refresh
+                refresh.  This value is set to True when the user presses `F5`.
+
+        Returns:
+            None.
+        """
+        self.resources.refresh
