@@ -151,4 +151,9 @@ class AwsCompleter(Completer):
         Returns:
             None.
         """
-        self.resources.refresh
+        self.resources.refresh(force_refresh)
+
+    def replace_shortcut(self, text):
+        """Replaces matched shortcut commands with their full command.
+
+        Currently, only one shortcut is re
