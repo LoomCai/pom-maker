@@ -156,4 +156,6 @@ class AwsCompleter(Completer):
     def replace_shortcut(self, text):
         """Replaces matched shortcut commands with their full command.
 
-        Currently, only one shortcut is re
+        Currently, only one shortcut is replaced before shortcut replacement
+        terminates, although this function could potentially be extended
+        to replace mutliple sh
