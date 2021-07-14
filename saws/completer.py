@@ -164,4 +164,9 @@ class AwsCompleter(Completer):
             * text: A string representing the input command text to replace.
 
         Returns:
-            A string representing input command te
+            A string representing input command text with a shortcut
+                replaced, if one has been found.
+        """
+        for key, value in self.shortcuts.items():
+            if key in text:
+           
