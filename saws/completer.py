@@ -179,4 +179,10 @@ class AwsCompleter(Completer):
 
         Currently, only one substitution is done before replacement terminates,
         although this function could potentially be extended to do multiple
-   
+        substitutions.
+
+        Args:
+            * text: A string representing the input command text to replace.
+
+        Returns:
+  
