@@ -177,4 +177,6 @@ class AwsCompleter(Completer):
     def replace_substitution(self, text):
         """Replaces a `%s` with the word immediately following it.
 
+        Currently, only one substitution is done before replacement terminates,
+        although this function could potentially be extended to do multiple
    
