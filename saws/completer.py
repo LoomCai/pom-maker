@@ -199,4 +199,8 @@ class AwsCompleter(Completer):
                 text = ' '.join(tokens)
                 text = re.sub(substitution_marker, replacement_text, text)
             except:
-          
+                return text
+        return text
+
+    def _get_resource_completions(self, words, word_before_cursor,
+                                  optio
