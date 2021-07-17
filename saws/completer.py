@@ -169,4 +169,7 @@ class AwsCompleter(Completer):
         """
         for key, value in self.shortcuts.items():
             if key in text:
-           
+                text = re.sub(key, value, text)
+                text = self.replace_substitution(text)
+                break
+        
