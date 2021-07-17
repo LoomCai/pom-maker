@@ -188,4 +188,8 @@ class AwsCompleter(Completer):
             A string representing input command text with a substitution,
             if one has been found.
         """
-        substitution_m
+        substitution_marker = '%s'
+
+        if substitution_marker in text:
+            tokens = text.split()
+            replacement_index = self.text_utils.get_token_in
