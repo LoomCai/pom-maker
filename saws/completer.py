@@ -196,4 +196,7 @@ class AwsCompleter(Completer):
                 substitution_marker, tokens) + 1
             try:
                 replacement_text = tokens.pop(replacement_index)
-        
+                text = ' '.join(tokens)
+                text = re.sub(substitution_marker, replacement_text, text)
+            except:
+          
