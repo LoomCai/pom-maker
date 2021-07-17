@@ -185,4 +185,7 @@ class AwsCompleter(Completer):
             * text: A string representing the input command text to replace.
 
         Returns:
-  
+            A string representing input command text with a substitution,
+            if one has been found.
+        """
+        substitution_m
