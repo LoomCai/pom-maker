@@ -172,4 +172,9 @@ class AwsCompleter(Completer):
                 text = re.sub(key, value, text)
                 text = self.replace_substitution(text)
                 break
-        
+        return text
+
+    def replace_substitution(self, text):
+        """Replaces a `%s` with the word immediately following it.
+
+   
