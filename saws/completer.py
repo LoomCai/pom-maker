@@ -192,4 +192,8 @@ class AwsCompleter(Completer):
 
         if substitution_marker in text:
             tokens = text.split()
-            replacement_index = self.text_utils.get_token_in
+            replacement_index = self.text_utils.get_token_index(
+                substitution_marker, tokens) + 1
+            try:
+                replacement_text = tokens.pop(replacement_index)
+        
