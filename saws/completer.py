@@ -210,4 +210,6 @@ class AwsCompleter(Completer):
             * words: A list of words that represent the input command text.
             * word_before_cursor: A string representing the word before the
                 cursor.
-            * option_text: A string to match that
+            * option_text: A string to match that represents the resource's
+                option text, such as '--ec2-state'.  For example, if
+                option_text is '--ec2-state' and it is 
