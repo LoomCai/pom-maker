@@ -203,4 +203,8 @@ class AwsCompleter(Completer):
         return text
 
     def _get_resource_completions(self, words, word_before_cursor,
-                                  optio
+                                  option_text, resource):
+        """Get completions for the specified AWS resource.
+
+        Args:
+            * words: A list of words that represent the inp
