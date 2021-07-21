@@ -207,4 +207,7 @@ class AwsCompleter(Completer):
         """Get completions for the specified AWS resource.
 
         Args:
-            * words: A list of words that represent the inp
+            * words: A list of words that represent the input command text.
+            * word_before_cursor: A string representing the word before the
+                cursor.
+            * option_text: A string to match that
