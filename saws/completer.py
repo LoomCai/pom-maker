@@ -212,4 +212,7 @@ class AwsCompleter(Completer):
                 cursor.
             * option_text: A string to match that represents the resource's
                 option text, such as '--ec2-state'.  For example, if
-                option_text is '--ec2-state' and it is 
+                option_text is '--ec2-state' and it is the word before the
+                cursor, then display associated resource completions found
+                in the resource parameter such as pending, running, etc.
+       
