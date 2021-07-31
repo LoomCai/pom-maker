@@ -217,4 +217,9 @@ class AwsCompleter(Completer):
                 in the resource parameter such as pending, running, etc.
             * resource: A list that represents the resource completions to
                 display if option_text is matched.  For example, instance ids,
-                instance tag
+                instance tags, etc.
+
+        Returns:
+            A generator of prompt_toolkit's Completion objects, containing
+            matched completions.
+     
