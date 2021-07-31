@@ -215,4 +215,6 @@ class AwsCompleter(Completer):
                 option_text is '--ec2-state' and it is the word before the
                 cursor, then display associated resource completions found
                 in the resource parameter such as pending, running, etc.
-       
+            * resource: A list that represents the resource completions to
+                display if option_text is matched.  For example, instance ids,
+                instance tag
