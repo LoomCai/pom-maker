@@ -222,4 +222,9 @@ class AwsCompleter(Completer):
         Returns:
             A generator of prompt_toolkit's Completion objects, containing
             matched completions.
-     
+        """
+        if len(words) <= 1:
+            return
+        # Example: --bucket
+        option_text_match = (words[-1] == option_text)
+        # E
