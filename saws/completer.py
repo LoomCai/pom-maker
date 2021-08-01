@@ -227,4 +227,8 @@ class AwsCompleter(Completer):
             return
         # Example: --bucket
         option_text_match = (words[-1] == option_text)
-        # E
+        # Example: --bucket prod
+        completing_with_space = \
+            (words[-2] == option_text and word_before_cursor != '')
+        # Example: s3://prod
+   
