@@ -231,4 +231,6 @@ class AwsCompleter(Completer):
         completing_with_space = \
             (words[-2] == option_text and word_before_cursor != '')
         # Example: s3://prod
-   
+        completing_no_space = \
+            (option_text in words[-1] and word_before_cursor != '')
+        if option_text_match or completing_with_space or completing_n
