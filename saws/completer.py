@@ -233,4 +233,7 @@ class AwsCompleter(Completer):
         # Example: s3://prod
         completing_no_space = \
             (option_text in words[-1] and word_before_cursor != '')
-        if option_text_match or completing_with_space or completing_n
+        if option_text_match or completing_with_space or completing_no_space:
+            return self.text_utils.find_matches(word_before_cursor,
+                                                resource,
+           
