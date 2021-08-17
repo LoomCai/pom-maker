@@ -236,4 +236,7 @@ class AwsCompleter(Completer):
         if option_text_match or completing_with_space or completing_no_space:
             return self.text_utils.find_matches(word_before_cursor,
                                                 resource,
-           
+                                                self.fuzzy_match)
+
+    def _get_aws_cli_completions(self, document):
+        """Get completions from the official AWS CLI for t
