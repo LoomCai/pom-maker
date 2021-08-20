@@ -239,4 +239,11 @@ class AwsCompleter(Completer):
                                                 self.fuzzy_match)
 
     def _get_aws_cli_completions(self, document):
-        """Get completions from the official AWS CLI for t
+        """Get completions from the official AWS CLI for the current scope.
+
+        Args:
+            * document: An instance of prompt_toolkit's Document.
+
+        Returns:
+            A list of string completions.
+ 
