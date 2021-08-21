@@ -246,4 +246,8 @@ class AwsCompleter(Completer):
 
         Returns:
             A list of string completions.
- 
+        """
+        text = self.replace_shortcut(document.text)
+        # Redirect stdout to a string so we can capture the AWS CLI
+        # autocompleter results
+        # See: 
