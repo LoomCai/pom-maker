@@ -258,4 +258,7 @@ class AwsCompleter(Completer):
         except Exception as e:
             self.log_exception(e, traceback)
         sys.stdout = old_stdout
-      
+        aws_completer_results = mystdout.getvalue()
+        # Tidy up the completions and store it in a list
+        aws_completer_results = re.sub('\n', '', aws_completer_results)
+   
