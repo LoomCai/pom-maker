@@ -250,4 +250,8 @@ class AwsCompleter(Completer):
         text = self.replace_shortcut(document.text)
         # Redirect stdout to a string so we can capture the AWS CLI
         # autocompleter results
-        # See: 
+        # See: http://stackoverflow.com/a/1218951
+        old_stdout = sys.stdout
+        sys.stdout = mystdout = cStringIO()
+        try:
+            self.a
