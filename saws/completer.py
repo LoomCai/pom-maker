@@ -261,4 +261,7 @@ class AwsCompleter(Completer):
         aws_completer_results = mystdout.getvalue()
         # Tidy up the completions and store it in a list
         aws_completer_results = re.sub('\n', '', aws_completer_results)
-   
+        aws_completer_results_list = aws_completer_results.split()
+        return aws_completer_results_list
+
+    def _get_custom_completions(se
