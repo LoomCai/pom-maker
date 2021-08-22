@@ -254,4 +254,8 @@ class AwsCompleter(Completer):
         old_stdout = sys.stdout
         sys.stdout = mystdout = cStringIO()
         try:
-            self.a
+            self.aws_completer.complete(text, len(text))
+        except Exception as e:
+            self.log_exception(e, traceback)
+        sys.stdout = old_stdout
+      
