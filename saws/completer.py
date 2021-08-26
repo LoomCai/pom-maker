@@ -264,4 +264,7 @@ class AwsCompleter(Completer):
         aws_completer_results_list = aws_completer_results.split()
         return aws_completer_results_list
 
-    def _get_custom_completions(se
+    def _get_custom_completions(self, words, word_before_cursor, mapping):
+        """Get custom completions resources, options, etc.
+
+        Completions for all enabled AWS 
