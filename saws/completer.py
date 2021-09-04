@@ -279,4 +279,8 @@ class AwsCompleter(Completer):
                     key: --bucket,    value: list of bucket names
                     key: --ec2-state, value: list of ec2 states
 
-        
+        Returns:
+            A generator of prompt_toolkit's Completion objects, containing
+            matched completions.
+        """
+        completions = 
