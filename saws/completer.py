@@ -267,4 +267,9 @@ class AwsCompleter(Completer):
     def _get_custom_completions(self, words, word_before_cursor, mapping):
         """Get custom completions resources, options, etc.
 
-        Completions for all enabled AWS 
+        Completions for all enabled AWS resources, global options,
+        filter options, etc.
+
+        Args:
+            * words: A list of strings for each word in the command text.
+          
