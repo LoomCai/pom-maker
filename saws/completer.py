@@ -275,4 +275,8 @@ class AwsCompleter(Completer):
             * word_before_cursor: A string representing the word before
                 the cursor.
             * mapping: A dict mapping of keyword triggers to completions
-                
+                Example:
+                    key: --bucket,    value: list of bucket names
+                    key: --ec2-state, value: list of ec2 states
+
+        
