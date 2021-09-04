@@ -272,4 +272,7 @@ class AwsCompleter(Completer):
 
         Args:
             * words: A list of strings for each word in the command text.
-          
+            * word_before_cursor: A string representing the word before
+                the cursor.
+            * mapping: A dict mapping of keyword triggers to completions
+                
