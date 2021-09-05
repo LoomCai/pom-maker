@@ -290,4 +290,7 @@ class AwsCompleter(Completer):
                     ._get_resource_completions(words,
                                                word_before_cursor,
                                                key,
-    
+                                               value)
+            else:
+                break
+        return completions
