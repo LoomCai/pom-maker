@@ -287,4 +287,7 @@ class AwsCompleter(Completer):
         for key, value in mapping.items():
             if completions is None:
                 completions = self \
-                    ._get_resource_
+                    ._get_resource_completions(words,
+                                               word_before_cursor,
+                                               key,
+    
