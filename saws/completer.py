@@ -283,4 +283,8 @@ class AwsCompleter(Completer):
             A generator of prompt_toolkit's Completion objects, containing
             matched completions.
         """
-        completions = 
+        completions = None
+        for key, value in mapping.items():
+            if completions is None:
+                completions = self \
+                    ._get_resource_
