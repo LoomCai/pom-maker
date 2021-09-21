@@ -21,4 +21,11 @@ try:
     from collections import OrderedDict
 except:
     from ordereddict import OrderedDict
-from configo
+from configobj import ConfigObj
+
+
+class Config(object):
+    """Reads and writes the config file `sawsrc`.
+
+    Attributes:
+        * SHORTCUTS: A string tha
