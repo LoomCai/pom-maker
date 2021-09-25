@@ -28,4 +28,6 @@ class Config(object):
     """Reads and writes the config file `sawsrc`.
 
     Attributes:
-        * SHORTCUTS: A string tha
+        * SHORTCUTS: A string that represents the start of shortcuts in
+            the config file ~/.sawsrc.
+        * MAIN: A string that represents the main set of configs in
