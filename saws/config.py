@@ -31,3 +31,7 @@ class Config(object):
         * SHORTCUTS: A string that represents the start of shortcuts in
             the config file ~/.sawsrc.
         * MAIN: A string that represents the main set of configs in
+            ~/.sawsrc.
+        * THEME: A string that represents the config theme.
+        * LOG_FILE: A string that represents the config log file location.
+        
