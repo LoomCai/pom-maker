@@ -34,4 +34,6 @@ class Config(object):
             ~/.sawsrc.
         * THEME: A string that represents the config theme.
         * LOG_FILE: A string that represents the config log file location.
-        
+        * LOG_LEVEL: A string that represents the config default log
+            file level.
+        * COLOR: A string that represents the c
