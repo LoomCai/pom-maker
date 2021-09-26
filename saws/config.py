@@ -36,4 +36,6 @@ class Config(object):
         * LOG_FILE: A string that represents the config log file location.
         * LOG_LEVEL: A string that represents the config default log
             file level.
-        * COLOR: A string that represents the c
+        * COLOR: A string that represents the config color output mode.
+        * FUZZY: A string that represents the config fuzzy matching mode.
+        * SHORTCUT: A string that represents
