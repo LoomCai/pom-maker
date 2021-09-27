@@ -46,4 +46,9 @@ class Config(object):
     MAIN = 'main'
     THEME = 'theme'
     LOG_FILE = 'log_file'
- 
+    LOG_LEVEL = 'log_level'
+    COLOR = 'color_output'
+    FUZZY = 'fuzzy_match'
+    SHORTCUT = 'shortcut_match'
+
+    def get_shortcuts(self, c
