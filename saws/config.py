@@ -38,4 +38,12 @@ class Config(object):
             file level.
         * COLOR: A string that represents the config color output mode.
         * FUZZY: A string that represents the config fuzzy matching mode.
-        * SHORTCUT: A string that represents
+        * SHORTCUT: A string that represents the config shortcut matching
+             mode.
+    """
+
+    SHORTCUTS = 'shortcuts'
+    MAIN = 'main'
+    THEME = 'theme'
+    LOG_FILE = 'log_file'
+ 
