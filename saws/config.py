@@ -51,4 +51,8 @@ class Config(object):
     FUZZY = 'fuzzy_match'
     SHORTCUT = 'shortcut_match'
 
-    def get_shortcuts(self, c
+    def get_shortcuts(self, config_obj):
+        """Gets the shortcuts from the specified config.
+
+        Args:
+            * config_obj: An instance o
