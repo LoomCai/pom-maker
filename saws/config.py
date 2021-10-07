@@ -55,4 +55,8 @@ class Config(object):
         """Gets the shortcuts from the specified config.
 
         Args:
-            * config_obj: An instance o
+            * config_obj: An instance of ConfigObj.
+
+        Returns:
+            An OrderedDict containing the shortcut commands as the keys and
+            their correspondin
