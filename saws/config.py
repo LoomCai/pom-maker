@@ -59,4 +59,7 @@ class Config(object):
 
         Returns:
             An OrderedDict containing the shortcut commands as the keys and
-            their correspondin
+            their corresponding full commands as the values.
+        """
+        shortcut_config_obj = self.read_configuration('saws.shortcuts',
+                           
