@@ -64,4 +64,7 @@ class Config(object):
         shortcut_config_obj = self.read_configuration('saws.shortcuts',
                                                       '~/.saws.shortcuts')
         return OrderedDict(zip(shortcut_config_obj[self.SHORTCUTS].keys(),
-                               shortcut_config_obj[
+                               shortcut_config_obj[self.SHORTCUTS].values()))
+
+    def read_configuration(self, config_template=None, config_path=None):
+        """Reads the config file i
