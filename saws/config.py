@@ -62,4 +62,6 @@ class Config(object):
             their corresponding full commands as the values.
         """
         shortcut_config_obj = self.read_configuration('saws.shortcuts',
-                           
+                                                      '~/.saws.shortcuts')
+        return OrderedDict(zip(shortcut_config_obj[self.SHORTCUTS].keys(),
+                               shortcut_config_obj[
