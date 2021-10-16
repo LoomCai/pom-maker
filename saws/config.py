@@ -80,4 +80,6 @@ class Config(object):
             config_template = 'sawsrc'
         if config_path is None:
             config_path = '~/.sawsrc'
-        config_template_
+        config_template_path = os.path.join(os.path.dirname(__file__),
+                                            config_template)
+        self._copy_template_config(config_template_path, conf
