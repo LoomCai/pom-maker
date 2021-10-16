@@ -71,4 +71,9 @@ class Config(object):
 
         Args:
             * config_template: A string representing the template file name.
-         
+            * config_path: A string representing the template file path.
+
+        Returns:
+            An instance of a ConfigObj.
+        """
+        if config_template
