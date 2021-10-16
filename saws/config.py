@@ -67,4 +67,8 @@ class Config(object):
                                shortcut_config_obj[self.SHORTCUTS].values()))
 
     def read_configuration(self, config_template=None, config_path=None):
-        """Reads the config file i
+        """Reads the config file if it exists, else reads the default config.
+
+        Args:
+            * config_template: A string representing the template file name.
+         
