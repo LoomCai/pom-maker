@@ -76,4 +76,8 @@ class Config(object):
         Returns:
             An instance of a ConfigObj.
         """
-        if config_template
+        if config_template is None:
+            config_template = 'sawsrc'
+        if config_path is None:
+            config_path = '~/.sawsrc'
+        config_template_
