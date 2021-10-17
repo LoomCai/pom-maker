@@ -86,4 +86,9 @@ class Config(object):
         return self._read_configuration(config_path, config_template_path)
 
     def _read_configuration(self, usr_config, def_config=None):
-   
+        """Reads the config file if it exists, else reads the default config.
+
+        Internal method, call read_configuration instead.
+
+        Args:
+           
