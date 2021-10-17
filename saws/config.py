@@ -82,4 +82,8 @@ class Config(object):
             config_path = '~/.sawsrc'
         config_template_path = os.path.join(os.path.dirname(__file__),
                                             config_template)
-        self._copy_template_config(config_template_path, conf
+        self._copy_template_config(config_template_path, config_path)
+        return self._read_configuration(config_path, config_template_path)
+
+    def _read_configuration(self, usr_config, def_config=None):
+   
