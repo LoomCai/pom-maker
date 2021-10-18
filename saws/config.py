@@ -91,4 +91,8 @@ class Config(object):
         Internal method, call read_configuration instead.
 
         Args:
-           
+            * usr_config: A string that specifies the config file name.
+            * def_config: A string that specifies the config default file name.
+
+        Returns:
+  
