@@ -95,4 +95,8 @@ class Config(object):
             * def_config: A string that specifies the config default file name.
 
         Returns:
-  
+            An instance of a ConfigObj.
+        """
+        usr_config_file = os.path.expanduser(usr_config)
+        cfg = ConfigObj()
+        cfg.
