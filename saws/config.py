@@ -99,4 +99,7 @@ class Config(object):
         """
         usr_config_file = os.path.expanduser(usr_config)
         cfg = ConfigObj()
-        cfg.
+        cfg.filename = usr_config_file
+        if def_config:
+            cfg.merge(ConfigObj(def_config, interpolation=False))
+        cfg.merge(Confi
