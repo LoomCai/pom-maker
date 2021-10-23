@@ -102,4 +102,8 @@ class Config(object):
         cfg.filename = usr_config_file
         if def_config:
             cfg.merge(ConfigObj(def_config, interpolation=False))
-        cfg.merge(Confi
+        cfg.merge(ConfigObj(usr_config_file, interpolation=False))
+        return cfg
+
+    def _copy_template_config(self, source, destination, overwrite=False):
+        
