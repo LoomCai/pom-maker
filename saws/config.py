@@ -116,3 +116,7 @@ class Config(object):
         Returns:
             None.
         """
+        destination = os.path.expanduser(destination)
+        if not overwrite and os.path.exists(destination):
+            return
+        shutil.copyfile(so
