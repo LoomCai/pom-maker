@@ -106,4 +106,8 @@ class Config(object):
         return cfg
 
     def _copy_template_config(self, source, destination, overwrite=False):
-        
+        """Writes the default config from a template.
+
+        Args:
+            * source: A string that specifies the path to the template.
+            * destination: A s
