@@ -110,4 +110,9 @@ class Config(object):
 
         Args:
             * source: A string that specifies the path to the template.
-            * destination: A s
+            * destination: A string that specifies the path to write.
+            * overwite: A boolean that specifies whether to overwite the file.
+
+        Returns:
+            None.
+        """
