@@ -1,0 +1,12 @@
+[--instance-ids]: 7
+i-b815ecc3
+i-a51d05f4
+i-a71bd617
+i-c86cba18
+i-f7df0ea7
+i-a1637b56
+i-hdcbac0d
+[--ec2-tag-key]: 3
+Stack
+Name
+P
