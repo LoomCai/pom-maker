@@ -9,4 +9,16 @@ i-hdcbac0d
 [--ec2-tag-key]: 3
 Stack
 Name
-P
+Purpose
+[--ec2-tag-value]: 6
+metrics
+testing
+billing
+security
+development-feature
+production
+[--bucket]: 16
+prod-downloads
+prod-downloads-logs
+prod-assets
+prod-assets
