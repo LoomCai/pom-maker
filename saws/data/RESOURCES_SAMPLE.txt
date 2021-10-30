@@ -46,4 +46,8 @@ dev-assets-logs
 dev-feature-downloads
 dev-feature-downloads-logs
 dev-feature-assets
-dev-fe
+dev-feature-assets-logs
+test-downloads
+test-downloads-logs
+test-assets
+test-assets-logs
