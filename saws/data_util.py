@@ -19,4 +19,14 @@ import re
 try:
     from collections import OrderedDict
 except:
-    from ordereddict import 
+    from ordereddict import OrderedDict
+
+
+class DataUtil(object):
+    """Utility class to read from the data folder.
+
+    Attributes:
+        * None.
+    """
+
+    def create_header_to_type_map(
