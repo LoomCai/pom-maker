@@ -33,4 +33,8 @@ class DataUtil(object):
         """Creates a dict mapping headers to ResourceTypes.
 
         Headers are the resource headers as they appear in the RESOURCES.txt.
-  
+        Headers are mapped to their corresponding ResourceType.
+
+        Args:
+            * headers: A string that represents the header.
+         
