@@ -29,4 +29,8 @@ class DataUtil(object):
         * None.
     """
 
-    def create_header_to_type_map(
+    def create_header_to_type_map(self, headers, data_type):
+        """Creates a dict mapping headers to ResourceTypes.
+
+        Headers are the resource headers as they appear in the RESOURCES.txt.
+  
