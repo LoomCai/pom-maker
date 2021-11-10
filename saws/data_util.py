@@ -42,4 +42,8 @@ class DataUtil(object):
         Returns:
             An OrderedDict mapping headers to ResourceTypes.
         """
-        command_ty
+        command_types = []
+        for item in data_type:
+            if item != data_type.NUM_TYPES:
+                command_types.append(item)
+        return OrderedDict(zip(he
