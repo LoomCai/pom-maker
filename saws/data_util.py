@@ -37,4 +37,9 @@ class DataUtil(object):
 
         Args:
             * headers: A string that represents the header.
-         
+            * data_type: An Enum specifying the data type.
+
+        Returns:
+            An OrderedDict mapping headers to ResourceTypes.
+        """
+        command_ty
