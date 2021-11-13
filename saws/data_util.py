@@ -49,4 +49,8 @@ class DataUtil(object):
         return OrderedDict(zip(headers, command_types))
 
     def get_data(self, data_file_path, header_to_type_map, data_type):
-        """Gets all data from the specified
+        """Gets all data from the specified data file.
+
+        Args:
+            * data_file_path: A string representing the full file path of
+                the data 
