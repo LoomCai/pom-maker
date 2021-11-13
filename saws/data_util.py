@@ -46,4 +46,7 @@ class DataUtil(object):
         for item in data_type:
             if item != data_type.NUM_TYPES:
                 command_types.append(item)
-        return OrderedDict(zip(he
+        return OrderedDict(zip(headers, command_types))
+
+    def get_data(self, data_file_path, header_to_type_map, data_type):
+        """Gets all data from the specified
