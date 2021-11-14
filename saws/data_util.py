@@ -53,4 +53,7 @@ class DataUtil(object):
 
         Args:
             * data_file_path: A string representing the full file path of
-                the data 
+                the data file.
+            * header_to_type_map: A dictionary mapping the data header labels
+                 to the data types.
+            * data_
