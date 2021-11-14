@@ -56,4 +56,9 @@ class DataUtil(object):
                 the data file.
             * header_to_type_map: A dictionary mapping the data header labels
                  to the data types.
-            * data_
+            * data_type: An Enum specifying the data type.
+
+        Returns:
+            A list, where each element is a list of completions for each
+                data_type
+   
