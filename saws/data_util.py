@@ -61,4 +61,8 @@ class DataUtil(object):
         Returns:
             A list, where each element is a list of completions for each
                 data_type
-   
+        """
+        data_lists = [[] for x in range(data_type.NUM_TYPES.value)]
+        with open(data_file_path) as f:
+            for line in f:
+                line =
