@@ -65,4 +65,7 @@ class DataUtil(object):
         data_lists = [[] for x in range(data_type.NUM_TYPES.value)]
         with open(data_file_path) as f:
             for line in f:
-                line =
+                line = re.sub('\n', '', line)
+                parsing_header = False
+                # Check if we are reading in a data header to determine
+          
