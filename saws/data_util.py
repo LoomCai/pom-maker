@@ -68,4 +68,7 @@ class DataUtil(object):
                 line = re.sub('\n', '', line)
                 parsing_header = False
                 # Check if we are reading in a data header to determine
-          
+                # which set of data we are parsing
+                for key, value in header_to_type_map.items():
+                    if key in line:
+               
