@@ -71,4 +71,8 @@ class DataUtil(object):
                 # which set of data we are parsing
                 for key, value in header_to_type_map.items():
                     if key in line:
-               
+                        data_type = value
+                        parsing_header = True
+                        break
+                if not parsing_header:
+              
