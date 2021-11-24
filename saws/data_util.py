@@ -75,4 +75,6 @@ class DataUtil(object):
                         parsing_header = True
                         break
                 if not parsing_header:
-              
+                    # Store the data in its associated list
+                    if line.strip() != '':
+                        data_lists[data_type.value].append(line)
