@@ -15,4 +15,10 @@
 
 from pygments.lexer import RegexLexer
 from pygments.lexer import words
-from pygm
+from pygments.token import Keyword, Name, Operator, Generic, Literal
+from .commands import AwsCommands
+from .config import Config
+
+
+class CommandLexer(RegexLexer):
+    """Prov
