@@ -21,4 +21,9 @@ from .config import Config
 
 
 class CommandLexer(RegexLexer):
-    """Prov
+    """Provides highlighting for commands.
+
+    Attributes:
+        * config: An instance of Config.
+        * config_obj: An instance of ConfigObj.
+        * shor
