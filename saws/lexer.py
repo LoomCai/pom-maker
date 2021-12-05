@@ -26,4 +26,6 @@ class CommandLexer(RegexLexer):
     Attributes:
         * config: An instance of Config.
         * config_obj: An instance of ConfigObj.
-        * shor
+        * shortcuts: An OrderedDict containing the shortcut commands as the
+            keys and their corresponding full commands as the values.
+        * shortcut_tokens:
