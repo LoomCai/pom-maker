@@ -28,4 +28,6 @@ class CommandLexer(RegexLexer):
         * config_obj: An instance of ConfigObj.
         * shortcuts: An OrderedDict containing the shortcut commands as the
             keys and their corresponding full commands as the values.
-        * shortcut_tokens:
+        * shortcut_tokens: A list containing words for each shortcut key:
+            key: 'aws ec2 ls' -> shortcut_tokens: ['aws', 'ec2', 'ls'].
+        * aws_command
