@@ -39,4 +39,8 @@ class CommandLexer(RegexLexer):
         * tokens: A dictionary of pygments tokens.
     """
 
-    config
+    config = Config()
+    config_obj = config.read_configuration()
+    shortcuts = config.get_shortcuts(config_obj)
+    shortcut_tokens = []
+    for sho
