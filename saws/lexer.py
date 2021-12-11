@@ -34,4 +34,9 @@ class CommandLexer(RegexLexer):
         * commands: A tuple, where each tuple element is a list of:
             * commands
             * sub_commands
-   
+            * global_options
+            * resource_options
+        * tokens: A dictionary of pygments tokens.
+    """
+
+    config
