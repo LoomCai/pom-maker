@@ -30,4 +30,8 @@ class CommandLexer(RegexLexer):
             keys and their corresponding full commands as the values.
         * shortcut_tokens: A list containing words for each shortcut key:
             key: 'aws ec2 ls' -> shortcut_tokens: ['aws', 'ec2', 'ls'].
-        * aws_command
+        * aws_commands: An instance of AwsCommands.
+        * commands: A tuple, where each tuple element is a list of:
+            * commands
+            * sub_commands
+   
