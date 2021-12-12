@@ -43,4 +43,8 @@ class CommandLexer(RegexLexer):
     config_obj = config.read_configuration()
     shortcuts = config.get_shortcuts(config_obj)
     shortcut_tokens = []
-    for sho
+    for shortcut in shortcuts.keys():
+        tokens = shortcut.split()
+        for token in tokens:
+            shortcut_tokens.append(token)
+    aws_comm
