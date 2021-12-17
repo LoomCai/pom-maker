@@ -52,4 +52,9 @@ class CommandLexer(RegexLexer):
     tokens = {
         'root': [
             (words(
-                tuple([AwsComman
+                tuple([AwsCommands.AWS_COMMAND]),
+                prefix=r'\b',
+                suffix=r'\b'),
+             Literal.String),
+            (words(
+                tuple([AwsCommands.AWS_DOCS
