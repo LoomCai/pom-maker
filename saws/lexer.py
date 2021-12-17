@@ -47,4 +47,9 @@ class CommandLexer(RegexLexer):
         tokens = shortcut.split()
         for token in tokens:
             shortcut_tokens.append(token)
-    aws_comm
+    aws_commands = AwsCommands()
+    commands = aws_commands.all_commands
+    tokens = {
+        'root': [
+            (words(
+                tuple([AwsComman
