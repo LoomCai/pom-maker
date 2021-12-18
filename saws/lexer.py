@@ -57,4 +57,9 @@ class CommandLexer(RegexLexer):
                 suffix=r'\b'),
              Literal.String),
             (words(
-                tuple([AwsCommands.AWS_DOCS
+                tuple([AwsCommands.AWS_DOCS]),
+                prefix=r'\b',
+                suffix=r'\b'),
+             Literal.Number),
+            (words(
+                tuple(commands[
