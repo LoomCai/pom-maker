@@ -62,4 +62,9 @@ class CommandLexer(RegexLexer):
                 suffix=r'\b'),
              Literal.Number),
             (words(
-                tuple(commands[
+                tuple(commands[AwsCommands.CommandType.COMMANDS.value]),
+                prefix=r'\b',
+                suffix=r'\b'),
+             Name.Class),
+            (words(
+            
