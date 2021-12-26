@@ -71,4 +71,7 @@ class CommandLexer(RegexLexer):
                 prefix=r'\b',
                 suffix=r'\b'),
              Keyword.Declaration),
-    
+            (words(
+                tuple(commands[AwsCommands.CommandType.GLOBAL_OPTIONS.value]),
+                prefix=r'',
+                suffix=r'\b'),
