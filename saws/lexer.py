@@ -75,3 +75,7 @@ class CommandLexer(RegexLexer):
                 tuple(commands[AwsCommands.CommandType.GLOBAL_OPTIONS.value]),
                 prefix=r'',
                 suffix=r'\b'),
+             Generic.Output),
+            (words(
+                tuple(commands[AwsCommands.CommandType.RESOURCE_OPTIONS.value]),
+        
