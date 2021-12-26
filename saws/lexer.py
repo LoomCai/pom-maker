@@ -83,4 +83,8 @@ class CommandLexer(RegexLexer):
              Operator.Word),
             (words(
                 tuple(shortcut_tokens),
-     
+                prefix=r'',
+                suffix=r'\b'),
+             Name.Exception),
+        ]
+    }
