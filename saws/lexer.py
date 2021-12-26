@@ -78,4 +78,9 @@ class CommandLexer(RegexLexer):
              Generic.Output),
             (words(
                 tuple(commands[AwsCommands.CommandType.RESOURCE_OPTIONS.value]),
-        
+                prefix=r'',
+                suffix=r'\b'),
+             Operator.Word),
+            (words(
+                tuple(shortcut_tokens),
+     
