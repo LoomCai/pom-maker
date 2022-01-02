@@ -14,4 +14,14 @@
 # language governing permissions and limitations under the License.
 
 from __future__ import unicode_literals
-from __future__ import print_fu
+from __future__ import print_function
+import os
+import logging
+
+
+class SawsLogger(object):
+    """Handles Saws logging.
+
+    Attributes:
+        * logger: An instance of Logger.
+    
