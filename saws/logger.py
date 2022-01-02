@@ -30,4 +30,6 @@ class SawsLogger(object):
         """Initializes a Logger for Saws.
 
         Args:
-            * name: A string t
+            * name: A string that represents the logger's name.
+            * log_file: A string that represents the log file name.
+            * log_level: A string that 
