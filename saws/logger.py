@@ -24,4 +24,10 @@ class SawsLogger(object):
 
     Attributes:
         * logger: An instance of Logger.
-    
+    """
+
+    def __init__(self, name, log_file, log_level):
+        """Initializes a Logger for Saws.
+
+        Args:
+            * name: A string t
