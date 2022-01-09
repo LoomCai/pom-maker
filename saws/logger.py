@@ -47,4 +47,7 @@ class SawsLogger(object):
         }
         handler = logging.FileHandler(os.path.expanduser(log_file))
         formatter = logging.Formatter(
-     
+            '%(asctime)s (%(process)d/%(threadName)s) '
+            '%(name)s %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        r
