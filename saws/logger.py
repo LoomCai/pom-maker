@@ -39,4 +39,8 @@ class SawsLogger(object):
         """
         self.logger = logging.getLogger(name)
         level_map = {
-            'CRITICA
+            'CRITICAL': logging.CRITICAL,
+            'ERROR': logging.ERROR,
+            'WARNING': logging.WARNING,
+            'INFO': logging.INFO,
+            'D
