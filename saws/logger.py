@@ -43,4 +43,8 @@ class SawsLogger(object):
             'ERROR': logging.ERROR,
             'WARNING': logging.WARNING,
             'INFO': logging.INFO,
-            'D
+            'DEBUG': logging.DEBUG
+        }
+        handler = logging.FileHandler(os.path.expanduser(log_file))
+        formatter = logging.Formatter(
+     
