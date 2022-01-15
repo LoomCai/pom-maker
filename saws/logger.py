@@ -52,4 +52,6 @@ class SawsLogger(object):
         handler.setFormatter(formatter)
         root_logger = logging.getLogger('saws')
         root_logger.addHandler(handler)
-        root_logger.setLevel(level_map[log_level.upper
+        root_logger.setLevel(level_map[log_level.upper()])
+        root_logger.debug('Initializing saws logging.')
+        root_logger.debug('Log file %r.', log_file)
