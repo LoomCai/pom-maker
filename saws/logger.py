@@ -50,4 +50,6 @@ class SawsLogger(object):
             '%(asctime)s (%(process)d/%(threadName)s) '
             '%(name)s %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
-        r
+        root_logger = logging.getLogger('saws')
+        root_logger.addHandler(handler)
+        root_logger.setLevel(level_map[log_level.upper
