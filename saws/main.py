@@ -15,4 +15,11 @@
 # language governing permissions and limitations under the License.
 
 from __future__ import unicode_literals
-from __future__ import 
+from __future__ import print_function
+import click
+from .saws import Saws
+
+
+# Disable Warning: Click detected the use of the unicode_literals
+# __future__ import.
+click.disable_un
