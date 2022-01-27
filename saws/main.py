@@ -22,4 +22,17 @@ from .saws import Saws
 
 # Disable Warning: Click detected the use of the unicode_literals
 # __future__ import.
-click.disable_un
+click.disable_unicode_literals_warning = True
+
+
+@click.command()
+def cli():
+    """Creates and calls Saws.
+
+    Args:
+        * None.
+
+    Returns:
+        None.
+    """
+    tr
