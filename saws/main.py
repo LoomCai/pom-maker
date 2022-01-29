@@ -35,4 +35,8 @@ def cli():
     Returns:
         None.
     """
-    tr
+    try:
+        saws = Saws()
+        saws.run_cli()
+    except (EOFError, KeyboardInterrupt):
+        saws.aws_cli.set_return_valu
