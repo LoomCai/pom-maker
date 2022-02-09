@@ -66,3 +66,58 @@ class AwsOptions(object):
 
     OPTIONS_DIR = os.path.dirname(os.path.realpath(__file__))
     OPTIONS_PATH = os.path.join(OPTIONS_DIR, 'data/OPTIONS.txt')
+
+    def __init__(self,
+                 all_commands):
+        """Initializes AwsResources.
+
+        Args:
+            * all_commands: A list of all commands, sub_commands, options, etc
+                from data/SOURCES.txt.
+
+        Returns:
+            None.
+        """
+        self.all_commands = all_commands
+        self.EC2_STATE_OPT = '--ec2-state'
+        self.CLUSTER_STATE_OPT = '--cluster-states'
+        self.option_headers = [self._make_options_header(self.EC2_STATE_OPT)]
+        self.data_util = DataUtil()
+        self.header_to_type_map = self.data_util.create_header_to_type_map(
+            headers=self.option_headers,
+            data_type=self.OptionType)
+        self.ec2_states, _ = DataUtil().get_data(self.OPTIONS_PATH,
+                                                 self.header_to_type_map,
+                                                 self.OptionType)
+        self.cluster_states = self._generate_cluster_states()
+        self.options_map = dict(zip([self.EC2_STATE_OPT,
+                                     self.CLUSTER_STATE_OPT],
+                                    [self.ec2_states,
+                                     self.cluster_states]))
+
+    def _make_options_header(self, option):
+        """Creates the header string in OPTIONS.txt from the given option.
+
+        Args:
+            * option: A string that represents an option.
+
+        Returns:
+            A string that represents the header in OPTIONS.txt for the
+                given option.
+        """
+        return option + ': '
+
+    def _generate_cluster_states(self):
+        """Generates all the cluster states from the official AWS CLI.
+
+        Args:
+            * None.
+
+        Returns:
+            A list containing all cluster states.
+        """
+        cluster_states = []
+        cluster_states.extend(LIST_CLUSTERS_ACTIVE_STATES)
+        cluster_states.extend(LIST_CLUSTERS_TERMINATED_STATES)
+        cluster_states.extend(LIST_CLUSTERS_FAILED_STATES)
+        return cluster_states
