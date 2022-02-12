@@ -75,3 +75,18 @@ class Bucket(Resource):
                     self.add_bucket_name(result)
                 except:
                     # Ignore blank lines
+                    pass
+
+    @abstractmethod
+    def add_bucket_name(self, bucket_name):
+        """Adds the bucket name to our bucket resources.
+
+        Abstract method.
+
+        Args:
+            * bucket_name: A string representing the bucket name.
+
+        Returns:
+            None.
+        """
+        pass
