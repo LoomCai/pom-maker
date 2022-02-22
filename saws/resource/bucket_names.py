@@ -19,4 +19,8 @@ from .bucket import Bucket
 
 
 class BucketNames(Bucket):
-    """Encapsulates the S3 bucket names re
+    """Encapsulates the S3 bucket names resources.
+
+    Attributes:
+        * OPTION: A string representing the option for bucket names.
+        * QUERY: A string representing the AWS query to list
