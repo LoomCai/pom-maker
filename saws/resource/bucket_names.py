@@ -23,4 +23,12 @@ class BucketNames(Bucket):
 
     Attributes:
         * OPTION: A string representing the option for bucket names.
-        * QUERY: A string representing the AWS query to list
+        * QUERY: A string representing the AWS query to list all bucket names.
+        * resources: A list of bucket names.
+    """
+
+    OPTION = '--bucket'
+    QUERY = 'aws s3 ls'
+
+    def __init__(self):
+        """Initiali
