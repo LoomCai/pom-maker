@@ -48,4 +48,8 @@ class BucketNames(Bucket):
             * None.
 
         Returns:
-   
+            None.
+
+        Raises:
+            A subprocess.CalledProcessError if check_output returns a non-zero
+                exit status, which is calle
