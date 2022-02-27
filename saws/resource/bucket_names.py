@@ -40,3 +40,12 @@ class BucketNames(Bucket):
             None.
         """
         super(BucketNames, self).__init__()
+
+    def query_resource(self):
+        """Queries and stores bucket names from AWS.
+
+        Args:
+            * None.
+
+        Returns:
+   
