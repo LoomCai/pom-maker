@@ -31,4 +31,12 @@ class BucketNames(Bucket):
     QUERY = 'aws s3 ls'
 
     def __init__(self):
-        """Initiali
+        """Initializes BucketNames.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        super(BucketNames, self).__init__()
