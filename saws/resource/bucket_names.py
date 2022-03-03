@@ -52,4 +52,9 @@ class BucketNames(Bucket):
 
         Raises:
             A subprocess.CalledProcessError if check_output returns a non-zero
-                exit status, which is calle
+                exit status, which is called by self._query_aws.
+        """
+        print('  Refreshing bucket names...')
+        super(BucketNames, self).query_resource()
+
+    def add_bucket
