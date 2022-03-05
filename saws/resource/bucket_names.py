@@ -57,4 +57,8 @@ class BucketNames(Bucket):
         print('  Refreshing bucket names...')
         super(BucketNames, self).query_resource()
 
-    def add_bucket
+    def add_bucket_name(self, bucket_name):
+        """Adds the bucket name to our bucket resources.
+
+        Args:
+            * bucket_name: A
