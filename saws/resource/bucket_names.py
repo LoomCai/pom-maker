@@ -61,4 +61,9 @@ class BucketNames(Bucket):
         """Adds the bucket name to our bucket resources.
 
         Args:
-            * bucket_name: A
+            * bucket_name: A string representing the bucket name.
+
+        Returns:
+            None.
+        """
+        self.resources.extend([bucket_name])
