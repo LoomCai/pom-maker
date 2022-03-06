@@ -16,24 +16,24 @@
 
 from __future__ import unicode_literals
 from __future__ import print_function
-from .bucket import Bucket
+import re
+from .resource import Resource
 
 
-class BucketUris(Bucket):
-    """Encapsulates the S3 bucket uri resources.
+class InstanceIds(Resource):
+    """Encapsulates the EC2 instance ids resources.
 
     Attributes:
-        * OPTION: A string representing the option for bucket uri.
-        * QUERY: A string representing the AWS query to list all bucket uri.
-        * resources: A list of bucket uri.
+        * OPTION: A string representing the option for instance ids.
+        * QUERY: A string representing the AWS query to list all instance ids.
+        * resources: A list of instance ids.
     """
 
-    OPTION = 's3:'
-    QUERY = 'aws s3 ls'
-    PREFIX = OPTION + '//'
+    OPTION = '--instance-ids'
+    QUERY = 'aws ec2 describe-instances --query "Reservations[].Instances[].[InstanceId]" --output text'  # NOQA
 
     def __init__(self):
-        """Initializes BucketNames.
+        """Initializes InstanceIds.
 
         Args:
             * None.
@@ -41,31 +41,23 @@ class BucketUris(Bucket):
         Returns:
             None.
         """
-        super(BucketUris, self).__init__()
+        super(InstanceIds, self).__init__()
 
     def query_resource(self):
-        """Queries and stores bucket uris from AWS.
+        """Queries and stores instance ids from AWS.
 
         Args:
             * None.
 
         Returns:
-            None.
+            The list of resources.
 
         Raises:
             A subprocess.CalledProcessError if check_output returns a non-zero
                 exit status, which is called by self._query_aws.
         """
-        print('  Refreshing bucket uris...')
-        super(BucketUris, self).query_resource()
-
-    def add_bucket_name(self, bucket_name):
-        """Adds the bucket name to our bucket resources.
-
-        Args:
-            * bucket_name: A string representing the bucket name.
-
-        Returns:
-            None.
-        """
-        self.resources.extend([self.PREFIX + bucket_name])
+        print('  Refreshing instance ids...')
+        output = self._query_aws(self.QUERY)
+        if output is not None:
+            output = re.sub('\n', ' ', output)
+            self.resources = output.split()
