@@ -8,4 +8,5 @@
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
-# o
+# or in the "license" file accompanying this file. This file is
+# distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
