@@ -19,4 +19,8 @@ from .resource import Resource
 
 
 class InstanceTagKeys(Resource):
-    """E
+    """Encapsulates the EC2 instance tag keys resources.
+
+    Attributes:
+        * OPTION: A string representing the option for instance tag keys.
+        * QUERY: A string repr
