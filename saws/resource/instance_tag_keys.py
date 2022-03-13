@@ -23,4 +23,10 @@ class InstanceTagKeys(Resource):
 
     Attributes:
         * OPTION: A string representing the option for instance tag keys.
-        * QUERY: A string repr
+        * QUERY: A string representing the AWS query to list all instance
+            tag keys.
+        * resources: A list of instance tag keys.
+    """
+
+    OPTION = '--ec2-tag-key'
+    QUERY = 'aws ec2 describe-ins
