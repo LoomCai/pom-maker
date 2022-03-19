@@ -32,4 +32,14 @@ class InstanceTagKeys(Resource):
     QUERY = 'aws ec2 describe-instances --filters "Name=tag-key,Values=*" --query Reservations[].Instances[].Tags[].Key --output text'  # NOQA
 
     def __init__(self):
-        """Initializes Inst
+        """Initializes InstanceTagKeys.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        super(InstanceTagKeys, self).__init__()
+
+    def que
