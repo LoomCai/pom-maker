@@ -42,4 +42,11 @@ class InstanceTagKeys(Resource):
         """
         super(InstanceTagKeys, self).__init__()
 
-    def que
+    def query_resource(self):
+        """Queries and stores instance ids from AWS.
+
+        Args:
+            * None.
+
+        Returns:
+          
