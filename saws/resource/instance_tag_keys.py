@@ -49,4 +49,8 @@ class InstanceTagKeys(Resource):
             * None.
 
         Returns:
-          
+            The list of resources.
+
+        Raises:
+            A subprocess.CalledProcessError if check_output returns a non-zero
+                exit stat
