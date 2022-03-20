@@ -53,4 +53,6 @@ class InstanceTagKeys(Resource):
 
         Raises:
             A subprocess.CalledProcessError if check_output returns a non-zero
-                exit stat
+                exit status, which is called by self._query_aws.
+        """
+        # TODO: Refactor query_resource in InstanceTagKeys and InstanceTagValues
