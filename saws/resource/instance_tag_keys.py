@@ -59,4 +59,4 @@ class InstanceTagKeys(Resource):
         print('  Refreshing instance tag keys...')
         output = self._query_aws(self.QUERY)
         if output is not None:
-            self.r
+            self.resources = list(set(output.split('\t')))
