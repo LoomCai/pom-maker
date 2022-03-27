@@ -19,4 +19,7 @@ from .resource import Resource
 
 
 class InstanceTagValues(Resource):
-   
+    """Encapsulates the EC2 instance tag values resources.
+
+    Attributes:
+        * OPTION: A string representing the option for instance tag v
