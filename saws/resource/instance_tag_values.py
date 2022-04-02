@@ -25,4 +25,8 @@ class InstanceTagValues(Resource):
         * OPTION: A string representing the option for instance tag values.
         * QUERY: A string representing the AWS query to list all instance
             tag values.
-        * resources: A list of instance tag valu
+        * resources: A list of instance tag values.
+    """
+
+    OPTION = '--ec2-tag-value'
+    QUERY = 'aws ec2 describe-instances --filters "Name=tag-value,Values=*" --query Reservations[].Instances[
