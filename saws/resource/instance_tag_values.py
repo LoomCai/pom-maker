@@ -37,4 +37,10 @@ class InstanceTagValues(Resource):
         Args:
             * None.
 
-        
+        Returns:
+            None.
+        """
+        super(InstanceTagValues, self).__init__()
+
+    def query_resource(self):
+        """Queries and 
