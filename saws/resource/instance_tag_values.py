@@ -22,4 +22,7 @@ class InstanceTagValues(Resource):
     """Encapsulates the EC2 instance tag values resources.
 
     Attributes:
-        * OPTION: A string representing the option for instance tag v
+        * OPTION: A string representing the option for instance tag values.
+        * QUERY: A string representing the AWS query to list all instance
+            tag values.
+        * resources: A list of instance tag valu
