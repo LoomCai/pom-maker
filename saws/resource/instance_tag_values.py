@@ -52,4 +52,5 @@ class InstanceTagValues(Resource):
             The list of resources.
 
         Raises:
-            A s
+            A subprocess.CalledProcessError if check_output returns a non-zero
+                exit status, which is called by self
