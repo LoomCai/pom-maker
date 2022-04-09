@@ -56,4 +56,7 @@ class InstanceTagValues(Resource):
                 exit status, which is called by self._query_aws.
         """
         # TODO: Refactor query_resource in InstanceTagKeys and InstanceTagValues
-        print('  Refreshing instance ta
+        print('  Refreshing instance tag values...')
+        output = self._query_aws(self.QUERY)
+        if output is not None:
+            self.resources = list(set(out
