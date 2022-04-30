@@ -34,4 +34,7 @@ class AwsResources(object):
     """Encapsulates AWS resources such as ec2 tags and buckets.
 
     Attributes:
-        * resource
+        * resources_path: A string representing the full file path of
+            data/RESOURCES.txt.
+        * log_exception: A callable log_exception from SawsLogger.
+        * r
