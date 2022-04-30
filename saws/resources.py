@@ -27,4 +27,11 @@ from .resource.instance_ids import InstanceIds
 from .resource.instance_tag_keys import InstanceTagKeys
 from .resource.instance_tag_values import InstanceTagValues
 from .resource.bucket_names import BucketNames
-from .resource.bucket_u
+from .resource.bucket_uris import BucketUris
+
+
+class AwsResources(object):
+    """Encapsulates AWS resources such as ec2 tags and buckets.
+
+    Attributes:
+        * resource
