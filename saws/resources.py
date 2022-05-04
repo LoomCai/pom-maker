@@ -37,4 +37,6 @@ class AwsResources(object):
         * resources_path: A string representing the full file path of
             data/RESOURCES.txt.
         * log_exception: A callable log_exception from SawsLogger.
-        * r
+        * resource_lists: A list where each element is a list of completions
+            for each resource.
+        * resources_headers_map: A dict mapping resourc
