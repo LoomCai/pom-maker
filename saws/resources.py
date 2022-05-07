@@ -39,4 +39,7 @@ class AwsResources(object):
         * log_exception: A callable log_exception from SawsLogger.
         * resource_lists: A list where each element is a list of completions
             for each resource.
-        * resources_headers_map: A dict mapping resourc
+        * resources_headers_map: A dict mapping resource headers to
+            resources to complete.  Headers denote the start of each
+            set of resources in the RESOURCES.txt file.
+        * resources_options_map: A
