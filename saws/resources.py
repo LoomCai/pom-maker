@@ -55,4 +55,8 @@ class AwsResources(object):
         """Enum specifying the resource type.
 
         Append new resource class instances here and increment NUM_TYPES.
-        Note: Order is important, new resources shoul
+        Note: Order is important, new resources should be added to the end.
+
+        Attributes:
+            * INSTANCE_IDS: An int representing instance ids.
+            * INSTANCE_TAG_KEYS: An int represe
