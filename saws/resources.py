@@ -52,4 +52,7 @@ class AwsResources(object):
     """
 
     class ResourceType(Enum):
-        """Enum spec
+        """Enum specifying the resource type.
+
+        Append new resource class instances here and increment NUM_TYPES.
+        Note: Order is important, new resources shoul
