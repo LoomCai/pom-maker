@@ -42,4 +42,7 @@ class AwsResources(object):
         * resources_headers_map: A dict mapping resource headers to
             resources to complete.  Headers denote the start of each
             set of resources in the RESOURCES.txt file.
-        * resources_options_map: A
+        * resources_options_map: A dict mapping resource options to
+            resources to complete.
+        * resource_headers: A list of headers that denote the start of each
+          
