@@ -47,4 +47,9 @@ class AwsResources(object):
         * resource_headers: A list of headers that denote the start of each
             set of resources in the RESOURCES.txt file.
         * data_util: An instance of DataUtil().
-        * header_to_type_map: A dict mapping headers as they appear
+        * header_to_type_map: A dict mapping headers as they appear in the
+            RESOURCES.txt file to their corresponding ResourceType.
+    """
+
+    class ResourceType(Enum):
+        """Enum spec
