@@ -45,4 +45,6 @@ class AwsResources(object):
         * resources_options_map: A dict mapping resource options to
             resources to complete.
         * resource_headers: A list of headers that denote the start of each
-          
+            set of resources in the RESOURCES.txt file.
+        * data_util: An instance of DataUtil().
+        * header_to_type_map: A dict mapping headers as they appear
