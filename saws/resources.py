@@ -59,4 +59,6 @@ class AwsResources(object):
 
         Attributes:
             * INSTANCE_IDS: An int representing instance ids.
-            * INSTANCE_TAG_KEYS: An int represe
+            * INSTANCE_TAG_KEYS: An int representing instance tag keys.
+            * INSTANCE_TAG_VALUES: An int representing instance tag values.
+            * BUCKET_NAMES: An int representing buck
