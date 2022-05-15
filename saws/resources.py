@@ -69,4 +69,9 @@ class AwsResources(object):
         INSTANCE_IDS, INSTANCE_TAG_KEYS, INSTANCE_TAG_VALUES, \
             BUCKET_NAMES, BUCKET_URIS = range(NUM_TYPES)
 
-    def 
+    def __init__(self,
+                 log_exception):
+        """Initializes AwsResources.
+
+        Args:
+            * log_exception: A callable log_exception from SawsLogge
