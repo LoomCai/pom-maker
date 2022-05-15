@@ -65,4 +65,8 @@ class AwsResources(object):
             * BUCKET_URIS: An int representing bucket uris.
             * NUM_TYPES: An int representing the number of resource types.
         """
-  
+        NUM_TYPES = 5
+        INSTANCE_IDS, INSTANCE_TAG_KEYS, INSTANCE_TAG_VALUES, \
+            BUCKET_NAMES, BUCKET_URIS = range(NUM_TYPES)
+
+    def 
