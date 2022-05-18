@@ -74,4 +74,10 @@ class AwsResources(object):
         """Initializes AwsResources.
 
         Args:
-            * log_exception: A callable log_exception from SawsLogge
+            * log_exception: A callable log_exception from SawsLogger.
+
+        Returns:
+            None.
+        """
+        # TODO: Use a file version instead of a new file
+        self._set_resources_path('data/RESOURCES_v2.txt')
