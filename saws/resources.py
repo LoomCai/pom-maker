@@ -81,3 +81,6 @@ class AwsResources(object):
         """
         # TODO: Use a file version instead of a new file
         self._set_resources_path('data/RESOURCES_v2.txt')
+        self.log_exception = log_exception
+        self.resource_lists = self._create_resource_lists()
+        self.resources_headers_map = No
