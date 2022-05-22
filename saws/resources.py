@@ -83,4 +83,7 @@ class AwsResources(object):
         self._set_resources_path('data/RESOURCES_v2.txt')
         self.log_exception = log_exception
         self.resource_lists = self._create_resource_lists()
-        self.resources_headers_map = No
+        self.resources_headers_map = None
+        self.resources_options_map = None
+        self.resource_headers = self._get_resource_headers()
+        self.resource_options = self._get_reso
