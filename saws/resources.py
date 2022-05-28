@@ -86,4 +86,7 @@ class AwsResources(object):
         self.resources_headers_map = None
         self.resources_options_map = None
         self.resource_headers = self._get_resource_headers()
-        self.resource_options = self._get_reso
+        self.resource_options = self._get_resource_options()
+        self.data_util = DataUtil()
+        self.header_to_type_map = self.data_util.create_header_to_type_map(
+            headers
