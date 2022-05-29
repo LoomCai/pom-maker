@@ -103,4 +103,10 @@ class AwsResources(object):
 
         Args:
             * force_refresh: A boolean determines whether to force a cache
-                refresh.  Th
+                refresh.  This value is set to True when the user presses `F5`.
+
+        Returns:
+            None.
+        """
+        self.clear_resources()
+        if no
