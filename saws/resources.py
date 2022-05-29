@@ -99,4 +99,8 @@ class AwsResources(object):
         If no cache exists, it queries AWS to build the resource lists.
         Pressing the `F5` key will set force_refresh to True, which proceeds
         to refresh the list regardless of whether a cache exists.
-        Before returning, it s
+        Before returning, it saves the resource lists to cache.
+
+        Args:
+            * force_refresh: A boolean determines whether to force a cache
+                refresh.  Th
