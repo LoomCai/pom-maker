@@ -93,4 +93,8 @@ class AwsResources(object):
             data_type=self.ResourceType)
 
     def refresh(self, force_refresh=False):
-        """Refreshes the AWS resources and caches the
+        """Refreshes the AWS resources and caches them to a file.
+
+        This function is called on startup.
+        If no cache exists, it queries AWS to build the resource lists.
+        Pressing the `F5` k
