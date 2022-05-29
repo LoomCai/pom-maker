@@ -89,4 +89,8 @@ class AwsResources(object):
         self.resource_options = self._get_resource_options()
         self.data_util = DataUtil()
         self.header_to_type_map = self.data_util.create_header_to_type_map(
-            headers
+            headers=self.resource_headers,
+            data_type=self.ResourceType)
+
+    def refresh(self, force_refresh=False):
+        """Refreshes the AWS resources and caches the
