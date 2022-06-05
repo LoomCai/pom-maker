@@ -114,3 +114,7 @@ class AwsResources(object):
                 self._refresh_resources_from_file()
                 print('Loaded resources from cache')
             except IOError:
+                print('No resource cache found')
+                force_refresh = True
+        if force_refresh:
+            self._query_resources()
