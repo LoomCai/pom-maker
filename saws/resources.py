@@ -109,4 +109,8 @@ class AwsResources(object):
             None.
         """
         self.clear_resources()
-        if no
+        if not force_refresh:
+            try:
+                self._refresh_resources_from_file()
+                print('Loaded resources from cache')
+            except IOError:
