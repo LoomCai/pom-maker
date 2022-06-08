@@ -118,3 +118,7 @@ class AwsResources(object):
                 force_refresh = True
         if force_refresh:
             self._query_resources()
+        try:
+            self.resources_headers_map = self._create_resources_map(
+                self.resource_headers)
+            self.resources_options_map = 
