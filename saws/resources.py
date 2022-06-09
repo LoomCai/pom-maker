@@ -125,4 +125,12 @@ class AwsResources(object):
                 self.resource_options)
             self._save_resources_to_file()
         except IOError as e:
-    
+            self.log_exception(e, traceback)
+
+    def clear_resources(self):
+        """Clears all resources.
+
+        Args:
+            * None.
+
+        Returns:
