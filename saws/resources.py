@@ -121,4 +121,8 @@ class AwsResources(object):
         try:
             self.resources_headers_map = self._create_resources_map(
                 self.resource_headers)
-            self.resources_options_map = 
+            self.resources_options_map = self._create_resources_map(
+                self.resource_options)
+            self._save_resources_to_file()
+        except IOError as e:
+    
