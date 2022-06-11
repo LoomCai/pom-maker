@@ -134,3 +134,9 @@ class AwsResources(object):
             * None.
 
         Returns:
+            None.
+        """
+        for resource_list in self.resource_lists:
+            resource_list.clear_resources()
+
+    def _create_resource_lists(sel
