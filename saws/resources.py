@@ -139,4 +139,8 @@ class AwsResources(object):
         for resource_list in self.resource_lists:
             resource_list.clear_resources()
 
-    def _create_resource_lists(sel
+    def _create_resource_lists(self):
+        """Create the resource lists.
+
+        Append new resource class instances here.
+        Note: Order is important, new resources should be added to th
