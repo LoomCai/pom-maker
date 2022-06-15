@@ -143,4 +143,13 @@ class AwsResources(object):
         """Create the resource lists.
 
         Append new resource class instances here.
-        Note: Order is important, new resources should be added to th
+        Note: Order is important, new resources should be added to the end.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        return [InstanceIds(),
+          
