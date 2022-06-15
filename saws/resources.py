@@ -152,4 +152,9 @@ class AwsResources(object):
             None.
         """
         return [InstanceIds(),
-          
+                InstanceTagKeys(),
+                InstanceTagValues(),
+                BucketNames(),
+                BucketUris()]
+
+    def 
