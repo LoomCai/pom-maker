@@ -157,4 +157,7 @@ class AwsResources(object):
                 BucketNames(),
                 BucketUris()]
 
-    def 
+    def _get_resource_headers(self):
+        """Builds a list of resource headers found in the resource file.
+
+        Each header denotes the start of e
