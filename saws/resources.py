@@ -167,4 +167,9 @@ class AwsResources(object):
             * None.
 
         Returns:
-            A list of headers that denote the start of each se
+            A list of headers that denote the start of each set of resources
+                in the RESOURCES.txt file.
+        """
+        resource_headers = []
+        for resource_list in self.resource_lists:
+      
