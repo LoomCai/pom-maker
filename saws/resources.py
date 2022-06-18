@@ -160,4 +160,11 @@ class AwsResources(object):
     def _get_resource_headers(self):
         """Builds a list of resource headers found in the resource file.
 
-        Each header denotes the start of e
+        Each header denotes the start of each set of resources in the
+        RESOURCES.txt file
+
+        Args:
+            * None.
+
+        Returns:
+            A list of headers that denote the start of each se
