@@ -182,4 +182,8 @@ class AwsResources(object):
             * None.
 
         Returns:
-            A list of optio
+            A list of options that kick off option completions.
+        """
+        resource_options = []
+        for resource_list in self.resource_lists:
+            resource_op
