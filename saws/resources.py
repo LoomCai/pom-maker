@@ -172,4 +172,8 @@ class AwsResources(object):
         """
         resource_headers = []
         for resource_list in self.resource_lists:
-      
+            resource_headers.append(resource_list.HEADER)
+        return resource_headers
+
+    def _get_resource_options(self):
+        
