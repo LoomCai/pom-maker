@@ -176,4 +176,10 @@ class AwsResources(object):
         return resource_headers
 
     def _get_resource_options(self):
-        
+        """Builds a list of resource options that kick off option completions.
+
+        Args:
+            * None.
+
+        Returns:
+            A list of optio
