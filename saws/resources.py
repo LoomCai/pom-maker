@@ -186,4 +186,8 @@ class AwsResources(object):
         """
         resource_options = []
         for resource_list in self.resource_lists:
-            resource_op
+            resource_options.append(resource_list.OPTION)
+        return resource_options
+
+    def _create_resources_map(self, resource_key):
+        """Creates a mapping of resource ke
