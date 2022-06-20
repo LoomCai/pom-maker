@@ -190,4 +190,8 @@ class AwsResources(object):
         return resource_options
 
     def _create_resources_map(self, resource_key):
-        """Creates a mapping of resource ke
+        """Creates a mapping of resource keywords and resources to complete.
+
+        Requires self.resource_headers to already contain all headers.
+
+        Example with resource_key == resource_header
