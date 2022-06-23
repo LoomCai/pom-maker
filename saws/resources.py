@@ -194,4 +194,9 @@ class AwsResources(object):
 
         Requires self.resource_headers to already contain all headers.
 
-        Example with resource_key == resource_header
+        Example with resource_key == resource_headers:
+            Key:   '[--instance-ids]'.
+            Value: List of instance ids.
+
+        Example with resource_key == resource_options:
+            Key:  
