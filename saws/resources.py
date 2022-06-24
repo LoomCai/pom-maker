@@ -199,4 +199,9 @@ class AwsResources(object):
             Value: List of instance ids.
 
         Example with resource_key == resource_options:
-            Key:  
+            Key:   '--instance-ids'.
+            Value: List of instance ids.
+
+        Args:
+            * resource_key: One of the two attributes:
+                resour
