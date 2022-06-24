@@ -204,4 +204,10 @@ class AwsResources(object):
 
         Args:
             * resource_key: One of the two attributes:
-                resour
+                resource_headers or resource_options.
+
+        Returns:
+            An OrderedDict resource keywords and resources to complete.
+        """
+        resources = []
+       
