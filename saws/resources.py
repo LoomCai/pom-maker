@@ -210,4 +210,6 @@ class AwsResources(object):
             An OrderedDict resource keywords and resources to complete.
         """
         resources = []
-       
+        for resource_list in self.resource_lists:
+            resources.append(resource_list.resources)
+        resources_map = OrderedDict(zi
