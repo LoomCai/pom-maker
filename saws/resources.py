@@ -212,4 +212,11 @@ class AwsResources(object):
         resources = []
         for resource_list in self.resource_lists:
             resources.append(resource_list.resources)
-        resources_map = OrderedDict(zi
+        resources_map = OrderedDict(zip(resource_key, resources))
+        return resources_map
+
+    def _query_resources(self):
+        """Runs queries for all resources.
+
+        Args:
+           
