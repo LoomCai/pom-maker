@@ -226,3 +226,7 @@ class AwsResources(object):
         """
         print('Refreshing resources...')
         for resource_list in self.resource_lists:
+            try:
+                resource_list.query_resource()
+            except Exception as e:
+                self.log_exception(e, traceback)
