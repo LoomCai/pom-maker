@@ -219,4 +219,10 @@ class AwsResources(object):
         """Runs queries for all resources.
 
         Args:
-           
+            * None.
+
+        Returns:
+            None.
+        """
+        print('Refreshing resources...')
+        for resource_list in self.resource_lists:
