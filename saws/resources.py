@@ -230,3 +230,9 @@ class AwsResources(object):
                 resource_list.query_resource()
             except Exception as e:
                 self.log_exception(e, traceback)
+        print('Done refreshing')
+
+    def _get_all_resources(self):
+        """Gets all resources from the data/RESOURCES.txt file.
+
+        Ar
