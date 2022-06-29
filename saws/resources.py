@@ -235,4 +235,10 @@ class AwsResources(object):
     def _get_all_resources(self):
         """Gets all resources from the data/RESOURCES.txt file.
 
-        Ar
+        Args:
+            * None.
+
+        Returns:
+            A list, where each element is a list of completions for each
+                ResourceType
+        ""
