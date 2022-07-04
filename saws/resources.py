@@ -241,4 +241,7 @@ class AwsResources(object):
         Returns:
             A list, where each element is a list of completions for each
                 ResourceType
-        ""
+        """
+        return DataUtil().get_data(self.resources_path,
+                                   self.header_to_type_map,
+                         
