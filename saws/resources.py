@@ -244,4 +244,10 @@ class AwsResources(object):
         """
         return DataUtil().get_data(self.resources_path,
                                    self.header_to_type_map,
-                         
+                                   self.ResourceType)
+
+    def _set_resources_path(self, resources_file):
+        """Sets the path of where to load the resources.
+
+        Args:
+            * reso
