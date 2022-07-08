@@ -250,4 +250,9 @@ class AwsResources(object):
         """Sets the path of where to load the resources.
 
         Args:
-            * reso
+            * resources_file: A string representing the resource file
+                path relative to the saws package.
+
+        Returns:
+            None.
+        """
