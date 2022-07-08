@@ -256,3 +256,7 @@ class AwsResources(object):
         Returns:
             None.
         """
+        RESOURCES_DIR = os.path.dirname(os.path.realpath(__file__))
+        self.resources_path = os.path.join(RESOURCES_DIR, resources_file)
+
+    def _refresh_resource
