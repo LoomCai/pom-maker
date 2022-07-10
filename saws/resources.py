@@ -263,4 +263,10 @@ class AwsResources(object):
         """Refreshes the AWS resources from data/RESOURCES.txt.
 
         Args:
-            * file_path: A string repres
+            * file_path: A string representing the resource file path.
+
+        Returns:
+            None.
+        """
+        all_resources = self._get_all_resources()
+        for index, resources in enumer
