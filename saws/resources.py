@@ -269,4 +269,8 @@ class AwsResources(object):
             None.
         """
         all_resources = self._get_all_resources()
-        for index, resources in enumer
+        for index, resources in enumerate(all_resources):
+            self.resource_lists[index].resources = resources
+
+    def _save_resources_to_file(self):
+        """Saves t
