@@ -273,4 +273,12 @@ class AwsResources(object):
             self.resource_lists[index].resources = resources
 
     def _save_resources_to_file(self):
-        """Saves t
+        """Saves the AWS resources to data/RESOURCES.txt.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        with open(self.r
