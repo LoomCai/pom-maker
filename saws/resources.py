@@ -281,4 +281,7 @@ class AwsResources(object):
         Returns:
             None.
         """
-        with open(self.r
+        with open(self.resources_path, 'wt') as fp:
+            for key, resources in self.resources_headers_map.items():
+                fp.write(key + ': ' + str(len(resources)) + '\n')
+                for reso
