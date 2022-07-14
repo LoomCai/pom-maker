@@ -176,3 +176,162 @@ class Saws(object):
 
         Returns:
             A boolean that represents the fuzzy flag.
+        """
+        return self.config_obj[self.config.MAIN].as_bool(self.config.FUZZY)
+
+    def set_shortcut_match(self, shortcut):
+        """Setter for shortcut matching mode
+
+        Used by prompt_toolkit's KeyBindingManager.
+        KeyBindingManager expects this function to be callable so we can't use
+        @property and @attrib.setter.
+
+        Args:
+            * color: A boolean that represents the shortcut flag.
+
+        Returns:
+            None.
+        """
+        self.config_obj[self.config.MAIN][self.config.SHORTCUT] = shortcut
+        self.completer.shortcut_match = shortcut
+
+    def get_shortcut_match(self):
+        """Getter for shortcut matching mode
+
+        Used by prompt_toolkit's KeyBindingManager.
+        KeyBindingManager expects this function to be callable so we can't use
+        @property and @attrib.setter.
+
+        Args:
+            * None.
+
+        Returns:
+            A boolean that represents the shortcut flag.
+        """
+        return self.config_obj[self.config.MAIN].as_bool(self.config.SHORTCUT)
+
+    def refresh_resources_and_options(self):
+        """Convenience function to refresh resources and options for completion.
+
+        Used by prompt_toolkit's KeyBindingManager.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        self.completer.refresh_resources_and_options(force_refresh=True)
+
+    def handle_docs(self, text=None, from_fkey=False):
+        """Displays contextual web docs for `F9` or the `docs` command.
+
+        Displays the web docs specific to the currently entered:
+
+        * (optional) command
+        * (optional) subcommand
+
+        If no command or subcommand is present, the docs index page is shown.
+
+        Docs are only displayed if:
+
+        * from_fkey is True
+        * from_fkey is False and `docs` is found in text
+
+        Args:
+            * text: A string representing the input command text.
+            * from_fkey: A boolean representing whether this function is
+                being executed from an `F9` key press.
+
+        Returns:
+            A boolean representing whether the web docs were shown.
+        """
+        base_url = 'http://docs.aws.amazon.com/cli/latest/reference/'
+        index_html = 'index.html'
+        if text is None:
+            text = self.aws_cli.current_buffer.document.text
+        # If the user hit the F9 key, append 'docs' to the text
+        if from_fkey:
+            text = text.strip() + ' ' + AwsCommands.AWS_DOCS
+        tokens = text.split()
+        if len(tokens) > 2 and tokens[-1] == AwsCommands.AWS_DOCS:
+            prev_word = tokens[-2]
+            # If we have a command, build the url
+            if prev_word in self.commands:
+                prev_word = prev_word + '/'
+                url = base_url + prev_word + index_html
+                webbrowser.open(url)
+                return True
+            # if we have a command and subcommand, build the url
+            elif prev_word in self.sub_commands:
+                command_url = tokens[-3] + '/'
+                sub_command_url = tokens[-2] + '.html'
+                url = base_url + command_url + sub_command_url
+                webbrowser.open(url)
+                return True
+            webbrowser.open(base_url + index_html)
+        # If we still haven't opened the help doc at this point and the
+        # user hit the F9 key or typed docs, just open the main docs index
+        if from_fkey or AwsCommands.AWS_DOCS in tokens:
+            webbrowser.open(base_url + index_html)
+            return True
+        return False
+
+    def _handle_cd(self, text):
+        """Handles a `cd` shell command by calling python's os.chdir.
+
+        Simply passing in the `cd` command to subprocess.call doesn't work.
+        Note: Changing the directory within Saws will only be in effect while
+        running Saws.  Exiting the program will return you to the directory
+        you were in prior to running Saws.
+
+        Attributes:
+            * text: A string representing the input command text.
+
+        Returns:
+            A boolean representing a `cd` command was found and handled.
+        """
+        CD_CMD = 'cd'
+        stripped_text = text.strip()
+        if stripped_text.startswith(CD_CMD):
+            directory = ''
+            if stripped_text == CD_CMD:
+                # Treat `cd` as a change to the root directory.
+                # os.path.expanduser does this in a cross platform manner.
+                directory = os.path.expanduser('~')
+            else:
+                tokens = text.split(CD_CMD + ' ')
+                directory = tokens[-1]
+            try:
+                os.chdir(directory)
+            except OSError as e:
+                self.log_exception(e, traceback, echo=True)
+            return True
+        return False
+
+    def _colorize_output(self, text):
+        """Highlights output with pygments.
+
+        Only highlights the output if all of the following conditions are True:
+
+        * The color option is enabled
+        * The command will be handled by the `aws-cli`
+        * The text does not contain the `configure` command
+        * The text does not contain the `help` command, which already does
+            output highlighting
+
+        Args:
+            * text: A string that represents the input command text.
+
+        Returns:
+            A string that represents:
+                * The original command text if no highlighting was performed.
+                * The pygments highlighted command text otherwise.
+        """
+        stripped_text = text.strip()
+        if not self.get_color() or stripped_text == '':
+            return text
+        if AwsCommands.AWS_COMMAND not in stripped_text.split():
+            return text
+        excludes = [AwsCommands.AWS_CONFIGURE,
+                    AwsCommands.AWS_HELP,
