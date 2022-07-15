@@ -335,3 +335,132 @@ class Saws(object):
             return text
         excludes = [AwsCommands.AWS_CONFIGURE,
                     AwsCommands.AWS_HELP,
+                    '|']
+        if not any(substring in stripped_text for substring in excludes):
+            return text.strip() + self.PYGMENTS_CMD
+        else:
+            return text
+
+    def _handle_keyboard_interrupt(self, e, platform):
+        """Handles keyboard interrupts more gracefully on Mac/Unix/Linux.
+
+        Allows Mac/Unix/Linux to continue running on keyboard interrupt,
+        as the user might interrupt a long-running AWS command with Control-C
+        while continuing to work with Saws.
+
+        On Windows, the "Terminate batch job (Y/N)" confirmation makes it
+        tricky to handle this gracefully.  Thus, we re-raise KeyboardInterrupt.
+
+        Args:
+            * e: A KeyboardInterrupt.
+            * platform: A string that denotes platform such as
+                'Windows', 'Darwin', etc.
+
+        Returns:
+            None
+
+        Raises:
+            Exception: A KeyboardInterrupt if running on Windows.
+        """
+        if platform == 'Windows':
+            raise e
+        else:
+            # Clear the renderer and send a carriage return
+            self.aws_cli.renderer.clear()
+            self.aws_cli.input_processor.feed(KeyPress(Keys.ControlM, u''))
+            self.aws_cli.input_processor.process_keys()
+
+    def _process_command(self, text):
+        """Processes the input command, called by the cli event loop
+
+        Args:
+            * text: A string that represents the input command text.
+
+        Returns:
+            None.
+        """
+        if AwsCommands.AWS_COMMAND in text:
+            text = self.completer.replace_shortcut(text)
+            if self.handle_docs(text):
+                return
+        try:
+            if not self._handle_cd(text):
+                text = self._colorize_output(text)
+                # Pass the command onto the shell so aws-cli can execute it
+                subprocess.call(text, shell=True)
+            print('')
+        except KeyboardInterrupt as e:
+            self._handle_keyboard_interrupt(e, platform.system())
+        except Exception as e:
+            self.log_exception(e, traceback, echo=True)
+
+    def _create_cli(self):
+        """Creates the prompt_toolkit's CommandLineInterface.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        history = FileHistory(os.path.expanduser('~/.saws-history'))
+        toolbar = Toolbar(self.get_color,
+                          self.get_fuzzy_match,
+                          self.get_shortcut_match)
+        layout = create_default_layout(
+            message='saws> ',
+            reserve_space_for_menu=8,
+            lexer=CommandLexer,
+            get_bottom_toolbar_tokens=toolbar.handler,
+            extra_input_processors=[
+                ConditionalProcessor(
+                    processor=HighlightMatchingBracketProcessor(
+                        chars='[](){}'),
+                    filter=HasFocus(DEFAULT_BUFFER) & ~IsDone())
+            ]
+        )
+        cli_buffer = Buffer(
+            history=history,
+            auto_suggest=AutoSuggestFromHistory(),
+            enable_history_search=True,
+            completer=self.completer,
+            complete_while_typing=Always(),
+            accept_action=AcceptAction.RETURN_DOCUMENT)
+        self.key_manager = KeyManager(
+            self.set_color,
+            self.get_color,
+            self.set_fuzzy_match,
+            self.get_fuzzy_match,
+            self.set_shortcut_match,
+            self.get_shortcut_match,
+            self.refresh_resources_and_options,
+            self.handle_docs)
+        style_factory = StyleFactory(self.theme)
+        application = Application(
+            mouse_support=False,
+            style=style_factory.style,
+            layout=layout,
+            buffer=cli_buffer,
+            key_bindings_registry=self.key_manager.manager.registry,
+            on_exit=AbortAction.RAISE_EXCEPTION,
+            on_abort=AbortAction.RETRY,
+            ignore_case=True)
+        eventloop = create_eventloop()
+        self.aws_cli = CommandLineInterface(
+            application=application,
+            eventloop=eventloop)
+
+    def run_cli(self):
+        """Runs the main loop.
+
+        Args:
+            * None.
+
+        Returns:
+            None.
+        """
+        print('Version:', __version__)
+        print('Theme:', self.theme)
+        while True:
+            document = self.aws_cli.run(reset_current_buffer=True)
+            self._process_command(document.text)
