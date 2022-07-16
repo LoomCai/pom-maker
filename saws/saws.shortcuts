@@ -1,4 +1,8 @@
 [shortcuts]
 
 # See the following link for the latest list of shortcuts provided by the
-# community: https://github.com/donnemartin/saws/blob/master/s
+# community: https://github.com/donnemartin/saws/blob/master/saws/saws.shortcuts
+
+# Shortcut entries in this file follow the form:
+#   'shortcut command' = 'full command'
+# Once a shortcut command is found, the corresponding full 
