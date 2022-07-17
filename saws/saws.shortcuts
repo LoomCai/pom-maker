@@ -5,4 +5,6 @@
 
 # Shortcut entries in this file follow the form:
 #   'shortcut command' = 'full command'
-# Once a shortcut command is found, the corresponding full 
+# Once a shortcut command is found, the corresponding full command is
+# substituted and matching stops.  Shortcuts are evaluated top to bottom.
+# Currently, shortcuts are only shown after the user types 'aws
