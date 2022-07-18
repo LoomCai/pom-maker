@@ -7,4 +7,7 @@
 #   'shortcut command' = 'full command'
 # Once a shortcut command is found, the corresponding full command is
 # substituted and matching stops.  Shortcuts are evaluated top to bottom.
-# Currently, shortcuts are only shown after the user types 'aws
+# Currently, shortcuts are only shown after the user types 'aws' as the first
+# command and the user is currently inputting the subcommand:
+#   aws [show shortcut matches]
+# Shortcuts optionally support fuzzy complet
