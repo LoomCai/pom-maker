@@ -10,4 +10,8 @@
 # Currently, shortcuts are only shown after the user types 'aws' as the first
 # command and the user is currently inputting the subcommand:
 #   aws [show shortcut matches]
-# Shortcuts optionally support fuzzy complet
+# Shortcuts optionally support fuzzy completion.
+
+# Simple shortcut demonstration to replace describe-instances with ls
+# Running the following command will kick off fuzzy auto-completion:
+#   aws ec2
