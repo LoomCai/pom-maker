@@ -14,4 +14,7 @@
 
 # Simple shortcut demonstration to replace describe-instances with ls
 # Running the following command will kick off fuzzy auto-completion:
-#   aws ec2
+#   aws ec2ls
+'ec2 ls --instance-ids' = 'ec2 describe-instances --instance-ids'
+#   aws emrls
+'emr ls --cluster-states' = 'emr list-clusters --cluster-states'
