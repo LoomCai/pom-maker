@@ -29,4 +29,8 @@
 # The following commands will kick off fuzzy auto-completion:
 #   aws ec2tagkey
 #   aws ec2tagval
-# These sh
+# These shortcuts support a string substitution:
+#   aws ls --ec2-tag-key [tag-key]
+#   aws ls --ec2-tag-value [tag-value]
+# Example input:
+#   aws ls --ec2
