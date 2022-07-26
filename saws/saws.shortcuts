@@ -24,4 +24,9 @@
 #   aws ec2start
 #   aws ec2stop
 'ec2 start-instances --instance-ids' = 'ec2 start-instances --instance-ids'
-'ec2 stop-instances --instance-ids' = 'ec2
+'ec2 stop-instances --instance-ids' = 'ec2 stop-instances --instance-ids'
+
+# The following commands will kick off fuzzy auto-completion:
+#   aws ec2tagkey
+#   aws ec2tagval
+# These sh
