@@ -33,4 +33,7 @@
 #   aws ls --ec2-tag-key [tag-key]
 #   aws ls --ec2-tag-value [tag-value]
 # Example input:
-#   aws ls --ec2
+#   aws ls --ec2-tag-key Stack
+# Example result:
+#   'ec2 ls --ec2-tag-key' = 'ec2 describe-instances --filters "Name=tag-key,Values=Stack"'
+'ec2 ls --ec2-tag-key
