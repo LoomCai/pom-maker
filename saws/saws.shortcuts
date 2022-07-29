@@ -39,4 +39,7 @@
 'ec2 ls --ec2-tag-key' = 'ec2 describe-instances --filters "Name=tag-key,Values=%s"'
 'ec2 ls --ec2-tag-value' = 'ec2 describe-instances --filters "Name=tag-value,Values=%s"'
 
-# Saws will 
+# Saws will auto-complete the following --ec2-state auto-completions:
+#   [pending | running | shutting-down | terminated | stopping | stopped]
+# Usage:
+#   ec2 ls --ec2-
