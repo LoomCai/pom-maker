@@ -42,4 +42,8 @@
 # Saws will auto-complete the following --ec2-state auto-completions:
 #   [pending | running | shutting-down | terminated | stopping | stopped]
 # Usage:
-#   ec2 ls --ec2-
+#   ec2 ls --ec2-state
+'ec2 ls --ec2-state' = 'ec2 describe-instances --filters "Name=instance-state-name,Values=%s"'
+
+# Simple 'ls' shortcuts
+'ec2 ls' = 'e
