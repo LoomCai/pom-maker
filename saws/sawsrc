@@ -8,4 +8,13 @@ theme = vim
 # Use color output mode.
 color_output = True
 
-# Use fuzzy matching mode for resources (default is t
+# Use fuzzy matching mode for resources (default is to use simple substring match).
+fuzzy_match = True
+
+# Use shortcut matching mode
+shortcut_match = True
+
+# log_file location.
+log_file = ~/.saws.log
+
+# Default l
