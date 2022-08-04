@@ -17,4 +17,6 @@ shortcut_match = True
 # log_file location.
 log_file = ~/.saws.log
 
-# Default l
+# Default log level. Possible values: "CRITICAL", "ERROR", "WARNING", "INFO"
+# and "DEBUG".
+log_level = INFO
