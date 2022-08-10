@@ -22,4 +22,10 @@ import pygments.styles
 class StyleFactory(object):
     """Creates a custom saws style.
 
-    Provides 
+    Provides styles for the completions menu and toolbar.
+
+    Attributes:
+        * style: An instance of a Pygments Style.
+    """
+
+    def __init__(self, name
