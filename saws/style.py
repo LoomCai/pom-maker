@@ -15,4 +15,11 @@
 
 from pygments.token import Token
 from pygments.util import ClassNotFound
-from pro
+from prompt_toolkit.styles import default_style_extensions, style_from_dict
+import pygments.styles
+
+
+class StyleFactory(object):
+    """Creates a custom saws style.
+
+    Provides 
