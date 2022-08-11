@@ -35,3 +35,9 @@ class StyleFactory(object):
             * name: A string representing the pygments style.
 
         Returns:
+            An instance of CliStyle.
+        """
+        self.style = self.style_factory(name)
+
+    def style_factory(self, name):
+  
