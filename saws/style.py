@@ -28,4 +28,10 @@ class StyleFactory(object):
         * style: An instance of a Pygments Style.
     """
 
-    def __init__(self, name
+    def __init__(self, name):
+        """Initializes StyleFactory.
+
+        Args:
+            * name: A string representing the pygments style.
+
+        Returns:
