@@ -40,4 +40,9 @@ class StyleFactory(object):
         self.style = self.style_factory(name)
 
     def style_factory(self, name):
-  
+        """Retrieves the specified pygments style.
+
+        If the specified style is not found, the native style is returned.
+
+        Args:
+            * name: A string re
