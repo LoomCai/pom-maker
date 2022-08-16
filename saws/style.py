@@ -45,4 +45,10 @@ class StyleFactory(object):
         If the specified style is not found, the native style is returned.
 
         Args:
-            * name: A string re
+            * name: A string representing the pygments style.
+
+        Returns:
+            An instance of CliStyle.
+        """
+        try:
+            style = pygments.styles.get_style_by_na
