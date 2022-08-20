@@ -51,4 +51,10 @@ class StyleFactory(object):
             An instance of CliStyle.
         """
         try:
-            style = pygments.styles.get_style_by_na
+            style = pygments.styles.get_style_by_name(name)
+        except ClassNotFound:
+            style = pygments.styles.get_style_by_name('native')
+
+        # Create styles dictionary.
+        styles = {}
+  
