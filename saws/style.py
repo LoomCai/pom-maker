@@ -57,4 +57,7 @@ class StyleFactory(object):
 
         # Create styles dictionary.
         styles = {}
-  
+        styles.update(style.styles)
+        styles.update(default_style_extensions)
+        styles.update({
+            Token.Menu.Completions.Completion.Current: 'bg:#00aaaa 
