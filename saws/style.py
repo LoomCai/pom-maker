@@ -63,4 +63,7 @@ class StyleFactory(object):
             Token.Menu.Completions.Completion.Current: 'bg:#00aaaa #000000',
             Token.Menu.Completions.Completion: 'bg:#008888 #ffffff',
             Token.Scrollbar: 'bg:#00aaaa',
-            Token.Scrollbar.Butt
+            Token.Scrollbar.Button: 'bg:#003333',
+            Token.Toolbar: 'bg:#222222 #cccccc',
+            Token.Toolbar.Off: 'bg:#222222 #696969',
+            Token.Toolbar.On: 'bg:#222222
