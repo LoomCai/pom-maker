@@ -69,4 +69,9 @@ class StyleFactory(object):
             Token.Toolbar.On: 'bg:#222222 #ffffff',
             Token.Toolbar.Search: 'noinherit bold',
             Token.Toolbar.Search.Text: 'nobold',
-            Token.Toolbar.System: 
+            Token.Toolbar.System: 'noinherit bold',
+            Token.Toolbar.Arg: 'noinherit bold',
+            Token.Toolbar.Arg.Text: 'nobold'
+        })
+
+        return style
