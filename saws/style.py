@@ -74,4 +74,4 @@ class StyleFactory(object):
             Token.Toolbar.Arg.Text: 'nobold'
         })
 
-        return style
+        return style_from_dict(styles)
