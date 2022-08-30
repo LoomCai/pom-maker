@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 gitchangelog > CHANGELOG_DRAFT
-pando
+pandoc --from=markdown --to=rst --output=CHANGELOG.rst CHANGELOG.md
