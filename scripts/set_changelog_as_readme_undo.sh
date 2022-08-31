@@ -1,1 +1,1 @@
-mv README_temp.md R
+mv README_temp.md README.md
