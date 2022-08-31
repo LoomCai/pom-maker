@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-fl
+flake8 --max-line-length=80 --exclude=build,scratch,docs,compat.py .
