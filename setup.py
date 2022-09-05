@@ -17,4 +17,9 @@ install_requires = [
 if sys.version_info < (2, 7):
     # Introduced in Python 2.7
     install_requires.append('ordereddict>=1.1')
-if sys.version_info < (3,
+if sys.version_info < (3, 4):
+    # Backport of Python 3.4 enums to earlier versions
+    install_requires.append('enum34>=1.0.4')
+
+setup(
+    description='SAWS: A Supercharged AWS Co
