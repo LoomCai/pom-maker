@@ -25,4 +25,8 @@ setup(
     description='SAWS: A Supercharged AWS Command Line Interface (CLI)',
     author='Donne Martin',
     url='https://github.com/donnemartin/saws',
-    download_url='https://pypi.python.org/pypi/sa
+    download_url='https://pypi.python.org/pypi/saws',
+    author_email='donne.martin@gmail.com',
+    version=__version__,
+    license='Apache License 2.0',
+    install
