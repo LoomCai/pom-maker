@@ -22,4 +22,7 @@ if sys.version_info < (3, 4):
     install_requires.append('enum34>=1.0.4')
 
 setup(
-    description='SAWS: A Supercharged AWS Co
+    description='SAWS: A Supercharged AWS Command Line Interface (CLI)',
+    author='Donne Martin',
+    url='https://github.com/donnemartin/saws',
+    download_url='https://pypi.python.org/pypi/sa
