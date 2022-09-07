@@ -36,4 +36,9 @@ setup(
             'tox>=1.9.2'
         ],
     },
-    entry
+    entry_points={
+        'console_scripts': 'saws = saws.main:cli'
+    },
+    packages=find_packages(),
+    package_data={'saws': ['sawsrc',
+          
