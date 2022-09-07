@@ -29,4 +29,11 @@ setup(
     author_email='donne.martin@gmail.com',
     version=__version__,
     license='Apache License 2.0',
-    install
+    install_requires=install_requires,
+    extras_require={
+        'testing': [
+            'mock>=1.0.1',
+            'tox>=1.9.2'
+        ],
+    },
+    entry
