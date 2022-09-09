@@ -41,4 +41,7 @@ setup(
     },
     packages=find_packages(),
     package_data={'saws': ['sawsrc',
-          
+                           'saws.shortcuts',
+                           'data/SOURCES.txt',
+                           'data/RESOURCES_SAMPLE.txt',
+                
