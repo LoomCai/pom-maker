@@ -44,4 +44,9 @@ setup(
                            'saws.shortcuts',
                            'data/SOURCES.txt',
                            'data/RESOURCES_SAMPLE.txt',
-                
+                           'data/OPTIONS.txt']},
+    scripts=[],
+    name='saws',
+    classifiers=[
+        'Intended Audience :: Developers',
+        'Intended Audience :
