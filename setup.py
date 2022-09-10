@@ -49,4 +49,8 @@ setup(
     name='saws',
     classifiers=[
         'Intended Audience :: Developers',
-        'Intended Audience :
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: Apache Software License',
+        'Natural Language :: English',
+        'Programming Language :: Python',
+   
