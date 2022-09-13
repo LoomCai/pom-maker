@@ -2,4 +2,5 @@
 
 # Copyright 2015 Donne Martin. All Rights Reserved.
 #
-# Lice
+# Licensed under the Apache License, Version 2.0 (the "License"). You
+# may not use this file except in compliance with the Li
