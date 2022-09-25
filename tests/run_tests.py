@@ -16,4 +16,7 @@
 
 from __future__ import unicode_literals
 from __future__ import print_function
-import un
+import unittest
+from test_completer import CompleterTest  # NOQA
+from test_commands import CommandsTest  # NOQA
+from test_resources import Resou
