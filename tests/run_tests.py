@@ -19,4 +19,8 @@ from __future__ import print_function
 import unittest
 from test_completer import CompleterTest  # NOQA
 from test_commands import CommandsTest  # NOQA
-from test_resources import Resou
+from test_resources import ResourcesTest  # NOQA
+from test_options import OptionsTest  # NOQA
+from test_saws import SawsTest  # NOQA
+from test_toolbar import ToolbarTest  # NOQA
+from test_keys im
