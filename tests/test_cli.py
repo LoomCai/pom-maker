@@ -21,4 +21,11 @@ import pexpect
 
 class CliTest(unittest.TestCase):
 
-    def test_run_c
+    def test_run_cli(self):
+        self.cli = None
+        self.step_cli_installed()
+        self.step_run_cli()
+        self.step_see_prompt()
+        self.step_send_ctrld()
+
+    def st
