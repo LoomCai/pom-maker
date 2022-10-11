@@ -32,4 +32,11 @@ class CliTest(unittest.TestCase):
         """
         Make sure saws is in installed packages.
         """
-        dists = set([di.key for di in pip.get_installed_d
+        dists = set([di.key for di in pip.get_installed_distributions()])
+        assert 'saws' in dists
+
+    def step_run_cli(self):
+        """
+        Run the process using pexpect.
+        """
+      
