@@ -28,4 +28,8 @@ class CliTest(unittest.TestCase):
         self.step_see_prompt()
         self.step_send_ctrld()
 
-    def st
+    def step_cli_installed(self):
+        """
+        Make sure saws is in installed packages.
+        """
+        dists = set([di.key for di in pip.get_installed_d
