@@ -39,4 +39,10 @@ class CliTest(unittest.TestCase):
         """
         Run the process using pexpect.
         """
-      
+        self.cli = pexpect.spawnu('saws')
+
+    def step_see_prompt(self):
+        """
+        Expect to see prompt.
+        """
+        self.cli.expect(
