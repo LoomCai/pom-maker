@@ -52,4 +52,4 @@ class CliTest(unittest.TestCase):
         Send Ctrl + D to exit.
         """
         self.cli.sendcontrol('d')
-        self.cli.expect(pexp
+        self.cli.expect(pexpect.EOF)
