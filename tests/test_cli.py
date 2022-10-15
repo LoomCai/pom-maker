@@ -45,4 +45,11 @@ class CliTest(unittest.TestCase):
         """
         Expect to see prompt.
         """
-        self.cli.expect(
+        self.cli.expect('saws> ')
+
+    def step_send_ctrld(self):
+        """
+        Send Ctrl + D to exit.
+        """
+        self.cli.sendcontrol('d')
+        self.cli.expect(pexp
