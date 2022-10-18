@@ -249,3 +249,64 @@ class CompleterTest(unittest.TestCase):
     def test_bucket_names(self):
         commands = ['aws s3pi get-bucket-acl --bucket web-']
         expected = ['web-server-logs', 'web-server-images']
+        bucket_names = self.completer.resources.resource_lists[
+            self.completer.resources.ResourceType.BUCKET_NAMES.value]
+        for bucket_name in expected:
+            bucket_names.add_bucket_name(bucket_name)
+        self.verify_completions(commands, expected)
+
+    def test_s3_uri(self):
+        commands = ['aws s3 ls s3:']
+        expected = ['s3://web-server-logs', 's3://web-server-images']
+        bucket_uris = self.completer.resources.resource_lists[
+            self.completer.resources.ResourceType.BUCKET_URIS.value]
+        for s3_uri in expected:
+            bucket_name = re.sub('s3://', '', s3_uri)
+            bucket_uris.add_bucket_name(bucket_name)
+        self.verify_completions(commands, expected)
+        commands = ['aws s3 ls s3://web']
+        self.verify_completions(commands, expected)
+
+    def test_ec2_states(self):
+        commands = ['aws ec2 ls --ec2-state pend']
+        expected = ['pending']
+        self.verify_completions(commands, expected)
+        commands = ['aws ec2 ls --ec2-state run']
+        expected = ['running']
+        self.verify_completions(commands, expected)
+        commands = ['aws ec2 ls --ec2-state shut']
+        expected = ['shutting-down']
+        self.verify_completions(commands, expected)
+        commands = ['aws ec2 ls --ec2-state term']
+        expected = ['terminated']
+        self.verify_completions(commands, expected)
+        commands = ['aws ec2 ls --ec2-state stop']
+        expected = ['stopping',
+                    'stopped']
+        self.verify_completions(commands, expected)
+
+    def test_cluster_states(self):
+        self.verify_cluster_states()
+
+    def test_cluster_states_fuzzy(self):
+        self.completer.fuzzy_match = True
+        self.verify_cluster_states()
+
+    def verify_cluster_states(self):
+        commands = ['aws emr ls --cluster-states star']
+        expected = ['STARTING']
+        self.verify_completions(commands, expected)
+        commands = ['emr ls --cluster-states BOOT']
+        expected = ['BOOTSTRAPPING']
+        self.verify_completions(commands, expected)
+        commands = ['emr ls --cluster-states run']
+        expected = ['RUNNING']
+        self.verify_completions(commands, expected)
+        commands = ['emr ls --cluster-states WAIT']
+        expected = ['WAITING']
+        self.verify_completions(commands, expected)
+        commands = ['emr ls --cluster-states term']
+        expected = ['TERMINATING',
+                    'TERMINATED',
+                    'TERMINATED_WITH_ERRORS']
+        self.verify_completions(commands, expected)
