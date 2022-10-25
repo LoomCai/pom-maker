@@ -15,4 +15,14 @@
 
 from __future__ import unicode_literals
 from __future__ import print_function
-impo
+import unittest
+from saws.saws import Saws
+
+
+class OptionsTest(unittest.TestCase):
+
+    def setUp(self):
+        self.create_options()
+
+    def create_options(self):
+        self.saw
