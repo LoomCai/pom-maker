@@ -25,4 +25,8 @@ class OptionsTest(unittest.TestCase):
         self.create_options()
 
     def create_options(self):
-        self.saw
+        self.saws = Saws(refresh_resources=False)
+        self.options = self.saws.completer.options
+
+    def test_make_header(self):
+        option = '--ec2-state
