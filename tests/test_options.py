@@ -29,4 +29,9 @@ class OptionsTest(unittest.TestCase):
         self.options = self.saws.completer.options
 
     def test_make_header(self):
-        option = '--ec2-state
+        option = '--ec2-state'
+        header = '--ec2-state: '
+        assert header == self.options._make_options_header(option)
+
+    def test_generate_cluster_states(self):
+        self.
