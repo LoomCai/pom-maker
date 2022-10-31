@@ -34,4 +34,6 @@ class OptionsTest(unittest.TestCase):
         assert header == self.options._make_options_header(option)
 
     def test_generate_cluster_states(self):
-        self.
+        self.options.cluster_states = []
+        self.options.cluster_states = self.options._generate_cluster_states()
+        states = ['STARTING', 'BOOTSTRA
