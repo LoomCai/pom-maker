@@ -36,4 +36,6 @@ class OptionsTest(unittest.TestCase):
     def test_generate_cluster_states(self):
         self.options.cluster_states = []
         self.options.cluster_states = self.options._generate_cluster_states()
-        states = ['STARTING', 'BOOTSTRA
+        states = ['STARTING', 'BOOTSTRAPPING', 'RUNNING', 'WAITING',
+                  'TERMINATING', 'TERMINATED', 'TERMINATED_WITH_ERRORS']
+        for stat
