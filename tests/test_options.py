@@ -38,4 +38,5 @@ class OptionsTest(unittest.TestCase):
         self.options.cluster_states = self.options._generate_cluster_states()
         states = ['STARTING', 'BOOTSTRAPPING', 'RUNNING', 'WAITING',
                   'TERMINATING', 'TERMINATED', 'TERMINATED_WITH_ERRORS']
-        for stat
+        for state in states:
+            assert state in self.options.cluster_states
