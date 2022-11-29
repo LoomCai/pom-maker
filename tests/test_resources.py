@@ -20,4 +20,8 @@ from tests.compat import unittest
 from saws.saws import Saws
 
 
-class Reso
+class ResourcesTest(unittest.TestCase):
+
+    NUM_SAMPLE_INSTANCE_IDS = 7
+    NUM_SAMPLE_INSTANCE_TAG_KEYS = 3
+    NUM_SAMPLE_INSTANCE_TAG_VALUE
