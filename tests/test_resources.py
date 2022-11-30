@@ -24,4 +24,10 @@ class ResourcesTest(unittest.TestCase):
 
     NUM_SAMPLE_INSTANCE_IDS = 7
     NUM_SAMPLE_INSTANCE_TAG_KEYS = 3
-    NUM_SAMPLE_INSTANCE_TAG_VALUE
+    NUM_SAMPLE_INSTANCE_TAG_VALUES = 6
+    NUM_SAMPLE_BUCKET_NAMES = 16
+    NUM_SAMPLE_BUCKET_URIS = 16
+
+    def setUp(self):
+        self.create_resources()
+        self.sample_resource
