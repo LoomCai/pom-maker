@@ -39,4 +39,6 @@ class ResourcesTest(unittest.TestCase):
         ]
 
     def create_resources(self):
-        self.saws =
+        self.saws = Saws(refresh_resources=False)
+        self.resources = self.saws.completer.resources
+        self.resources._set_resources_path('data/RESOURCES_SAMPLE.
