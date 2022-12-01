@@ -30,4 +30,7 @@ class ResourcesTest(unittest.TestCase):
 
     def setUp(self):
         self.create_resources()
-        self.sample_resource
+        self.sample_resource_counts = [
+            self.NUM_SAMPLE_INSTANCE_IDS,
+            self.NUM_SAMPLE_INSTANCE_TAG_KEYS,
+            self.NUM_SAMPLE_INSTANCE_
