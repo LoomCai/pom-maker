@@ -33,4 +33,10 @@ class ResourcesTest(unittest.TestCase):
         self.sample_resource_counts = [
             self.NUM_SAMPLE_INSTANCE_IDS,
             self.NUM_SAMPLE_INSTANCE_TAG_KEYS,
-            self.NUM_SAMPLE_INSTANCE_
+            self.NUM_SAMPLE_INSTANCE_TAG_VALUES,
+            self.NUM_SAMPLE_BUCKET_NAMES,
+            self.NUM_SAMPLE_BUCKET_URIS
+        ]
+
+    def create_resources(self):
+        self.saws =
