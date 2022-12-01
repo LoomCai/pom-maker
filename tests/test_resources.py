@@ -45,4 +45,9 @@ class ResourcesTest(unittest.TestCase):
 
     def verify_resources(self):
         for resource_list, sample_resource_count in zip(
-                self.resources.resource_l
+                self.resources.resource_lists,
+                self.sample_resource_counts):
+            assert len(resource_list.resources) == sample_resource_count
+
+    # TODO: Silence output
+    @m
