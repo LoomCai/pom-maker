@@ -41,4 +41,8 @@ class ResourcesTest(unittest.TestCase):
     def create_resources(self):
         self.saws = Saws(refresh_resources=False)
         self.resources = self.saws.completer.resources
-        self.resources._set_resources_path('data/RESOURCES_SAMPLE.
+        self.resources._set_resources_path('data/RESOURCES_SAMPLE.txt')
+
+    def verify_resources(self):
+        for resource_list, sample_resource_count in zip(
+                self.resources.resource_l
