@@ -50,4 +50,6 @@ class ResourcesTest(unittest.TestCase):
             assert len(resource_list.resources) == sample_resource_count
 
     # TODO: Silence output
-    @m
+    @mock.patch('saws.resources.print')
+    def test_refresh_forced(self, mock_print):
+        self.resources._set_resources_path('data/RESOURC
