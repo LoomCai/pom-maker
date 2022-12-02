@@ -64,4 +64,7 @@ class ResourcesTest(unittest.TestCase):
         self.verify_resources()
         mock_print.assert_called_with('Loaded resources from cache')
 
-    
+    # TODO: Fix mocks
+    @unittest.skip('')
+    @mock.patch('saws.resources.subprocess')
+    def test_query_aws_instance_ids(self, mock_subproces
