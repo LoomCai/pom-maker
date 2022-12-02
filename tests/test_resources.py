@@ -60,4 +60,8 @@ class ResourcesTest(unittest.TestCase):
     # TODO: Silence output
     @mock.patch('saws.resources.print')
     def test_refresh(self, mock_print):
-        se
+        self.resources.refresh(force_refresh=False)
+        self.verify_resources()
+        mock_print.assert_called_with('Loaded resources from cache')
+
+    
