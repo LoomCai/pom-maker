@@ -55,4 +55,9 @@ class ResourcesTest(unittest.TestCase):
         self.resources._set_resources_path('data/RESOURCES_FORCED.txt')
         self.resources.clear_resources()
         self.resources.refresh(force_refresh=True)
-        mock_print.assert_called_
+        mock_print.assert_called_with('Done refreshing')
+
+    # TODO: Silence output
+    @mock.patch('saws.resources.print')
+    def test_refresh(self, mock_print):
+        se
