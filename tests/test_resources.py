@@ -82,4 +82,6 @@ class ResourcesTest(unittest.TestCase):
     def test_query_aws_instance_tag_keys(self, mock_subprocess):
         instance_tag_keys = self.resources.resource_lists[
             self.resources.ResourceType.INSTANCE_TAG_KEYS.value]
-     
+        instance_tag_keys._query_aws(instance_tag_keys.QUERY)
+        mock_subprocess.check_output.assert_called_with(
+            instance_tag
