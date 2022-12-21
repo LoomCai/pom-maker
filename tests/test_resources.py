@@ -84,4 +84,10 @@ class ResourcesTest(unittest.TestCase):
             self.resources.ResourceType.INSTANCE_TAG_KEYS.value]
         instance_tag_keys._query_aws(instance_tag_keys.QUERY)
         mock_subprocess.check_output.assert_called_with(
-            instance_tag
+            instance_tag_keys.QUERY,
+            universal_newlines=True,
+            shell=True)
+
+    # TODO: Fix mocks
+    # @unittest.skip('')
+    @mock.patch('saws.resources.sub
