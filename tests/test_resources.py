@@ -90,4 +90,7 @@ class ResourcesTest(unittest.TestCase):
 
     # TODO: Fix mocks
     # @unittest.skip('')
-    @mock.patch('saws.resources.sub
+    @mock.patch('saws.resources.subprocess')
+    def query_aws_instance_tag_values(self, mock_subprocess):
+        instance_tag_values = self.resources.resource_lists[
+            self.resourc
