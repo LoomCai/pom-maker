@@ -101,4 +101,7 @@ class ResourcesTest(unittest.TestCase):
             shell=True)
 
     # TODO: Fix mocks
-    @unitt
+    @unittest.skip('')
+    @mock.patch('saws.resources.subprocess')
+    def test_query_aws_bucket_names(self, mock_subprocess):
+        bucke
