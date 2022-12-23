@@ -95,4 +95,10 @@ class ResourcesTest(unittest.TestCase):
         instance_tag_values = self.resources.resource_lists[
             self.resources.ResourceType.INSTANCE_TAG_VALUES.value]
         instance_tag_values._query_aws(instance_tag_values.QUERY)
-        mock_subprocess.check_output.asser
+        mock_subprocess.check_output.assert_called_with(
+            instance_tag_values.QUERY,
+            universal_newlines=True,
+            shell=True)
+
+    # TODO: Fix mocks
+    @unitt
