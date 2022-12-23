@@ -93,4 +93,6 @@ class ResourcesTest(unittest.TestCase):
     @mock.patch('saws.resources.subprocess')
     def query_aws_instance_tag_values(self, mock_subprocess):
         instance_tag_values = self.resources.resource_lists[
-            self.resourc
+            self.resources.ResourceType.INSTANCE_TAG_VALUES.value]
+        instance_tag_values._query_aws(instance_tag_values.QUERY)
+        mock_subprocess.check_output.asser
