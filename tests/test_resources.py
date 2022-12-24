@@ -104,4 +104,7 @@ class ResourcesTest(unittest.TestCase):
     @unittest.skip('')
     @mock.patch('saws.resources.subprocess')
     def test_query_aws_bucket_names(self, mock_subprocess):
-        bucke
+        bucket_names = self.resources.resource_lists[
+            self.resources.ResourceType.BUCKET_NAMES.value]
+        bucket_names._query_aws(bucket_names.QUERY)
+    
