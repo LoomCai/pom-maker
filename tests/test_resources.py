@@ -112,4 +112,7 @@ class ResourcesTest(unittest.TestCase):
             universal_newlines=True,
             shell=True)
 
-    def test_add_and
+    def test_add_and_clear_bucket_name(self):
+        BUCKET_NAME = 'test_bucket_name'
+        bucket_names = self.resources.resource_lists[
+            self.resources.Resource
