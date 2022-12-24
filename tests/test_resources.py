@@ -107,4 +107,9 @@ class ResourcesTest(unittest.TestCase):
         bucket_names = self.resources.resource_lists[
             self.resources.ResourceType.BUCKET_NAMES.value]
         bucket_names._query_aws(bucket_names.QUERY)
-    
+        mock_subprocess.check_output.assert_called_with(
+            bucket_names.QUERY,
+            universal_newlines=True,
+            shell=True)
+
+    def test_add_and
