@@ -115,4 +115,7 @@ class ResourcesTest(unittest.TestCase):
     def test_add_and_clear_bucket_name(self):
         BUCKET_NAME = 'test_bucket_name'
         bucket_names = self.resources.resource_lists[
-            self.resources.Resource
+            self.resources.ResourceType.BUCKET_NAMES.value]
+        bucket_uris = self.resources.resource_lists[
+            self.resources.ResourceType.BUCKET_URIS.value]
+  
