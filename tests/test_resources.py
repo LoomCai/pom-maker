@@ -118,4 +118,7 @@ class ResourcesTest(unittest.TestCase):
             self.resources.ResourceType.BUCKET_NAMES.value]
         bucket_uris = self.resources.resource_lists[
             self.resources.ResourceType.BUCKET_URIS.value]
-  
+        bucket_names.clear_resources()
+        bucket_names.add_bucket_name(BUCKET_NAME)
+        assert BUCKET_NAME in bucket_names.resources
+        bucket_uris.add_buc
