@@ -121,4 +121,7 @@ class ResourcesTest(unittest.TestCase):
         bucket_names.clear_resources()
         bucket_names.add_bucket_name(BUCKET_NAME)
         assert BUCKET_NAME in bucket_names.resources
-        bucket_uris.add_buc
+        bucket_uris.add_bucket_name(BUCKET_NAME)
+        BUCKET_URI = bucket_uris.PREFIX + BUCKET_NAME
+        assert BUCKET_URI in bucket_uris.resources
+        bucket_names.clear_
