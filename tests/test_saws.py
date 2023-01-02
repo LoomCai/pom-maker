@@ -29,4 +29,9 @@ class SawsTest(unittest.TestCase):
         self.file_name = os.path.expanduser('~') + '/' + '.saws.log'
         self.saws = Saws(refresh_resources=False)
         self.DOCS_HOME_URL = \
-            'http://docs.aws.amazon.com/cli/latest/reference/index.ht
+            'http://docs.aws.amazon.com/cli/latest/reference/index.html'
+
+    @mock.patch('saws.saws.click')
+    def test_log_exception(self, mock_click):
+        exception_message = 'test_log_exception'
+        e = Exception(exc
