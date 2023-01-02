@@ -20,3 +20,10 @@ import os
 import traceback
 from tests.compat import unittest
 from saws.saws import Saws
+from saws.commands import AwsCommands
+
+
+class SawsTest(unittest.TestCase):
+
+    def setUp(self):
+        self.file_name = os.path.expanduser('~') + '/' + '.
