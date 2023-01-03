@@ -34,4 +34,9 @@ class SawsTest(unittest.TestCase):
     @mock.patch('saws.saws.click')
     def test_log_exception(self, mock_click):
         exception_message = 'test_log_exception'
-        e = Exception(exc
+        e = Exception(exception_message)
+        try:
+            raise e
+        except Exception:
+            # Traceback needs to have an active exception as described in:
+   
