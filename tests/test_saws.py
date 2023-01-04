@@ -39,4 +39,6 @@ class SawsTest(unittest.TestCase):
             raise e
         except Exception:
             # Traceback needs to have an active exception as described in:
-   
+            # http://bugs.python.org/issue23003
+            self.saws.log_exception(e, traceback, echo=True)
+            mock_click.secho.assert_ca
