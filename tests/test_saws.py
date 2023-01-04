@@ -41,4 +41,7 @@ class SawsTest(unittest.TestCase):
             # Traceback needs to have an active exception as described in:
             # http://bugs.python.org/issue23003
             self.saws.log_exception(e, traceback, echo=True)
-            mock_click.secho.assert_ca
+            mock_click.secho.assert_called_with(str(e), fg='red')
+        assert os.path.isfile(self.file_name)
+        with open(self.file_name, 'r') as fp:
+            for line 
