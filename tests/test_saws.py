@@ -44,4 +44,10 @@ class SawsTest(unittest.TestCase):
             mock_click.secho.assert_called_with(str(e), fg='red')
         assert os.path.isfile(self.file_name)
         with open(self.file_name, 'r') as fp:
-            for line 
+            for line in fp:
+                pass
+            assert exception_message in line
+
+    def test_set_get_color(self):
+        self.saws.set_color(True)
+        assert self.saws.get
