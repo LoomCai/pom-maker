@@ -56,3 +56,8 @@ class SawsTest(unittest.TestCase):
 
     def test_get_set_fuzzy_match(self):
         self.saws.set_fuzzy_match(True)
+        assert self.saws.get_fuzzy_match()
+        self.saws.set_fuzzy_match(False)
+        assert not self.saws.get_fuzzy_match()
+
+    def test_get_set
