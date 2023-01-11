@@ -63,4 +63,10 @@ class SawsTest(unittest.TestCase):
     def test_get_set_shortcut_match(self):
         self.saws.set_shortcut_match(True)
         assert self.saws.get_shortcut_match()
-        self.saws.set_shortcut_match(False
+        self.saws.set_shortcut_match(False)
+        assert not self.saws.get_shortcut_match()
+
+    @mock.patch('saws.saws.webbrowser')
+    def test_handle_docs(self, mock_webbrowser):
+        EC2_URL = \
+     
