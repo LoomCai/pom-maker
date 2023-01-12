@@ -69,4 +69,6 @@ class SawsTest(unittest.TestCase):
     @mock.patch('saws.saws.webbrowser')
     def test_handle_docs(self, mock_webbrowser):
         EC2_URL = \
-     
+            'http://docs.aws.amazon.com/cli/latest/reference/ec2/index.html'
+        EC2_DESC_INSTANCES_URL = \
+            'http://docs.aws.amazon.com/cli/latest/referen
