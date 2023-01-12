@@ -71,4 +71,7 @@ class SawsTest(unittest.TestCase):
         EC2_URL = \
             'http://docs.aws.amazon.com/cli/latest/reference/ec2/index.html'
         EC2_DESC_INSTANCES_URL = \
-            'http://docs.aws.amazon.com/cli/latest/referen
+            'http://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html'  # NOQA
+        assert not self.saws.handle_docs('')
+        assert not self.saws.handle_docs('foo bar')
+        assert self.saws.ha
