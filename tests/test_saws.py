@@ -74,4 +74,6 @@ class SawsTest(unittest.TestCase):
             'http://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html'  # NOQA
         assert not self.saws.handle_docs('')
         assert not self.saws.handle_docs('foo bar')
-        assert self.saws.ha
+        assert self.saws.handle_docs('',
+                                     from_fkey=True)
+        mock_webbrowser.open.assert_called_with(self.DO
