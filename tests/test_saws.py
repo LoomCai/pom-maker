@@ -76,4 +76,7 @@ class SawsTest(unittest.TestCase):
         assert not self.saws.handle_docs('foo bar')
         assert self.saws.handle_docs('',
                                      from_fkey=True)
-        mock_webbrowser.open.assert_called_with(self.DO
+        mock_webbrowser.open.assert_called_with(self.DOCS_HOME_URL)
+        assert self.saws.handle_docs('baz',
+                                     from_fkey=True)
+        mock_webbrowser.open.assert_calle
