@@ -82,4 +82,6 @@ class SawsTest(unittest.TestCase):
         mock_webbrowser.open.assert_called_with(self.DOCS_HOME_URL)
         assert self.saws.handle_docs('aws ec2',
                                      from_fkey=True)
-        mock_webbrow
+        mock_webbrowser.open.assert_called_with(EC2_URL)
+        assert self.saws.handle_docs('aws ec2 docs',
+                                     from_fkey=Fals
