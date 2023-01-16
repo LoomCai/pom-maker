@@ -88,4 +88,7 @@ class SawsTest(unittest.TestCase):
         mock_webbrowser.open.assert_called_with(EC2_URL)
         assert self.saws.handle_docs('aws ec2 describe-instances',
                                      from_fkey=True)
-        mock_webbrowser.open.assert_called_with(EC2_DESC_INSTANC
+        mock_webbrowser.open.assert_called_with(EC2_DESC_INSTANCES_URL)
+        assert self.saws.handle_docs('aws ec2 describe-instances docs',
+                                     from_fkey=False)
+        mock_w
