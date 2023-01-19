@@ -91,4 +91,8 @@ class SawsTest(unittest.TestCase):
         mock_webbrowser.open.assert_called_with(EC2_DESC_INSTANCES_URL)
         assert self.saws.handle_docs('aws ec2 describe-instances docs',
                                      from_fkey=False)
-        mock_w
+        mock_webbrowser.open.assert_called_with(EC2_DESC_INSTANCES_URL)
+
+    @mock.patch('saws.saws.os')
+    def test_handle_cd(self, mock_os):
+        assert not s
