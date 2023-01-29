@@ -95,4 +95,7 @@ class SawsTest(unittest.TestCase):
 
     @mock.patch('saws.saws.os')
     def test_handle_cd(self, mock_os):
-        assert not s
+        assert not self.saws._handle_cd('aws')
+        assert self.saws._handle_cd('cd ')
+        assert self.saws._handle_cd('cd foo')
+        mock_os.chdir.ass
