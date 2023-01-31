@@ -98,4 +98,8 @@ class SawsTest(unittest.TestCase):
         assert not self.saws._handle_cd('aws')
         assert self.saws._handle_cd('cd ')
         assert self.saws._handle_cd('cd foo')
-        mock_os.chdir.ass
+        mock_os.chdir.assert_called_with('foo')
+
+    def test_colorize_output(self):
+        self.saws.set_color(False)
+        assert self.saws._colorize_output(AwsCommands.AWS_COMMAND
