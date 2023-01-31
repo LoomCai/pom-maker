@@ -102,4 +102,8 @@ class SawsTest(unittest.TestCase):
 
     def test_colorize_output(self):
         self.saws.set_color(False)
-        assert self.saws._colorize_output(AwsCommands.AWS_COMMAND
+        assert self.saws._colorize_output(AwsCommands.AWS_COMMAND) == \
+            AwsCommands.AWS_COMMAND
+        self.saws.set_color(True)
+        assert self.saws._colorize_output(AwsCommands.AWS_CONFIGURE) == \
+          
