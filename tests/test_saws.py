@@ -109,4 +109,9 @@ class SawsTest(unittest.TestCase):
             AwsCommands.AWS_CONFIGURE
         assert self.saws._colorize_output(AwsCommands.AWS_HELP) == \
             AwsCommands.AWS_HELP
-        EC2_LS_CMD = 'aws ec2 ls
+        EC2_LS_CMD = 'aws ec2 ls'
+        assert self.saws._colorize_output(EC2_LS_CMD) == \
+            EC2_LS_CMD + self.saws.PYGMENTS_CMD
+
+    @mock.patch('saws.saws.subprocess')
+    
