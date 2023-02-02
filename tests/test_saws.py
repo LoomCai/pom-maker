@@ -106,4 +106,7 @@ class SawsTest(unittest.TestCase):
             AwsCommands.AWS_COMMAND
         self.saws.set_color(True)
         assert self.saws._colorize_output(AwsCommands.AWS_CONFIGURE) == \
-          
+            AwsCommands.AWS_CONFIGURE
+        assert self.saws._colorize_output(AwsCommands.AWS_HELP) == \
+            AwsCommands.AWS_HELP
+        EC2_LS_CMD = 'aws ec2 ls
