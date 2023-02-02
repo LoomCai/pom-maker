@@ -114,4 +114,6 @@ class SawsTest(unittest.TestCase):
             EC2_LS_CMD + self.saws.PYGMENTS_CMD
 
     @mock.patch('saws.saws.subprocess')
-    
+    @mock.patch('saws.saws.webbrowser')
+    def test_process_command_docs(self, mock_webbrowser, mock_subprocess):
+        self.saws._process_command(
