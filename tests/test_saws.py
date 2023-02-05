@@ -123,4 +123,9 @@ class SawsTest(unittest.TestCase):
     @mock.patch('saws.saws.subprocess')
     def test_process_command_cd(self, mock_subprocess):
         self.saws._process_command('cd .')
-        mock_subprocess.call.assert_
+        mock_subprocess.call.assert_not_called()
+
+    @mock.patch('saws.saws.subprocess')
+    def test_process_command(self, mock_subprocess):
+        self.saws.set_color(False)
+     
