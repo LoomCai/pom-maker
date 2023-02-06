@@ -128,4 +128,7 @@ class SawsTest(unittest.TestCase):
     @mock.patch('saws.saws.subprocess')
     def test_process_command(self, mock_subprocess):
         self.saws.set_color(False)
-     
+        INVAL_CMD = 'foo'
+        self.saws._process_command(INVAL_CMD)
+        mock_subprocess.call.assert_called_with(INVAL_CMD,
+                             
