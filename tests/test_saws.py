@@ -131,4 +131,6 @@ class SawsTest(unittest.TestCase):
         INVAL_CMD = 'foo'
         self.saws._process_command(INVAL_CMD)
         mock_subprocess.call.assert_called_with(INVAL_CMD,
-                             
+                                                shell=True)
+        self.saws._process_command(AwsCommands.AWS_COMMAND)
+        mock_subprocess.call.assert_called_wit
