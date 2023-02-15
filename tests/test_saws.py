@@ -136,4 +136,6 @@ class SawsTest(unittest.TestCase):
         mock_subprocess.call.assert_called_with(AwsCommands.AWS_COMMAND,
                                                 shell=True)
         self.saws.set_color(True)
-        
+        colorized_command = AwsCommands.AWS_COMMAND + self.saws.PYGMENTS_CMD
+        self.saws._process_command(AwsCommands.AWS_COMMAND)
+  
