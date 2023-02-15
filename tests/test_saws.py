@@ -133,4 +133,7 @@ class SawsTest(unittest.TestCase):
         mock_subprocess.call.assert_called_with(INVAL_CMD,
                                                 shell=True)
         self.saws._process_command(AwsCommands.AWS_COMMAND)
-        mock_subprocess.call.assert_called_wit
+        mock_subprocess.call.assert_called_with(AwsCommands.AWS_COMMAND,
+                                                shell=True)
+        self.saws.set_color(True)
+        
