@@ -146,4 +146,4 @@ class SawsTest(unittest.TestCase):
         # TODO: Mock calls to renderer.clear and input_processor.feed
         self.saws._handle_keyboard_interrupt(e, platform='Darwin')
         with self.assertRaises(KeyboardInterrupt):
-            self.saws._handle_keyboard_interrupt(e, plat
+            self.saws._handle_keyboard_interrupt(e, platform='Windows')
