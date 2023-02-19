@@ -18,4 +18,11 @@ from __future__ import print_function
 import unittest
 from pygments.token import Token
 from saws.saws import Saws
-from saws.toolbar import
+from saws.toolbar import Toolbar
+
+
+class ToolbarTest(unittest.TestCase):
+
+    def setUp(self):
+        self.saws = Saws(refresh_resources=False)
+        self.toolbar = Toolbar(s
