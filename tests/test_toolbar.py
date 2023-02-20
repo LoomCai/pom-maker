@@ -25,4 +25,8 @@ class ToolbarTest(unittest.TestCase):
 
     def setUp(self):
         self.saws = Saws(refresh_resources=False)
-        self.toolbar = Toolbar(s
+        self.toolbar = Toolbar(self.saws.get_color,
+                               self.saws.get_fuzzy_match,
+                               self.saws.get_shortcut_match)
+
+    def t
