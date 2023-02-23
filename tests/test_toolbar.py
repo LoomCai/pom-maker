@@ -37,4 +37,7 @@ class ToolbarTest(unittest.TestCase):
             (Token.Toolbar.On, ' [F2] Color: ON '),
             (Token.Toolbar.On, ' [F3] Fuzzy: ON '),
             (Token.Toolbar.On, ' [F4] Shortcuts: ON '),
-    
+            (Token.Toolbar, ' [F5] Refresh '),
+            (Token.Toolbar, ' [F9] Docs '),
+            (Token.Toolbar, ' [F10] Exit ')]
+        assert expected =
