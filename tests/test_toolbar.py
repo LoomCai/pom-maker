@@ -45,4 +45,7 @@ class ToolbarTest(unittest.TestCase):
     def test_toolbar_off(self):
         self.saws.set_color(False)
         self.saws.set_fuzzy_match(False)
-   
+        self.saws.set_shortcut_match(False)
+        expected = [
+            (Token.Toolbar.Off, ' [F2] Color: OFF '),
+            (Token.Toolbar.Off, ' 
