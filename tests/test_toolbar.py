@@ -48,4 +48,7 @@ class ToolbarTest(unittest.TestCase):
         self.saws.set_shortcut_match(False)
         expected = [
             (Token.Toolbar.Off, ' [F2] Color: OFF '),
-            (Token.Toolbar.Off, ' 
+            (Token.Toolbar.Off, ' [F3] Fuzzy: OFF '),
+            (Token.Toolbar.Off, ' [F4] Shortcuts: OFF '),
+            (Token.Toolbar, ' [F5] Refresh '),
+            (Token.Toolbar
