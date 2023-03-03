@@ -51,4 +51,6 @@ class ToolbarTest(unittest.TestCase):
             (Token.Toolbar.Off, ' [F3] Fuzzy: OFF '),
             (Token.Toolbar.Off, ' [F4] Shortcuts: OFF '),
             (Token.Toolbar, ' [F5] Refresh '),
-            (Token.Toolbar
+            (Token.Toolbar, ' [F9] Docs '),
+            (Token.Toolbar, ' [F10] Exit ')]
+        assert expected == self.toolbar.handler(None)
